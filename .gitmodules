@@ -1,10 +1,3 @@
-[submodule "preproc/barra/get_barra"]
-	path = preproc/barra/get_barra
-	url = https://gitlab.com/tuflow-user-group/tuflow-fv/data-pre-processing/get_barra.git
-[submodule "preproc/barra/get-atmos"]
-	path = preproc/barra/get-atmos
-	url = https://gitlab.com/tuflow-user-group/tuflow-fv/data-pre-processing/get-atmos.git
-
 [submodule "aed-marvl"]
 	path = aed-marvl
 	url = https://github.com/AquaticEcoDynamics/aed-marvl
