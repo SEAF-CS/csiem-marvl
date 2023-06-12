@@ -1,6 +1,6 @@
 function create_interpolated_BC_for_inflow_NAR_v1(swan,headers,datearray,shift_AHD)
 
-load Tidaldata.mat;
+%load Tidaldata.mat;
 
 
 ISOTime = datearray;
@@ -20,11 +20,11 @@ end
 varname = 'height';
 
 
-[t_date,ind] = unique(data.bar.date);
-t_data = data.bar.height(ind);
+[t_date,ind] = unique(swan.DOT_PTBAR02.H.Date);
+t_data = swan.DOT_PTBAR02.H.Data(ind);
 
-[t_date1,ind] = unique(data.free.date);
-t_data1 = data.free.height(ind);
+[t_date1,ind] = unique(swan.DOT_FFFBH01.H.Date);
+t_data1 = swan.DOT_FFFBH01.H.Data(ind);
 
 ss = find(~isnan(t_data) == 1);
 sss = find(~isnan(t_data1) == 1);
@@ -42,7 +42,7 @@ else
     wl(wl < 0.18) = 0.18;
 end
 
-
+wl(wl < -50) = 0;
 
 figure;plot(wl);title('wl');
 
@@ -70,7 +70,7 @@ SS9(1:length(datearray)) = 0;
 
 varname = 'SAL';
 
-Sal = create_interpolated_dataset(swan,varname,'s6160262','Bottom',datearray);
+Sal = create_interpolated_dataset(swan,varname,'DWER_6160262','Bottom',datearray);
 
 figure;plot(Sal);title('Sal');
 
@@ -80,7 +80,7 @@ clear t_date t_data;
 
 varname = 'TEMP';
 
-Temp = create_interpolated_dataset(swan,varname,'s6160262','Bottom',datearray);
+Temp = create_interpolated_dataset(swan,varname,'DWER_6160262','Bottom',datearray);
 
 figure;plot(Temp);title('Temp');
 
@@ -90,7 +90,7 @@ clear t_date t_data;
 
 varname = 'WQ_OXY_OXY';
 
-Oxy = create_interpolated_dataset(swan,varname,'s6160262','Bottom',datearray);
+Oxy = create_interpolated_dataset(swan,varname,'DWER_6160262','Bottom',datearray);
 
 figure;plot(Oxy);title('Oxygen');
 
@@ -100,7 +100,7 @@ clear t_date t_data;
 
 varname = 'WQ_SIL_RSI';
 
-Sil = create_interpolated_dataset(swan,varname,'s6160262','Bottom',datearray);
+Sil = create_interpolated_dataset(swan,varname,'DWER_6160262','Bottom',datearray);
 
 figure;plot(Sil);title('Silica');
 
@@ -110,7 +110,7 @@ clear t_date t_data;
 
 varname = 'WQ_NIT_AMM';
 
-Amm = create_interpolated_dataset(swan,varname,'s6160262','Bottom',datearray);
+Amm = create_interpolated_dataset(swan,varname,'DWER_6160262','Bottom',datearray);
 
 
 figure;plot(Amm);title('Amm');
@@ -121,7 +121,7 @@ clear t_date t_data;
 
 varname = 'WQ_DIAG_TOT_TN';
 
-TN = create_interpolated_dataset(swan,varname,'s6160262','Bottom',datearray);
+TN = create_interpolated_dataset(swan,varname,'DWER_6160262','Bottom',datearray);
 
 
 figure;plot(TN);title('TN');
@@ -134,7 +134,7 @@ clear t_date t_data;
 
 varname = 'WQ_PHS_FRP';
 
-FRP = create_interpolated_dataset(swan,varname,'s6160262','Bottom',datearray);
+FRP = create_interpolated_dataset(swan,varname,'DWER_6160262','Bottom',datearray);
 
 figure;plot(FRP);title('FRP');
 
@@ -156,7 +156,7 @@ clear t_date t_data;
 
 varname = 'WQ_OGM_DON';
 
-DON_T = create_interpolated_dataset(swan,varname,'s6160262','Bottom',datearray);
+DON_T = create_interpolated_dataset(swan,varname,'DWER_6160262','Bottom',datearray);
 
 DON = DON_T .* 0.3;
 
@@ -171,7 +171,7 @@ clear t_date t_data;
 
 varname = 'WQ_DIAG_TOT_TKN';
 
-TKN = create_interpolated_dataset(swan,varname,'s6160262','Bottom',datearray);
+TKN = create_interpolated_dataset(swan,varname,'DWER_6160262','Bottom',datearray);
 
 
 figure;plot(TKN);title('TKN');
@@ -190,7 +190,7 @@ figure;plot(TON);title('TON');
 
 varname = 'WQ_NIT_NIT';
 
-Nit = create_interpolated_dataset(swan,varname,'s6160262','Bottom',datearray);
+Nit = create_interpolated_dataset(swan,varname,'DWER_6160262','Bottom',datearray);
 
 figure;plot(Nit);title('NIT');
 
@@ -211,7 +211,7 @@ figure;plot(PON);title('PON');
 
 varname = 'WQ_DIAG_TOT_TP';
 
-TP = create_interpolated_dataset(swan,varname,'s6160262','Bottom',datearray);
+TP = create_interpolated_dataset(swan,varname,'DWER_6160262','Bottom',datearray);
 
 figure;plot(TP);title('TP');
 
@@ -244,11 +244,17 @@ figure;plot(POP);title('POP');
 
 varname = 'WQ_OGM_DOC';
 
-DOC_T = create_interpolated_dataset(swan,varname,'s6160262','Bottom',datearray);
+DOC_T = create_interpolated_dataset(swan,varname,'DWER_6160262','Bottom',datearray);
 
 DOC = DOC_T .* 0.4;
 
 DOC(DOC < 0) = 0;
+
+        TOC_Calc = (DOC .* 1.1) + 46;
+        
+        
+        POC = TOC_Calc - DOC;
+
 
 
 figure;plot(DOC);title('DOC');
@@ -259,7 +265,7 @@ clear t_date t_data;
 
 varname = 'WQ_OGM_POC';
 
-POC = create_interpolated_dataset(swan,varname,'s6160262','Bottom',datearray);
+%POC = create_interpolated_dataset(swan,varname,'DWER_6160262','Bottom',datearray);
 
 POC(POC < 0) = 0;
 
@@ -273,7 +279,7 @@ clear t_date t_data;
 varname = 'WQ_DIAG_TOT_TSS';
 
 
-SS1_T = create_interpolated_dataset(swan,varname,'s6160262','Bottom',datearray);
+SS1_T = create_interpolated_dataset(swan,varname,'DWER_6160262','Bottom',datearray);
 
 SS1 = SS1_T * 0.3;
 SS2 = SS1_T * 0.7;
@@ -286,7 +292,7 @@ clear t_date t_data;
 
 varname = 'WQ_DIAG_PHY_TCHLA';
 
-CHLA = create_interpolated_dataset(swan,varname,'s6160262','Bottom',datearray);
+CHLA = create_interpolated_dataset(swan,varname,'DWER_6160262','Bottom',datearray);
 
 
 GRN = CHLA .* 0.04;
