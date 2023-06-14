@@ -38,7 +38,7 @@ ttt = find(wl < -50);
 wl(ttt) = wl1(ttt);
 
 if shift_AHD% AHD shift
-    wl = wl - 0.74;
+    wl = wl - (0.756 + 0.29) ;
 else
     wl(wl < 0.18) = 0.18;
 end
