@@ -5,7 +5,7 @@
 ![image](aed-marvl/docs/MARVL-overview.png)
 
 ## Overview
-csiem-marvl (the Cockburn Sound Integrated Ecosystem Model - Model Assessment, Reporting and Visualisation Library) is an integrated software package for visualizing the model outputs and observational datasets, and evaluating the model performance. CDM-marvl uses the `aed-marvl` as the core functions for plotting and evaluating model outputs. For the key features and modules of `aed-marvl` the readers are refered to https://github.com/AquaticEcoDynamics/aed-marvl 
+csiem-marvl (the Cockburn Sound Integrated Ecosystem Model - Model Assessment, Reporting and Visualisation Library) is an integrated software package for visualizing the model outputs and observational datasets, and evaluating the model performance. csiem-marvl uses the `aed-marvl` as the core functions for plotting and evaluating model outputs. For the key features and modules of `aed-marvl` the readers are refered to https://github.com/AquaticEcoDynamics/aed-marvl 
 
 ## Repository Organisation
 - `aed-marvl`: core plotting and model performance evaluating scripts and libraries for MARVL; 
