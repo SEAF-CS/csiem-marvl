@@ -1,6 +1,6 @@
 clear all; close all;
 
-shpfile = '../../../gis/Zones/MLAU_Zones_v2_ll.shp';
+shpfile = '../../../gis/Zones/MLAU_Zones_v2_ll_C.shp';
 
 shp = shaperead(shpfile);
 
