@@ -25,6 +25,10 @@ To access the repository, use a client like GitHub Desktop, or download from the
 
 `git clone git@github.com:SEAF-CS/csiem-marvl`
 
+or if you want the embedded sub-module(s):
+
+`git clone --recurse-submodules git@github.com:SEAF-CS/csiem-marvl`  
+
 Once you have the main repository, create an `output` directory to store items that are created. 
 
 ### Running aed-marvl for polygon time-series plots
@@ -46,7 +50,7 @@ Once you have the main repository, create an `output` directory to store items t
 <a href="url"><img src="configs/000_examples/cs_mangles_example.png" width="500" ></a>
 
 - For these scripts to work effectively, the data products from the `csiem-data` repository must be sourced and added to the `data` folder. For more information on the observed data available for these scripts, please visit the csiem-data [wiki](https://github.com/SEAF-CS/csiem-data/wiki) 
-- A range of other marvl plots are configurable and can be applied to the Cockburn Sound model - see the [wiki here](https://github.com/AquaticEcoDynamics/aed-marvl/wiki/Master-Module) for further examples.
+- A range of other marvl plots are configurable and can be applied to the Cockburn Sound model - see the [wiki here](https://github.com/AquaticEcoDynamics/aed-marvl/wiki/Master-Module) specific to the aed-marvl repo for further examples.
 
 ### Running custom matlab scripts
 
