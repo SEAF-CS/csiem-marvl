@@ -1,0 +1,145 @@
+vars,counts
+ACCELERATIONX, 11.00
+ACCELERATIONY, 11.00
+ACCELERATIONZ, 11.00
+AIRTEMP, 12.00
+AMPLITUDE1,  5.00
+AMPLITUDE2,  5.00
+AMPLITUDE3,  5.00
+Allo,  1.00
+AlphaBetaCar,  1.00
+Anth,  1.00
+Asta,  1.00
+Butfuco,  1.00
+COND,190.00
+Cantha,  1.00
+CphlA,  1.00
+CphlB,  1.00
+CphlC1,  1.00
+CphlC2,  1.00
+CphlC3,  1.00
+CphlideA,  1.00
+D, 29.00
+DENSITY_ANOMALY,  6.00
+DIC,  1.00
+Diadchr,  1.00
+Diadino,  1.00
+Diato,  1.00
+Dino,  1.00
+DvCphlA,  1.00
+DvCphlA_CphlA,  1.00
+DvCphlB,  1.00
+DvCphlB_CphlB,  1.00
+Echin,  1.00
+FLOW, 21.00
+Fuco,  1.00
+Gyro,  1.00
+H, 25.00
+HEADING, 24.00
+Hexfuco,  1.00
+Ketohexfuco,  1.00
+Lut,  1.00
+Lyco,  1.00
+MAX_WIND_SPEED,  1.00
+MgDvp,  1.00
+Neo,  1.00
+Nitrite,  1.00
+ON,  8.00
+OP,  8.00
+PAR_STD,  1.00
+PITCH, 24.00
+PRESSURE, 61.00
+PRESSURE_SENSOR_DEPTH, 19.00
+Perid,  1.00
+PhideA,  1.00
+PhytinA,  1.00
+PhytinB,  1.00
+Picoeukaryotes,  1.00
+Pras,  1.00
+Prochlorococcus,  1.00
+PyrophideA,  1.00
+PyrophytinA,  1.00
+ROLL, 24.00
+SAL,269.00
+SECCHI_DEPTH,166.00
+SPEED_OF_SOUND, 30.00
+Synechococcus,  1.00
+TEMP,1187.00
+TPAR,  1.00
+TSOLAR,  1.00
+TSSinorganic,  1.00
+TSSorganic,  1.00
+Tilt, 11.00
+Total_Par_day,  2.00
+UCUR, 24.00
+VCUR, 24.00
+Viola,  1.00
+WCUR,  5.00
+WL_398_uW,  2.00
+WL_398_umol,  2.00
+WL_448_uW,  2.00
+WL_448_umol,  2.00
+WL_470_uW,  2.00
+WL_470_umol,  2.00
+WL_524_uW,  2.00
+WL_524_umol,  2.00
+WL_554_uW,  2.00
+WL_554_umol,  2.00
+WL_590_uW,  2.00
+WL_590_umol,  2.00
+WL_628_uW,  2.00
+WL_628_umol,  2.00
+WL_656_uW,  2.00
+WL_656_umol,  2.00
+WL_699_uW,  2.00
+WL_699_umol,  2.00
+WQ_CAR_PH,191.00
+WQ_DIAG_OAS_IRR_BAND_1,  9.00
+WQ_DIAG_OAS_IRR_BAND_2,  9.00
+WQ_DIAG_OAS_IRR_BAND_3,  9.00
+WQ_DIAG_OAS_IRR_BAND_4,  9.00
+WQ_DIAG_OAS_IRR_BAND_5,  9.00
+WQ_DIAG_OAS_IRR_BAND_6,  9.00
+WQ_DIAG_OAS_IRR_BAND_7,  9.00
+WQ_DIAG_OAS_IRR_BAND_8,  9.00
+WQ_DIAG_OAS_IRR_BAND_9,  9.00
+WQ_DIAG_OXY_SAT,201.00
+WQ_DIAG_PHY_TCHLA,233.00
+WQ_DIAG_TOT_PAR, 13.00
+WQ_DIAG_TOT_TKN, 87.00
+WQ_DIAG_TOT_TN,248.00
+WQ_DIAG_TOT_TP,248.00
+WQ_DIAG_TOT_TSS,120.00
+WQ_DIAG_TOT_TURBIDITY,185.00
+WQ_NIT_AMM,248.00
+WQ_NIT_NIT,245.00
+WQ_OGM_DOC,104.00
+WQ_OGM_DON, 61.00
+WQ_OGM_POC, 21.00
+WQ_OXY_OXY,311.00
+WQ_PHS_FRP,249.00
+WQ_SIL_RSI, 73.00
+Zea,  1.00
+density, 43.00
+fluorescence, 63.00
+light_attenuation_coefficient,109.00
+logger_temperature,  2.00
+max_PAR,  1.00
+max_solar_raditation,  1.00
+max_station_level_pressure,  1.00
+mean_solar_raditation,  1.00
+min_PAR,  1.00
+min_solar_raditation,  1.00
+min_station_level_pressure,  1.00
+min_wind_speed,  1.00
+phaeophytin_a, 43.00
+picop_brewin2012in,3461.00
+posidonia_sinuosa_above_ground_biomass, 61.00
+posidonia_sinuosa_below_ground_biomass, 61.00
+posidonia_sinuosa_count, 61.00
+posidonia_sinuosa_dry_weight, 61.00
+posidonia_sinuosa_total_biomass, 61.00
+sea_level_pressure_std,  1.00
+solar_raditation_std,  1.00
+surface_photosynthetically_active_photon_flux,  6.00
+wind_direction_std,  1.00
