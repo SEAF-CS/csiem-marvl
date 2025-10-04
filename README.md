@@ -29,7 +29,7 @@ Once you have the main repository, create an `output` directory to store items t
 
 ### Running aed-marvl for polygon time-series plots
 
-- For the aed-marvl polygon-timeeries plotting, open Matlab (version 2020 or later), go to the local `csiem-marvl` folder and add the paths to tools/libraries by entering:
+- For the main `aed-marvl` *polygon-timeseries* plotting, open Matlab (version 2020 or later), go to the local `csiem-marvl` folder and add the paths to tools/libraries by entering:
  ```
  addpath(genpath('./'))
  ```
@@ -46,6 +46,7 @@ Once you have the main repository, create an `output` directory to store items t
 <a href="url"><img src="configs/000_examples/cs_mangles_example.png" width="500" ></a>
 
 - For these scripts to work effectively, the data products from the `csiem-data` repository must be sourced and added to the `data` folder. For more information on the observed data available for these scripts, please visit the csiem-data [wiki](https://github.com/SEAF-CS/csiem-data/wiki) 
+- A range of other marvl plots are configurable and can be applied to the Cockburn Sound model - see the [wiki here](https://github.com/AquaticEcoDynamics/aed-marvl/wiki/Master-Module) for further examples.
 
 ### Running custom matlab scripts
 
