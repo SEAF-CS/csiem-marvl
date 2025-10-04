@@ -2,6 +2,10 @@
 
 # csiem-marvl : plotting and visualisation tools for CSIEM
 
+[![Matlab Badge](https://img.shields.io/badge/MATLAB-ff8c00.svg?&style=for-the-badge&logo=matrix&logoColor=white)](https://github.com/SEAF-CS/csiem-marvl)
+[![Python Badge](https://img.shields.io/badge/Python-306998.svg?&style=for-the-badge&logo=Python&logoColor=white)](https://github.com/SEAF-CS/csiem_regional_dashboard)
+[![Jupyter Badge](https://img.shields.io/badge/Jupyter-F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=white)](https://github.com/SEAF-CS/sentinel2_ridgeplot)
+
 ## Overview
 <a href="url"><img src="custom_py/tfv_curtain/csiem_example_animation.gif" align="right" width="400" ></a>
 `csiem-marvl` refers to the Cockburn Sound Integrated Ecosystem Model - Model Assessment, Reporting and Visualisation Library, which is a collection of scripts and tools for assisting users visualise model outputs and observational datasets, and for evaluating the model's performance. `csiem-marvl` uses the more generic `aed-marvl` package for core functions for plotting and evaluating model output, in addition to a suite of custom scripts developed for specific applications. 
@@ -38,6 +42,8 @@ Once you have the main repository, create an `output` directory to store items t
  ```
    run_AEDmarvl('./MARVL.m','yaml')
  ```
+
+<a href="url"><img src="configs/000_examples/cs_mangles_example.png" width="500" ></a>
 
 - For these scripts to work effectively, the data products from the `csiem-data` repository must be sourced and added to the `data` folder. For more information on the observed data available for these scripts, please visit the csiem-data [wiki](https://github.com/SEAF-CS/csiem-data/wiki) 
 
