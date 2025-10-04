@@ -1,0 +1,413 @@
+master:
+  modules: [transect_stackedArea]
+  varname:
+  - [SAL, Salinity]
+  - [TEMP, Temperature]
+  - [WQ_OXY_OXY, DO]
+  - [WQ_NIT_AMM, NH_4]
+  - [WQ_NIT_NIT, NO_3]
+  - [WQ_PHS_FRP, PO_4]
+  - [WQ_DIAG_PHY_TCHLA, TCHLA]
+  - [WQ_DIAG_TOT_TN, TN]
+  - [WQ_DIAG_TOT_TP, TP]
+  - [WQ_DIAG_TOT_TSS, TSS]
+  - [WQ_DIAG_TOT_TOC, TOC]
+  - [WQ_OGM_DOC, DOC]
+  - [WQ_DIAG_TOT_TURBIDITY, Turbidity]
+  - [WQ_NCS_SS1, SS1]
+  add_human: 1.0
+  ncfile: {name: 'E:\database\csiem_100_A_20130101_20130601_WQ_009_WQ_plot_ks.nc',
+    legend: MODEL, tag: TFV}
+  add_fielddata: 1.0
+  fielddata_matfile: ./Data/cockburn.mat
+  fielddata: cockburn
+  font: Times New Roman
+  fontsize: 8.0
+  xlabelsize: 9.0
+  ylabelsize: 9.0
+  titlesize: 9.0
+  legendsize: 6.0
+  visible: 'on'
+timeseries:
+  start_plot_ID: 4.0
+  end_plot_ID: 4.0
+  plotvalidation: 1.0
+  validation_raw: 1.0
+  plotmodel: 1.0
+  plotdepth: [surface, bottom]
+  depthTHRESH: -3.0
+  edge_color:
+  - [0.6509803921568628, 0.33725490196078434, 0.1568627450980392]
+  - [0.03137254901960784, 0.34509803921568627, 0.6196078431372549]
+  depth_range: [0.2, 100.0]
+  validation_minmax: 0.0
+  isModelRange: 1.0
+  pred_lims: [0.05, 0.25, 0.5, 0.75, 0.95]
+  alph: 0.5
+  isFieldRange: 0.0
+  fieldprctile: [10.0, 90.0]
+  isHTML: 1.0
+  polygon_file: ./GIS/MLAU_Zones_v1_ll.shp
+  plotAllsites: 1.0
+  add_error: 1.0
+  isSaveErr: 1.0
+  obsTHRESH: 5.0
+  showSkill: 1.0
+  scoremethod: range
+  skills: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+  outputdirectory: ./Outputs/timeseries/RAW/
+  htmloutput: ./Outputs/timeseries/HTML/
+  ErrFilename: ./Outputs/timeseries/errormatrix.mat
+  ncfile:
+    symbol: ['-', '-']
+    colour:
+    - [0.6509803921568628, 0.33725490196078434, 0.1568627450980392]
+    - [0.03137254901960784, 0.34509803921568627, 0.6196078431372549]
+    col_pal_color_surf:
+    - [0.996078431372549, 0.9098039215686274, 0.7843137254901961]
+    - [0.9882352941176471, 0.5529411764705883, 0.34901960784313724]
+    col_pal_color_bot:
+    - [0.8705882352941177, 0.9215686274509803, 0.9686274509803922]
+    - [0.4196078431372549, 0.6823529411764706, 0.8392156862745098]
+  datearray: [735235.0, 735355.0, 735478.0, 735600.0]
+  dateformat: mmm/yy
+  istitled: 1.0
+  isylabel: 1.0
+  islegend: 1.0
+  isYlim: 1.0
+  dimensions: [20.0, 10.0]
+  dailyave: 0.0
+  legendlocation: northeastoutside
+  filetype: eps
+  cAxis:
+  - value: []
+  - value: []
+  - value: []
+  - value: []
+  - value: []
+  - value: []
+  - value: []
+  - value: []
+  - value: []
+  - value: []
+  - value: []
+  - value: []
+  - value: []
+  - value: []
+transect:
+  start_plot_ID: 1.0
+  end_plot_ID: 6.0
+  polygon_file: .\GIS\Curtain_polyline_100m_QC_ll.shp
+  plotvalidation: 1.0
+  pred_lims: [0.05, 0.25, 0.5, 0.75, 0.95]
+  isRange: 1.0
+  istitled: 1.0
+  isylabel: 1.0
+  islegend: 0.0
+  isYlim: 1.0
+  isHTML: 1.0
+  isSurf: 1.0
+  isSpherical: 1.0
+  use_matfiles: 0.0
+  add_obs_num: 1.0
+  outputdirectory: ./Outputs/transect/RAW/
+  htmloutput: ./Outputs/transect/HTML/
+  dimc: [0.9, 0.9, 0.9]
+  boxlegend: southeast
+  rangelegend: northwest
+  dimensions: [20.0, 10.0]
+  pdates:
+    value: [735236.0, 735266.0]
+  binfielddata: 1.0
+  binradius: 0.5
+  linedist: 1500.0
+  xtickManual: 1.0
+  xlim: [0.0, 47.6]
+  xticks: [0.0, 18.4, 28.3, 47.5]
+  xticklabels: [Cape Peron, Coogee, Port Fremantle, Narrows Bridge]
+  xlabel: Distance from Southern CS (km)
+  cAxis:
+  - value: [30.0, 37.0]
+  - value: [22.0, 30.0]
+  - value: [5.5, 7.3]
+  - value: [0.0, 0.1]
+  - value: [0.0, 0.02]
+  - value: [0.0, 0.015]
+  ncfile:
+    symbol: ['-']
+    translate: 1.0
+    colour: [0.6509803921568628, 0.33725490196078434, 0.1568627450980392]
+    edge_color: [0.6509803921568628, 0.33725490196078434, 0.1568627450980392]
+    col_pal_color:
+    - [0.996078431372549, 0.9098039215686274, 0.7843137254901961]
+    - [0.9882352941176471, 0.5529411764705883, 0.34901960784313724]
+transectSA:
+  thevars: [WQ_PHY_GRN, WQ_PHY_DINO, WQ_PHY_MDIAT, WQ_PHY_CRYPT, WQ_PHY_BGA]
+  thelabels: [Green Algae, Dino, Diatom, Crypt, Cyano]
+  thevars_conv: [0.24, 0.24, 0.24, 0.24, 0.24]
+  varname: [WQ_DIAG_PHY_TCHLA, TChla (\mug/L)]
+  add_human: 1.0
+  polygon_file: .\GIS\Curtain_polyline_100m_QC_ll.shp
+  plotvalidation: 1.0
+  pred_lims: [0.05, 0.25, 0.5, 0.75, 0.95]
+  isRange: 1.0
+  istitled: 1.0
+  isylabel: 1.0
+  islegend: 0.0
+  isYlim: 1.0
+  isHTML: 1.0
+  isSurf: 1.0
+  isSpherical: 1.0
+  use_matfiles: 0.0
+  add_obs_num: 1.0
+  outputdirectory: ./Outputs/transectSA/RAW/
+  htmloutput: ./Outputs/transectSA/HTML/
+  dimc: [0.9, 0.9, 0.9]
+  boxlegend: southeast
+  rangelegend: northwest
+  dimensions: [20.0, 10.0]
+  pdates:
+    value: [735236.0, 735266.0]
+  binfielddata: 1.0
+  binradius: 0.5
+  linedist: 1500.0
+  xtickManual: 1.0
+  xlim: [0.0, 47.6]
+  xticks: [0.0, 18.4, 28.3, 47.5]
+  xticklabels: [Cape Peron, Coogee, Port Fremantle, Narrows Bridge]
+  xlabel: Distance from Southern CS (km)
+  cAxis:
+    value: [0.0, 10.0]
+profile:
+  cAxis:
+  - value: []
+  - value: []
+  - value: []
+  - value: []
+  - value: []
+  - value: []
+  - value: []
+  - value: []
+  - value: []
+  - value: []
+  - value: []
+  - value: []
+  - value: []
+  - value: []
+  start_plot_ID: 1.0
+  end_plot_ID: 1.0
+  sitenames: [Cockburn, Swan]
+  siteX: [115.7265, 115.8178]
+  siteY: [-32.2264, -32.0059]
+  plotvalidation: false
+  plotmodel: 1.0
+  filetype: eps
+  expected: 1.0
+  isHTML: 1.0
+  datearray: [735249.0, 735250.0, 735251.0, 735252.0, 735253.0, 735254.0]
+  dateformat: dd/mm/yyyy
+  dimc: [0.9, 0.9, 0.9]
+  istitled: 1.0
+  isylabel: 1.0
+  islegend: 1.0
+  isYlim: 1.0
+  isGridon: 1.0
+  dimensions: [20.0, 10.0]
+  outputdirectory: ./Outputs/profile/RAW/
+  htmloutput: ./Outputs/profile/HTML/
+sheet:
+  cAxis:
+    value: [34.5, 36.5]
+  start_plot_ID: 1.0
+  end_plot_ID: 1.0
+  style: m_map
+  plotdepth: [surface]
+  plottype: movie
+  xlim: [115.6089, 115.7786]
+  ylim: [-32.3206, -31.9921]
+  FileFormat: mp4
+  Quality: 100.0
+  FrameRate: 6.0
+  resolution: [1024.0, 768.0]
+  colormap: turbo
+  save_images: 1.0
+  datearray: [735249.0, 735254.0]
+  dateformat: mm/yyyy
+  plot_interval: 2.0
+  outputdirectory: ./Outputs/sheet/
+  clip_depth: 0.05
+  dimc: [0.9, 0.9, 0.9]
+  istitled: 1.0
+  isColorbar: 1.0
+  Xlim: []
+  Ylim: []
+  isAxison: 1.0
+  dimensions: [20.0, 10.0]
+curtain:
+  cAxis:
+    value: [32.0, 37.0]
+  start_plot_ID: 1.0
+  end_plot_ID: 1.0
+  geofile: .\data\csiem_100_A_20130101_20130601_WQ_009_diag_geo.nc
+  polyline: .\GIS\Curtain_polyline_100m_QC_ll.shp
+  isSpherical: 1.0
+  plottype: slide
+  datearray: [735249.0, 735250.0, 735251.0, 735252.0, 735253.0, 735254.0]
+  resolution: [1024.0, 768.0]
+  colormap: turbo
+  save_images: 1.0
+  outputdirectory: ./Outputs/curtain/
+  clip_depth: 0.05
+  dimc: [0.9, 0.9, 0.9]
+  istitled: 1.0
+  isColorbar: 1.0
+  xtickManual: 1.0
+  xlim: [0.0, 47.6]
+  xticks: [0.0, 18.4, 28.3, 47.5]
+  xticklabels: [Cape Peron, Coogee, Port Fremantle, Narrows Bridge]
+  xlabel: Distance from CS South (km)
+  isAxison: 1.0
+  dimensions: [24.0, 8.5]
+transectExc:
+  start_plot_ID: 14.0
+  end_plot_ID: 14.0
+  polygon_file: .\GIS\Curtain_polyline_100m_QC_ll.shp
+  plotvalidation: 0.0
+  pred_lims: [0.05, 0.25, 0.5, 0.75, 0.95]
+  isRange: 1.0
+  istitled: 1.0
+  isylabel: 1.0
+  islegend: 0.0
+  isYlim: 1.0
+  isHTML: 1.0
+  isSurf: 1.0
+  isSpherical: 1.0
+  use_matfiles: 0.0
+  add_obs_num: 1.0
+  thresh:
+  - value: []
+    legend: []
+  - value: []
+    legend: []
+  - value: []
+    legend: []
+  - value: []
+    legend: []
+  - value: []
+    legend: []
+  - value: []
+    legend: []
+  - value: []
+    legend: []
+  - value: []
+    legend: []
+  - value: []
+    legend: []
+  - value: []
+    legend: []
+  - value: []
+    legend: []
+  - value: []
+    legend: []
+  - value: []
+    legend: []
+  - value: [4.0, 10.0]
+    legend: ['%time > 4 mg/L', '%time > 10 mg/L']
+  outputdirectory: ./Outputs/transect_exceedance/RAW/
+  htmloutput: ./Outputs/transect_exceedance/HTML/
+  dimc: [0.9, 0.9, 0.9]
+  boxlegend: southeast
+  rangelegend: northwest
+  dimensions: [20.0, 10.0]
+  pdates:
+    value: [735249.0, 735254.0]
+  binfielddata: 1.0
+  binradius: 0.5
+  linedist: 1500.0
+  xtickManual: 1.0
+  xlim: [0.0, 47.6]
+  xticks: [0.0, 18.4, 28.3, 47.5]
+  xticklabels: [Cape Peron, Coogee, Port Fremantle, Narrows Bridge]
+  xlabel: Distance from Southern CS (km)
+  cAxis:
+  - value: []
+  - value: []
+  - value: []
+  - value: []
+  - value: []
+  - value: []
+  - value: []
+  - value: []
+  - value: []
+  - value: []
+  - value: []
+  - value: []
+  - value: []
+  - value: []
+  ncfile:
+    symbol: ['-']
+    translate: 1.0
+    colour: [0.6509803921568628, 0.33725490196078434, 0.1568627450980392]
+    edge_color: [0.6509803921568628, 0.33725490196078434, 0.1568627450980392]
+    col_pal_color:
+    - [0.6901960784313725, 0.7450980392156863, 0.7725490196078432]
+    - [0.6352941176470588, 0.7450980392156863, 0.7725490196078432]
+    - [0.5882352941176471, 0.7450980392156863, 0.7725490196078432]
+    - [0.5882352941176471, 0.7450980392156863, 0.7725490196078432]
+boxchartConf:
+  start_plot_ID: 3.0
+  end_plot_ID: 5.0
+  polygon_file: .\GIS\MLAU_Zones_v1_ll.shp
+  cattt: [CS01, CS02, CS03, CS04, CS05, CS06, CS07, CS08, CS09, CS10, CS11, CS12,
+    CS13, CS14, CS15, CS16, CS17, CS18, CS19, CS20, CS21, CS22, CS23, CS24]
+  datearray: [735235.0, 735266.0]
+  cAxis:
+  - value: [0.0, 40.0]
+  - value: [0.0, 40.0]
+  - value: [0.0, 10.0]
+  - value: [0.0, 0.02]
+  - value: [0.0, 0.02]
+  - value: [0.0, 100.0]
+  - value: [0.0, 100.0]
+  - value: [0.0, 100.0]
+  - value: [0.0, 100.0]
+  - value: [0.0, 100.0]
+  - value: [0.0, 100.0]
+  - value: [0.0, 100.0]
+  - value: [0.0, 100.0]
+  - value: [0.0, 100.0]
+  dimensions: [28.0, 7.5]
+  outputdirectory: ./Outputs/boxchart/RAW/
+NBudget:
+  Pool_3D:
+  - [WQ_OGM_DON, DON]
+  - [WQ_OGM_DONR, DONR]
+  - [WQ_OGM_PON, PON]
+  - [WQ_NIT_NIT, NIT]
+  - [WQ_NIT_AMM, AMM]
+  Pool_3D_factors: [1.4E-8, 1.4E-8, 1.4E-8, 1.4E-8, 1.4E-8]
+  BGC_3D:
+  - [WQ_DIAG_NIT_ANAMMOX, ANAMMOX]
+  - [WQ_DIAG_NIT_DENIT, DENIT]
+  - [WQ_DIAG_NIT_DNRA, DNRA]
+  - [WQ_DIAG_NIT_NITRIF, NITRIF]
+  BGC_3D_factors: [1.4E-8, 1.4E-8, 1.4E-8, 1.4E-8]
+  BGC_2D:
+  - [WQ_DIAG_NIT_SED_AMM, SED-AMM]
+  - [WQ_DIAG_NIT_SED_NIT, SED-NIT]
+  BGC_2D_factors: [1.4E-8, 1.4E-8]
+  polygon_file: E:\database\AED-MARVl-v0.3\Examples\Cockburn\GIS\Cockburn_Sites_2021.shp
+  plotAllsites: 0.0
+  plotsite: 5.0
+  inputdirectory: E:\database\AED-MARVl-v0.3\Examples\Cockburn\Data\nutrient_budget\matfiles_kw001\
+  outputdirectory: E:\database\AED-MARVl-v0.3\Examples\Cockburn\plotting2\NutrientBudget\
+  datearray: [738308.0, 738323.0, 738338.0, 738353.0, 738368.0]
+  dateformat: dd/mm/yyyy
+  dimc: [0.9, 0.9, 0.9]
+  istitled: 1.0
+  isylabel: 1.0
+  islegend: 1.0
+  isYlim: 1.0
+  isGridon: 1.0
+  dimensions: [20.0, 10.0]
+  legendlocation: northeastoutside
