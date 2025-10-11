@@ -77,7 +77,7 @@ master.add_human = 1; % option to use user-define names, if 0 use AED names
 
 % Models
 %master.ncfile(1).name = '/Projects2/csiem/model/csiem_model_tfvaed_1.6/outputs/results/csiem_A001_20201101_20211231_WQ_WQ.nc';
-master.ncfile(1).name = '/Volumes/Projects2/csiem/model/csiem_model_tfvaed_1.6/outputs/results/csiem_A001_20191101_20201231_WQ_WQ.nc';
+master.ncfile(1).name = '/Projects2/csiem/model/csiem_model_tfvaed_1.6/outputs/results/csiem_A001_20191101_20201231_WQ_WQ.nc';
 master.ncfile(1).legend = 'csiem1.6';
 master.ncfile(1).tag = 'TFV';
 
@@ -128,7 +128,7 @@ timeseries.isFieldRange = 0;
 timeseries.fieldprctile = [10 90];
 timeseries.isHTML = 1;
 
-timeseries.polygon_file = '../../gis/MLAU_Zones_v3_ll.shp';
+timeseries.polygon_file = '../../gis/Zones/MLAU_Zones_v3_ll.shp';
 timeseries.plotAllsites = 1;
 if timeseries.plotAllsites == 0
     timeseries.plotsite = [6 10 29];
