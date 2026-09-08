@@ -1,0 +1,49 @@
+# Groundwater Analysis Configuration
+# Configuration for reading CSV files and calculating total flow
+
+# Directory paths containing CSV files
+directories:
+  directory_1: "W:\\WAMSI\\bc_repo\\6_gw\\CSV"  # Path to first directory containing CSV files
+  directory_2: "W:\\WAMSI\\bc_repo\\6_gw\\PRAMS"  # Path to second directory containing CSV files
+  directory_3: "W:\\WAMSI\\bc_repo\\6_gw\\PRAMS2"  # Path to second directory containing CSV files
+# CSV file settings
+csv_settings:
+  # Column name that contains flow data
+  flow_column: "Flow"
+
+  # Encoding for reading CSV files (utf-8, latin-1, etc.)
+  encoding: "utf-8"
+
+  # CSV delimiter
+  delimiter: ","
+
+  # Skip rows at the beginning of CSV (if headers or metadata exist)
+  skip_rows: 0
+
+  # Decimal separator
+  decimal: "."
+
+# Output settings
+output:
+  # Output table format (console, csv, excel, html)
+  format: "console"
+
+  # Output file path (if format is csv, excel, or html)
+  output_file: "flow_summary.csv"
+
+  # Include timestamp in output
+  include_timestamp: true
+
+  # Sort results by total flow (ascending/descending/none)
+  sort_by_flow: "descending"
+
+# Processing options
+processing:
+  # Handle missing values in flow column (skip, zero, error)
+  missing_values: "skip"
+
+  # Include file processing errors in output table
+  include_errors: true
+
+  # Recursive directory search (search subdirectories)
+  recursive: false

@@ -1,0 +1,31 @@
+WINDOW_MODE=campaigns  (2 windows)
+Loading coordinates...
+Found 14 survey days: [69, 70, 71, 72, 73, 77, 78, 80, 83, 84, 85, 86, 87, 88]
+
+Loading coastline...
+Field machinery loaded: 546 coords | grid (400, 300) | domain lon 115.45 115.776 lat -32.525 -31.87
+profile_dir -> Q:/SEAF-CS/V1.8/DATA/csiem-data/data-lake/DEP/SMCWS/1991/1991-08/profile_data
+salinity     n= 532  clim 34.00..35.50
+temperature  n= 532  clim 15.25..18.00
+density      n= 532  clim 24.80..25.80
+Model 1991-07-20 00:00:00 -> 1991-08-31 00:00:00; 30206 cells
+FULL run [campaigns]: 6 figure(s)
+    Surface: 137 stations, range 14.95–18.65
+    Bottom: 133 stations, range 14.95–18.02
+  saved temperature/map_temperature_prestorm.png
+    Surface: 137 stations, range 27.18–35.54
+    Bottom: 133 stations, range 34.16–35.54
+  saved salinity/map_salinity_prestorm.png
+    Surface: 137 stations, range 19.73–26.09
+    Bottom: 133 stations, range 24.77–26.09
+  saved density/map_density_prestorm.png
+    Surface: 131 stations, range 15.67–17.92
+    Bottom: 129 stations, range 15.61–17.90
+  saved temperature/map_temperature_poststorm.png
+    Surface: 131 stations, range 29.92–35.94
+    Bottom: 129 stations, range 34.13–35.94
+  saved salinity/map_salinity_poststorm.png
+    Surface: 131 stations, range 21.83–26.38
+    Bottom: 129 stations, range 24.89–26.39
+  saved density/map_density_poststorm.png
+Done.

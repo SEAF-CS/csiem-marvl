@@ -1,0 +1,28 @@
+=== WAIT-THEN-RUN started 2026-06-21 17:12:57 ===
+waiting for the new 1991 sim to finish (polling model log for completion)...
+>>> sim COMPLETION marker found 17:12:57
+settling + verifying NC is closed and covers the survey (>= 24 Aug)...
+  NC check [1]: OK nsteps 1009 tmax 1991-08-31 00:00:00  (17:14:05)
+=== launching full 1991 validation plot set 17:14:05 ===
+>>> START  [1] region_validation (base+rev)   (17:14:06)
+>>> DONE   [1] region_validation (base+rev)   exit=0   (17:15:37)   -> ../_log_region_validation.log
+>>> START  [2] scatter   (17:15:37)
+>>> DONE   [2] scatter   exit=0   (17:15:44)   -> ../_log_scatter.log
+>>> START  [2] scatter_lon   (17:15:44)
+>>> DONE   [2] scatter_lon   exit=0   (17:15:49)   -> ../_log_scatter_lon.log
+>>> START  [3a] hovmoller   (17:15:49)
+>>> DONE   [3a] hovmoller   exit=0   (17:16:35)   -> ../_log_hovmoller.log
+>>> START  [4] transectA curtains   (17:16:35)
+>>> DONE   [4] transectA curtains   exit=0   (17:21:27)   -> ../_log_transectA.log
+>>> START  [3b] profile_series   (17:21:27)
+>>> DONE   [3b] profile_series   exit=0   (17:23:23)   -> ../_log_profile_series.log
+>>> START  [5] transectB curtains   (17:23:23)
+>>> DONE   [5] transectB curtains   exit=0   (17:27:19)   -> ../_log_transectB.log
+>>> START  [6] transectOA curtains   (17:27:19)
+>>> DONE   [6] transectOA curtains   exit=0   (17:30:39)   -> ../_log_transectOA.log
+>>> START  [7] maps - campaigns   (17:30:40)
+>>> DONE   [7] maps - campaigns   exit=0   (17:46:07)   -> ../_log_maps_campaigns.log
+>>> START  [8] maps - panels   (17:46:07)
+>>> DONE   [8] maps - panels   exit=0   (19:06:46)   -> ../_log_maps_panels.log
+ALL DONE  (19:06:46)
+=== WAIT-THEN-RUN finished 2026-06-21 19:06:46 ===

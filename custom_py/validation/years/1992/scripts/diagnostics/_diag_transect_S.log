@@ -1,0 +1,33 @@
+Traceback (most recent call last):
+  File "G:\CSIEM\1.8.0\csiem-marvl\custom_py\validation\years\1992\scripts\diagnostics\transect_NAR_offshore_v2.py", line 49, in <module>
+    ds=xr.open_dataset(NC); ds['RHOW']=eos80_potential_density(ds['SAL'],ds['TEMP']); fv=ds.tfv
+  File "G:\CSIEM/1.8.0/csiem-marvl/custom_py/validation/common/lib\eos80.py", line 16, in eos80_potential_density
+    rho_w = a[0] + a[1] * T + a[2] * T2 + a[3] * T3 + a[4] * T4 + a[5] * T5
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\core\_typed_ops.py", line 310, in __rmul__
+    return self._binary_op(other, operator.mul, reflexive=True)
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\core\dataarray.py", line 4746, in _binary_op
+    else f(other_variable_or_arraylike, self.variable)
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\core\_typed_ops.py", line 630, in __rmul__
+    return self._binary_op(other, operator.mul, reflexive=True)
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\core\variable.py", line 2313, in _binary_op
+    self_data, other_data, dims = _broadcast_compat_data(self, other)
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\core\variable.py", line 2929, in _broadcast_compat_data
+    self_data = self.data
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\core\variable.py", line 449, in data
+    return self._data.get_duck_array()
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\core\indexing.py", line 837, in get_duck_array
+    self._ensure_cached()
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\core\indexing.py", line 831, in _ensure_cached
+    self.array = as_indexable(self.array.get_duck_array())
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\core\indexing.py", line 788, in get_duck_array
+    return self.array.get_duck_array()
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\core\indexing.py", line 651, in get_duck_array
+    array = self.array[self.key]
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\backends\netCDF4_.py", line 100, in __getitem__
+    return indexing.explicit_indexing_adapter(
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\core\indexing.py", line 1015, in explicit_indexing_adapter
+    result = raw_indexing_method(raw_key.tuple)
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\backends\netCDF4_.py", line 113, in _getitem
+    array = getitem(original_array, key)
+  File "src\\netCDF4\\_netCDF4.pyx", line 5060, in netCDF4._netCDF4.Variable.__getitem__
+numpy._core._exceptions._ArrayMemoryError: Unable to allocate 5.70 GiB for an array with shape (2377, 643225) and data type float32

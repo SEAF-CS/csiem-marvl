@@ -1,0 +1,4 @@
+wrote G:/CSIEM/1.8.0/csiem-marvl/custom_py/validation/years/1991/outputs/diagnostics/bathy_compare_B009_B010.png
+connecting reach (km5-13): B010 shallowest 0.02 m, B009 shallowest -0.68 m
+  cells where B010 >-1m: 3/58   B009 >-1m: 2/58
+  mean Zb reach: B010 -6.46  B009 -6.61

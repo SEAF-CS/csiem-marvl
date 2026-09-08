@@ -1,0 +1,15 @@
+QC: masked 5 fresh-bottom spikes (obs_botS<33) for bottom stats
+wrote Q:/SEAF-CS/V1.8/MARVL/csiem-marvl/custom_py/validation/years/1992/outputs\scatter_validation_1992.png
+wrote Q:/SEAF-CS/V1.8/MARVL/csiem-marvl/custom_py/validation/years/1992/outputs\region_bias_1992.png
+wrote Q:/SEAF-CS/V1.8/MARVL/csiem-marvl/custom_py/validation/years/1992/outputs\region_map_1992.png
+
+=== per-region SURFACE bias (model - obs) ===
+var         S      T    n
+region                   
+OA      0.341 -0.267  229
+CS      0.039 -0.658  452
+N       0.279 -0.049   58
+NW      0.629  0.289  225
+W       0.570  0.271   40
+SW      0.446  0.046  240
+S       0.167 -0.460   27

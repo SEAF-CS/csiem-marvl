@@ -1,0 +1,54 @@
+opening model NC ...
+L2 jday 225: 10 offshore obs | model curtain @ 13-Aug 14:00
+  wrote L2_225.png
+L2 jday 226: 7 offshore obs | model curtain @ 14-Aug 09:00
+  wrote L2_226.png
+L2 jday 227: 10 offshore obs | model curtain @ 15-Aug 12:00
+  wrote L2_227.png
+L2 jday 228: 16 offshore obs | model curtain @ 16-Aug 13:00
+  wrote L2_228.png
+L2 jday 229: 6 offshore obs | model curtain @ 17-Aug 12:00
+  wrote L2_229.png
+L2 jday 230: 7 offshore obs | model curtain @ 18-Aug 09:00
+  wrote L2_230.png
+L2 jday 232: 12 offshore obs | model curtain @ 20-Aug 13:00
+  wrote L2_232.png
+Traceback (most recent call last):
+  File "G:\CSIEM\1.8.0\csiem-marvl\custom_py\validation\years\1991\scripts\diagnostics\transect_L2_estuary_validation.py", line 165, in <module>
+    mgrids, md = model_grids(poly, mpts, ch, grid_x, grid_y, seabed, mid_dt)
+  File "G:\CSIEM\1.8.0\csiem-marvl\custom_py\validation\years\1991\scripts\diagnostics\transect_L2_estuary_validation.py", line 101, in model_grids
+    c = fv.get_curtain(poly, variables=['SAL', 'TEMP'], time=md)
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\tfv\xarray.py", line 1011, in get_curtain
+    array[:, c, :] = xtr.get_curtain_cell(variables, t, polyline)
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\tfv\miscellaneous.py", line 54, in wrapper
+    arr = function_call(base, v, *args[2:], **kwargs)
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\tfv\extractor.py", line 818, in get_curtain_cell
+    data = self.get_raw_data(variable, ii)
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\tfv\extractor.py", line 491, in get_raw_data
+    return self.ds[variable][ii, :].values
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\core\dataarray.py", line 801, in values
+    return self.variable.values
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\core\variable.py", line 541, in values
+    return _as_array_or_item(self._data)
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\core\variable.py", line 339, in _as_array_or_item
+    data = np.asarray(data)
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\core\indexing.py", line 834, in __array__
+    return np.asarray(self.get_duck_array(), dtype=dtype)
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\core\indexing.py", line 837, in get_duck_array
+    self._ensure_cached()
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\core\indexing.py", line 831, in _ensure_cached
+    self.array = as_indexable(self.array.get_duck_array())
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\core\indexing.py", line 788, in get_duck_array
+    return self.array.get_duck_array()
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\core\indexing.py", line 651, in get_duck_array
+    array = self.array[self.key]
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\backends\netCDF4_.py", line 100, in __getitem__
+    return indexing.explicit_indexing_adapter(
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\core\indexing.py", line 1015, in explicit_indexing_adapter
+    result = raw_indexing_method(raw_key.tuple)
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\backends\netCDF4_.py", line 113, in _getitem
+    array = getitem(original_array, key)
+  File "src\\netCDF4\\_netCDF4.pyx", line 5079, in netCDF4._netCDF4.Variable.__getitem__
+  File "src\\netCDF4\\_netCDF4.pyx", line 6051, in netCDF4._netCDF4.Variable._get
+  File "src\\netCDF4\\_netCDF4.pyx", line 2164, in netCDF4._netCDF4._ensure_nc_success
+RuntimeError: NetCDF: HDF error

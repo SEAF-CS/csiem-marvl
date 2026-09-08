@@ -1,0 +1,21 @@
+opening model NC ...
+L1 jday 225: 31 stns | model curtain @ 13-Aug 13:00
+  wrote L1_225.png
+L1 jday 226: 23 stns | model curtain @ 14-Aug 12:00
+  wrote L1_226.png
+L1 jday 227: 31 stns | model curtain @ 15-Aug 14:00
+  wrote L1_227.png
+L1 jday 228: 28 stns | model curtain @ 16-Aug 16:00
+  wrote L1_228.png
+L1 jday 229: 27 stns | model curtain @ 17-Aug 12:00
+  wrote L1_229.png
+L1 jday 230: 25 stns | model curtain @ 18-Aug 10:00
+  wrote L1_230.png
+L1 jday 232: 30 stns | model curtain @ 20-Aug 15:00
+  wrote L1_232.png
+L1 jday 233: 23 stns | model curtain @ 21-Aug 07:00
+  wrote L1_233.png
+L1 jday 234: 32 stns | model curtain @ 22-Aug 09:00
+  wrote L1_234.png
+
+9 obs-vs-model section figures -> Q:/SEAF-CS/V1.8/MARVL/csiem-marvl/custom_py/validation/years/1991/outputs/diagnostics/transect_long

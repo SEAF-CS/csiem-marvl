@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//w/WAMSI/bc_repo/6_gw/CSV/**)",
+      "Read(//w/WAMSI/bc_repo/6_gw/PRAMS/**)",
+      "Read(//w/WAMSI/bc_repo/6_gw/PRAMS2/**)",
+      "Bash(python:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

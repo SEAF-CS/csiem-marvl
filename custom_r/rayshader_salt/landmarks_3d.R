@@ -1,0 +1,15 @@
+.libPaths(c("G:/CSIEM/1.8.0/csiem-marvl/rayshader/rlib/4.4", .libPaths()))
+suppressMessages({ library(rayshader); library(raster); library(rgl) })
+ZSCALE<-0.4
+elmat <- t(raster_to_matrix(raster("data/dem_coarse_fixed.tif")))
+lm <- read.csv("data/landmarks_px.csv", stringsAsFactors=FALSE)
+ms<-ray_shade(elmat,zscale=ZSCALE,lambert=TRUE); ma<-ambient_shade(elmat,zscale=ZSCALE)
+tex<-elmat|>sphere_shade(zscale=ZSCALE,texture="imhof1")|>add_shadow(ms,0.5)|>add_shadow(ma,0)
+plot_3d(tex,elmat,zscale=ZSCALE,fov=0,theta=340,phi=50,windowsize=c(1400,1100),zoom=0.5,water=FALSE); Sys.sleep(0.2)
+cols <- c("red","blue","darkgreen","purple","black")
+for (i in seq_len(nrow(lm)))
+  render_label(elmat, x=lm$col[i], y=lm$row[i], z=120, zscale=ZSCALE,
+               text=lm$name[i], textsize=2.2, linewidth=4, textcolor=cols[i], linecolor=cols[i])
+render_camera(theta=340,phi=50,zoom=0.5,fov=0)
+render_snapshot("images/landmarks_3d_readable.png",clear=FALSE); rgl::close3d()
+cat("done\n")

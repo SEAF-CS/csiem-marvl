@@ -1,0 +1,24 @@
+===== 1992 FULL SET START 2026-07-12 07:48:24 =====
+--- [A] run_all.sh (region_validation, scatter, transectA, maps-daily) ---
+>>> START  [1] region_validation (base+rev)   (07:48:25)
+>>> DONE   [1] region_validation (base+rev)   exit=0   (07:51:21)   -> ../_log_region_validation.log
+>>> START  [2] scatter   (07:51:21)
+>>> DONE   [2] scatter   exit=0   (07:51:30)   -> ../_log_scatter.log
+>>> START  [2] scatter_lon   (07:51:30)
+>>> DONE   [2] scatter_lon   exit=0   (07:51:33)   -> ../_log_scatter_lon.log
+>>> START  [4] transectA curtains   (07:51:33)
+>>> DONE   [4] transectA curtains   exit=1   (08:00:16)   -> ../_log_transectA.log
+>>> START  [7/8] maps - daily   (08:00:16)
+>>> DONE   [7/8] maps - daily   exit=1   (08:09:34)   -> ../_log_maps.log
+ALL DONE  (08:09:34)
+--- [B] run_diagnostics.sh (cs55, oa80, transect_NAR, wl) ---
+>>> START transect_S (08:09:35)
+>>> DONE  transect_S exit=1 (08:17:24)
+>>> START ts_cs55 (08:17:24)
+>>> DONE  ts_cs55 exit=0 (08:20:08)
+>>> START ts_oa80 (08:20:08)
+>>> DONE  ts_oa80 exit=0 (08:22:36)
+>>> START wl_tidal (08:22:36)
+>>> DONE  wl_tidal exit=0 (08:23:03)
+ALL 1992 DIAGNOSTICS DONE (08:23:03)
+===== 1992 FULL SET DONE 2026-07-12 08:23:03 =====

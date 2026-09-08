@@ -1,0 +1,23 @@
+WINDOW_MODE=panels  (20 windows)
+Loading coordinates...
+Found 14 survey days: [69, 70, 71, 72, 73, 77, 78, 80, 83, 84, 85, 86, 87, 88]
+
+Loading coastline...
+Field machinery loaded: 546 coords | grid (400, 300) | domain lon 115.45 115.776 lat -32.525 -31.87
+profile_dir -> Q:/SEAF-CS/V1.8/DATA/csiem-data/data-lake/DEP/SMCWS/1991/1991-08/profile_data
+salinity     n= 734  clim 34.00..35.50
+temperature  n= 734  clim 15.25..17.50
+density      n= 734  clim 24.80..25.80
+Model 1991-07-20 00:00:00 -> 1991-08-31 00:00:00; 30206 cells
+FULL run [panels]: 60 figure(s)
+    Surface: 13 stations, range 15.48–16.68
+    Bottom: 13 stations, range 15.60–16.61
+  saved temperature/map_temperature_616a.png
+    Surface: 13 stations, range 34.14–34.79
+    Bottom: 13 stations, range 34.46–34.86
+  saved salinity/map_salinity_616a.png
+    Surface: 13 stations, range 25.15–25.50
+    Bottom: 13 stations, range 25.34–25.55
+  saved density/map_density_616a.png
+    Surface: 9 stations, range 15.29–16.14
+    Bottom: 9 stations, range 15.48–16.63

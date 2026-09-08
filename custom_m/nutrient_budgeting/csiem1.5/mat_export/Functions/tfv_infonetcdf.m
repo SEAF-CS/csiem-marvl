@@ -2,6 +2,7 @@ function [varnames,dimnames,data] = tfv_infonetcdf(filename);
 % Simple function to get all variable names from a Tuflow netcdf file
 data = [];
 ncid = netcdf.open(filename,'NC_NOWRITE');
+cleanupObj = onCleanup(@() netcdf.close(ncid));
 [ndims,nvars,~,unlimdimid] = netcdf.inq(ncid);
 dimids = (0:ndims-1)';
 dimnames = cell(ndims,1);

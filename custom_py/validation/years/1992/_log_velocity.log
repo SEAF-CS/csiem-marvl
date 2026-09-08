@@ -1,0 +1,12 @@
+YEAR=1992  window 04 Mar-10 Apr  6 series
+opening model NC ...
+G:\CSIEM\1.8.0\csiem-marvl\custom_py\validation\years\1992\scripts\diagnostics\velocity_validation.py:122: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  GRID = pd.date_range(WIN0, WIN1, freq='H'); GNS = GRID.astype(np.int64).values.astype(float)
+  CSC4 top     : obs 4.4 mod 9.0 cm/s  bias +4.5 rmse 7.9 vcorr 0.36 veer +1 pax 159/152
+  CSC4 near-bed: obs 4.7 mod 8.2 cm/s  bias +3.6 rmse 7.0 vcorr 0.32 veer +166 pax 127/148
+  CSC5 mid     : obs 4.3 mod 6.2 cm/s  bias +2.0 rmse 4.7 vcorr 0.40 veer -2 pax 179/156
+  CSC5 near-bed: obs 3.7 mod 5.7 cm/s  bias +2.0 rmse 4.4 vcorr 0.42 veer +6 pax 7/148
+  SDC1 near-bed: obs 8.9 mod 6.0 cm/s  bias -2.9 rmse 5.7 vcorr 0.33 veer -18 pax 165/175
+  SW1  near-bed: obs 8.2 mod 6.8 cm/s  bias -1.4 rmse 5.5 vcorr 0.39 veer -17 pax 161/163
+wrote G:\CSIEM\1.8.0\csiem-marvl\custom_py\validation\years\1992\outputs\TimeSeries\velocity_skill_1992.csv
+wrote G:\CSIEM\1.8.0\csiem-marvl\custom_py\validation\years\1992\outputs\TimeSeries\velocity_validation_1992.png

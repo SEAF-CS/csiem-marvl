@@ -1,0 +1,5 @@
+Warning messages:
+1: package 'rayshader' was built under R version 4.4.3 
+2: package 'rgl' was built under R version 4.4.3 
+done: 67 preview frame(s)
+gif 67

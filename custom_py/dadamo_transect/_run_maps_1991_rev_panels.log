@@ -1,0 +1,187 @@
+WINDOW_MODE=panels  (20 windows)
+Loading coordinates...
+Found 14 survey days: [69, 70, 71, 72, 73, 77, 78, 80, 83, 84, 85, 86, 87, 88]
+
+Loading coastline...
+Field machinery loaded: 546 coords | grid (400, 300) | domain lon 115.45 115.776 lat -32.525 -31.87
+profile_dir -> Q:/SEAF-CS/V1.8/DATA/csiem-data/data-lake/DEP/SMCWS/1991/1991-08/profile_data
+salinity     n= 588  clim 34.00..35.25
+temperature  n= 588  clim 15.25..17.00
+density      n= 588  clim 25.00..25.60
+Model 1991-07-20 00:00:00 -> 1991-08-31 00:00:00; 30206 cells
+FULL run [panels]: 60 figure(s)
+    Surface: 13 stations, range 15.48–16.68
+    Bottom: 13 stations, range 15.60–16.61
+  saved temperature/map_temperature_616a.png
+    Surface: 13 stations, range 34.14–34.79
+    Bottom: 13 stations, range 34.46–34.86
+  saved salinity/map_salinity_616a.png
+    Surface: 13 stations, range 25.15–25.50
+    Bottom: 13 stations, range 25.34–25.55
+  saved density/map_density_616a.png
+    Surface: 9 stations, range 15.29–16.14
+    Bottom: 9 stations, range 15.48–16.63
+  saved temperature/map_temperature_616b.png
+    Surface: 9 stations, range 34.18–34.67
+    Bottom: 9 stations, range 34.33–34.99
+  saved salinity/map_salinity_616b.png
+    Surface: 9 stations, range 25.20–25.53
+    Bottom: 9 stations, range 25.30–25.59
+  saved density/map_density_616b.png
+    Surface: 35 stations, range 15.70–17.07
+    Bottom: 34 stations, range 15.35–17.00
+  saved temperature/map_temperature_616c.png
+    Surface: 35 stations, range 34.14–35.08
+    Bottom: 34 stations, range 34.22–35.10
+  saved salinity/map_salinity_616c.png
+    Surface: 35 stations, range 25.09–25.56
+    Bottom: 34 stations, range 25.22–25.60
+  saved density/map_density_616c.png
+6.16d temperature: 1 field profiles, skipping
+6.16d salinity: 1 field profiles, skipping
+6.16d density: 1 field profiles, skipping
+    Surface: 31 stations, range 15.46–16.60
+    Bottom: 29 stations, range 15.35–17.21
+  saved temperature/map_temperature_616e.png
+    Surface: 31 stations, range 34.15–34.76
+    Bottom: 29 stations, range 34.21–35.11
+  saved salinity/map_salinity_616e.png
+    Surface: 31 stations, range 25.14–25.50
+    Bottom: 29 stations, range 25.23–25.61
+  saved density/map_density_616e.png
+    Surface: 9 stations, range 15.63–16.72
+    Bottom: 9 stations, range 15.63–16.37
+  saved temperature/map_temperature_616f.png
+    Surface: 9 stations, range 33.87–34.29
+    Bottom: 9 stations, range 34.24–34.73
+  saved salinity/map_salinity_616f.png
+    Surface: 9 stations, range 24.72–25.26
+    Bottom: 9 stations, range 25.20–25.52
+  saved density/map_density_616f.png
+    Surface: 7 stations, range 15.48–16.50
+    Bottom: 7 stations, range 15.33–16.36
+  saved temperature/map_temperature_616g.png
+    Surface: 7 stations, range 34.12–34.29
+    Bottom: 7 stations, range 34.30–34.77
+  saved salinity/map_salinity_616g.png
+    Surface: 7 stations, range 25.08–25.27
+    Bottom: 7 stations, range 25.33–25.49
+  saved density/map_density_616g.png
+    Surface: 8 stations, range 15.60–16.71
+    Bottom: 8 stations, range 15.42–16.62
+  saved temperature/map_temperature_616h.png
+    Surface: 8 stations, range 34.24–34.75
+    Bottom: 8 stations, range 34.24–34.78
+  saved salinity/map_salinity_616h.png
+    Surface: 8 stations, range 25.18–25.39
+    Bottom: 8 stations, range 25.24–25.48
+  saved density/map_density_616h.png
+    Surface: 16 stations, range 15.51–16.77
+    Bottom: 16 stations, range 15.45–16.70
+  saved temperature/map_temperature_616i.png
+    Surface: 16 stations, range 33.99–34.88
+    Bottom: 16 stations, range 34.26–34.89
+  saved salinity/map_salinity_616i.png
+    Surface: 16 stations, range 24.86–25.53
+    Bottom: 16 stations, range 25.26–25.54
+  saved density/map_density_616i.png
+    Surface: 8 stations, range 15.56–16.52
+    Bottom: 8 stations, range 15.47–16.56
+  saved temperature/map_temperature_616j.png
+    Surface: 8 stations, range 34.25–34.49
+    Bottom: 8 stations, range 34.26–34.75
+  saved salinity/map_salinity_616j.png
+    Surface: 8 stations, range 25.22–25.28
+    Bottom: 8 stations, range 25.26–25.47
+  saved density/map_density_616j.png
+    Surface: 12 stations, range 15.70–16.57
+    Bottom: 11 stations, range 15.48–16.59
+  saved temperature/map_temperature_616k.png
+    Surface: 12 stations, range 34.24–34.57
+    Bottom: 11 stations, range 34.27–34.74
+  saved salinity/map_salinity_616k.png
+    Surface: 12 stations, range 25.06–25.29
+    Bottom: 11 stations, range 25.23–25.47
+  saved density/map_density_616k.png
+    Surface: 22 stations, range 15.71–17.27
+    Bottom: 21 stations, range 15.53–17.27
+  saved temperature/map_temperature_616l.png
+    Surface: 22 stations, range 33.73–34.84
+    Bottom: 21 stations, range 34.19–35.07
+  saved salinity/map_salinity_616l.png
+    Surface: 22 stations, range 24.61–25.38
+    Bottom: 21 stations, range 25.17–25.51
+  saved density/map_density_616l.png
+    Surface: 12 stations, range 15.60–16.83
+    Bottom: 12 stations, range 15.63–17.49
+  saved temperature/map_temperature_617a.png
+    Surface: 12 stations, range 33.37–34.91
+    Bottom: 12 stations, range 34.27–35.23
+  saved salinity/map_salinity_617a.png
+    Surface: 12 stations, range 24.43–25.48
+    Bottom: 12 stations, range 25.24–25.57
+  saved density/map_density_617a.png
+    Surface: 15 stations, range 15.79–16.30
+    Bottom: 14 stations, range 15.59–16.54
+  saved temperature/map_temperature_617b.png
+    Surface: 15 stations, range 34.24–34.71
+    Bottom: 14 stations, range 34.27–35.00
+  saved salinity/map_salinity_617b.png
+    Surface: 15 stations, range 25.18–25.45
+    Bottom: 14 stations, range 25.25–25.62
+  saved density/map_density_617b.png
+    Surface: 7 stations, range 15.63–16.12
+    Bottom: 7 stations, range 15.61–16.31
+  saved temperature/map_temperature_617c.png
+    Surface: 7 stations, range 34.26–34.68
+    Bottom: 7 stations, range 34.31–34.70
+  saved salinity/map_salinity_617c.png
+    Surface: 7 stations, range 25.24–25.48
+    Bottom: 7 stations, range 25.30–25.48
+  saved density/map_density_617c.png
+    Surface: 13 stations, range 15.68–16.22
+    Bottom: 13 stations, range 15.64–17.57
+  saved temperature/map_temperature_617d.png
+    Surface: 13 stations, range 32.75–34.78
+    Bottom: 13 stations, range 34.33–35.27
+  saved salinity/map_salinity_617d.png
+    Surface: 13 stations, range 24.03–25.53
+    Bottom: 13 stations, range 25.31–25.60
+  saved density/map_density_617d.png
+    Surface: 13 stations, range 15.71–16.30
+    Bottom: 13 stations, range 15.63–16.58
+  saved temperature/map_temperature_617e.png
+    Surface: 13 stations, range 25.57–34.64
+    Bottom: 13 stations, range 34.26–34.96
+  saved salinity/map_salinity_617e.png
+    Surface: 13 stations, range 18.48–25.40
+    Bottom: 13 stations, range 25.14–25.60
+  saved density/map_density_617e.png
+    Surface: 10 stations, range 15.69–16.33
+    Bottom: 10 stations, range 15.64–16.41
+  saved temperature/map_temperature_617f.png
+    Surface: 10 stations, range 34.25–34.83
+    Bottom: 10 stations, range 34.33–34.85
+  saved salinity/map_salinity_617f.png
+    Surface: 10 stations, range 25.22–25.54
+    Bottom: 10 stations, range 25.30–25.54
+  saved density/map_density_617f.png
+    Surface: 34 stations, range 15.83–16.60
+    Bottom: 34 stations, range 15.69–16.59
+  saved temperature/map_temperature_617g.png
+    Surface: 34 stations, range 34.06–34.83
+    Bottom: 34 stations, range 34.20–34.91
+  saved salinity/map_salinity_617g.png
+    Surface: 34 stations, range 24.89–25.48
+    Bottom: 34 stations, range 25.06–25.55
+  saved density/map_density_617g.png
+    Surface: 23 stations, range 15.73–16.19
+    Bottom: 21 stations, range 15.73–16.43
+  saved temperature/map_temperature_617h.png
+    Surface: 23 stations, range 34.04–34.59
+    Bottom: 21 stations, range 34.25–34.78
+  saved salinity/map_salinity_617h.png
+    Surface: 23 stations, range 25.01–25.44
+    Bottom: 21 stations, range 25.12–25.48
+  saved density/map_density_617h.png
+Done.

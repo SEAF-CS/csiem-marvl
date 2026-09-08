@@ -1,0 +1,22 @@
+Loading coordinates...
+Found 14 survey days: [69, 70, 71, 72, 73, 77, 78, 80, 83, 84, 85, 86, 87, 88]
+
+Loading coastline...
+Field machinery loaded: 546 coords | broad grid (400, 300) | broad domain lon 115.45 115.776 lat -32.525 -31.87
+OA transect span 18-Aug 08:11..12:13  ->  map window 18-Aug 06:11..14:13  (+-2 h)
+OA zoom: lon 115.6009..115.7673  lat -32.1628..-32.0443  grid (300, 300)  (25 OA/CS stations)
+salinity     n= 128  clim 33.00..35.50
+temperature  n= 128  clim 15.50..18.75
+density      n= 128  clim 24.20..25.60
+Model 1991-07-20 00:00:00 -> 1991-08-31 00:00:00; 30206 cells
+OA run: 3 figure(s)
+    Surface: 27 stations, range 16.12–18.71
+    Bottom: 27 stations, range 15.99–18.72
+  saved temperature/map_temperature_OA.png
+    Surface: 27 stations, range 25.77–35.39
+    Bottom: 27 stations, range 34.22–35.39
+  saved salinity/map_salinity_OA.png
+    Surface: 27 stations, range 18.61–25.49
+    Bottom: 27 stations, range 25.05–25.53
+  saved density/map_density_OA.png
+Done.

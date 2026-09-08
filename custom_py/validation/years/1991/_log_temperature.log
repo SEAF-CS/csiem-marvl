@@ -1,0 +1,9 @@
+YEAR=1991  window 01 Aug-31 Aug
+opening model NC ...
+  CSC1 top: bias +0.25 rmse 0.43
+  CSC1 near-bed: bias +0.29 rmse 0.59
+  CSC2 top: bias -0.00 rmse 0.33
+  CSC2 near-bed: bias +0.27 rmse 0.45
+  CSC3 top: bias +0.30 rmse 0.39
+  SDC1 mid: bias +0.12 rmse 0.46
+wrote Q:/SEAF-CS/V1.8/MARVL/csiem-marvl/custom_py/validation/years\1991\outputs\TimeSeries\temperature_validation_1991.png

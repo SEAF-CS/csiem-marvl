@@ -1,0 +1,41 @@
+Loading station coordinates...
+  546 stations from .loc files
+  override ROTTO: (-32.0050, 115.5200) — Rottnest Island anchorage (manual override)
+  547 known stations after overrides
+=== BASELINE 1992 extraction ===
+casts in window ('1992-02-22', '1992-04-03'): 1272
+  100/1272
+  200/1272
+  300/1272
+  400/1272
+  500/1272
+  600/1272
+  700/1272
+  800/1272
+  900/1272
+  1000/1272
+  1100/1272
+WARNING: point 'loc01' is outside of model domain
+  1200/1272
+
+=== REV 1992 extraction ===
+casts in window ('1992-02-22', '1992-04-03'): 1272
+  100/1272
+  200/1272
+  300/1272
+  400/1272
+  500/1272
+  600/1272
+  700/1272
+  800/1272
+  900/1272
+  1000/1272
+  1100/1272
+WARNING: point 'loc01' is outside of model domain
+  1200/1272
+
+=== HEADLINE: 1992 surface salinity bias (model - obs) ===
+  baseline  surf S bias = +0.278 (n=1271)   bot S bias = +0.272 (n=1201)
+  rev       surf S bias = -0.019 (n=1271)   bot S bias = -0.035 (n=1201)
+
+wrote G:/CSIEM/1.8.0/csiem-marvl/custom_py/dadamo_transect\region_validation_1992_revcompare.png

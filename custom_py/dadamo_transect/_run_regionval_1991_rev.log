@@ -1,0 +1,27 @@
+Loading station coordinates...
+  546 stations from .loc files
+  override ROTTO: (-32.0050, 115.5200) — Rottnest Island anchorage (manual override)
+  547 known stations after overrides
+=== BASELINE 1991 extraction ===
+casts in window ('1991-07-20', '1991-08-31'): 654
+  100/654
+  200/654
+  300/654
+  400/654
+  500/654
+  600/654
+
+=== REV 1991 extraction ===
+casts in window ('1991-07-20', '1991-08-31'): 654
+  100/654
+  200/654
+  300/654
+  400/654
+  500/654
+  600/654
+
+=== HEADLINE: 1991 surface salinity bias (model - obs) ===
+  baseline  surf S +1.117 (n=654)   bot S +0.720   surf T -0.133
+  rev       surf S -0.053 (n=654)   bot S -0.398   surf T +0.161
+
+wrote G:/CSIEM/1.8.0/csiem-marvl/custom_py/dadamo_transect\region_validation_1991_revcompare.png

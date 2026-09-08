@@ -1,0 +1,23 @@
+Loading coordinates...
+Loading survey log...
+  331 casts at active stations (265 DFV, 66 DMV/DHV/DTV) across 10 configured days
+  chainage range: -20.0 to +14.0 km
+Loading bathymetry...
+  bathymetry: 2.2 to 27.5 m
+
+Generating per-day cross-sections...
+
+Field machinery loaded: 546 coords, 10 jdays, 42 union stations; chainage 14.0 to -20.0 km
+Model 1992-02-22 00:00:00 -> 1992-04-19 20:00:00; 42 fixed model stations
+FULL run: 10 jday(s)
+  saved compare_TransectA_1992_jday069.png
+  saved compare_TransectA_1992_jday070.png
+  saved compare_TransectA_1992_jday071.png
+  saved compare_TransectA_1992_jday072.png
+  saved compare_TransectA_1992_jday073.png
+  saved compare_TransectA_1992_jday080.png
+  saved compare_TransectA_1992_jday083.png
+  saved compare_TransectA_1992_jday084.png
+  saved compare_TransectA_1992_jday085.png
+  saved compare_TransectA_1992_jday087.png
+Done.

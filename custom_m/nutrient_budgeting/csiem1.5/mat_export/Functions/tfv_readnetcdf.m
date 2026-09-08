@@ -60,6 +60,7 @@ end
 
 % Gather netcdf file info
 ncid = netcdf.open(filename,'NC_NOWRITE');
+cleanupObj = onCleanup(@() netcdf.close(ncid));
 [ndims,nvars,~,unlimdimid] = netcdf.inq(ncid);
 dimids = (0:ndims-1)';
 dimnames = cell(ndims,1);
@@ -203,11 +204,9 @@ else % We are chasing timeseries output for specified points within variables
             end
         end
     end
-    netcdf.close(ncid)
 end
 if isTime
     data.Time = data.ResTime/24 + start_date;
-    netcdf.close(ncid)
 end
 end %--% tfv_readnetcdf
 %-------------------------------------------------------------------------%

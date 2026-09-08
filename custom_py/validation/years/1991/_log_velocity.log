@@ -1,0 +1,12 @@
+YEAR=1991  window 10 Aug-31 Aug  6 series
+opening model NC ...
+Q:\SEAF-CS\V1.8\MARVL\csiem-marvl\custom_py\validation\years\1991\scripts\diagnostics\velocity_validation.py:122: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  GRID = pd.date_range(WIN0, WIN1, freq='H'); GNS = GRID.astype(np.int64).values.astype(float)
+  CSC1 top     : obs 5.4 mod 11.4 cm/s  bias +6.0 rmse 9.6 vcorr 0.33 veer +16 pax 38/134
+  CSC1 near-bed: obs 5.2 mod 8.3 cm/s  bias +3.1 rmse 6.7 vcorr 0.22 veer -9 pax 142/137
+  CSC2 top     : obs 4.4 mod 8.2 cm/s  bias +3.8 rmse 6.7 vcorr 0.35 veer +21 pax 140/141
+  CSC2 near-bed: obs 3.5 mod 6.3 cm/s  bias +2.8 rmse 5.0 vcorr 0.29 veer -20 pax 6/144
+  CSC3 top     : obs 4.4 mod 5.9 cm/s  bias +1.5 rmse 4.4 vcorr 0.46 veer +16 pax 175/173
+  SDC1 mid     : obs 8.7 mod 7.1 cm/s  bias -1.7 rmse 5.9 vcorr 0.57 veer -7 pax 163/168
+wrote Q:\SEAF-CS\V1.8\MARVL\csiem-marvl\custom_py\validation\years\1991\outputs\TimeSeries\velocity_skill_1991.csv
+wrote Q:\SEAF-CS\V1.8\MARVL\csiem-marvl\custom_py\validation\years\1991\outputs\TimeSeries\velocity_validation_1991.png

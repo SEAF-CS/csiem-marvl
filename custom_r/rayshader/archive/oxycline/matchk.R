@@ -1,0 +1,6 @@
+.libPaths(c("G:/CSIEM/1.8.0/csiem-marvl/rayshader/rlib/4.4", .libPaths()))
+suppressMessages(library(rayrender))
+cat("diffuse args:\n");    print(names(formals(rayrender::diffuse)))
+cat("\ndielectric args:\n"); print(names(formals(rayrender::dielectric)))
+cat("\nglossy args:\n");    print(names(formals(rayrender::glossy)))
+cat("\nxz_rect args:\n");   print(names(formals(rayrender::xz_rect)))

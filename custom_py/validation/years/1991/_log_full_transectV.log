@@ -1,0 +1,67 @@
+Traceback (most recent call last):
+  File "pandas/_libs/tslibs/conversion.pyx", line 217, in pandas._libs.tslibs.conversion.cast_from_unit
+OverflowError: int too big to convert
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "pandas/_libs/tslibs/timedeltas.pyx", line 377, in pandas._libs.tslibs.timedeltas._maybe_cast_from_unit
+  File "pandas/_libs/tslibs/conversion.pyx", line 219, in pandas._libs.tslibs.conversion.cast_from_unit
+pandas._libs.tslibs.np_datetime.OutOfBoundsDatetime: cannot convert input 9.969209968386869e+36 with the unit 'h'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\coding\times.py", line 326, in decode_cf_datetime
+    dates = _decode_datetime_with_pandas(flat_num_dates, units, calendar)
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\coding\times.py", line 273, in _decode_datetime_with_pandas
+    pd.to_timedelta(flat_num_dates.max(), time_units) + ref_date
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\core\tools\timedeltas.py", line 223, in to_timedelta
+    return _coerce_scalar_to_timedelta_type(arg, unit=unit, errors=errors)
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pandas\core\tools\timedeltas.py", line 233, in _coerce_scalar_to_timedelta_type
+    result = Timedelta(r, unit)
+  File "pandas/_libs/tslibs/timedeltas.pyx", line 1896, in pandas._libs.tslibs.timedeltas.Timedelta.__new__
+  File "pandas/_libs/tslibs/timedeltas.pyx", line 356, in pandas._libs.tslibs.timedeltas.convert_to_timedelta64
+  File "pandas/_libs/tslibs/timedeltas.pyx", line 379, in pandas._libs.tslibs.timedeltas._maybe_cast_from_unit
+pandas._libs.tslibs.np_datetime.OutOfBoundsTimedelta: Cannot cast 9.969209968386869e+36 from h to 'ns' without overflow.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\coding\times.py", line 218, in _decode_cf_datetime_dtype
+    result = decode_cf_datetime(example_value, units, calendar, use_cftime)
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\coding\times.py", line 328, in decode_cf_datetime
+    dates = _decode_datetime_with_cftime(
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\coding\times.py", line 242, in _decode_datetime_with_cftime
+    cftime.num2date(num_dates, units, calendar, only_use_cftime_datetimes=True)
+  File "src\\cftime\\_cftime.pyx", line 627, in cftime._cftime.num2date
+  File "src\\cftime\\_cftime.pyx", line 421, in cftime._cftime.cast_to_int
+OverflowError: time values outside range of 64 bit signed integers
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\conventions.py", line 450, in decode_cf_variables
+    new_vars[k] = decode_cf_variable(
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\conventions.py", line 291, in decode_cf_variable
+    var = times.CFDatetimeCoder(use_cftime=use_cftime).decode(var, name=name)
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\coding\times.py", line 992, in decode
+    dtype = _decode_cf_datetime_dtype(data, units, calendar, self.use_cftime)
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\coding\times.py", line 228, in _decode_cf_datetime_dtype
+    raise ValueError(msg)
+ValueError: unable to decode time units 'hours since 1990-01-01T00:00:00' with 'the default calendar'. Try opening your dataset with decode_times=False or installing cftime if it is not installed.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "G:\CSIEM\1.8.0\csiem-marvl\custom_py\validation\years\1991\scripts\diagnostics\transectV_shelf.py", line 108, in <module>
+    ds = xr.open_dataset(NC); ds['RHOW'] = eos80_potential_density(ds['SAL'], ds['TEMP']); fv = ds.tfv
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\backends\api.py", line 588, in open_dataset
+    backend_ds = backend.open_dataset(
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\backends\netCDF4_.py", line 659, in open_dataset
+    ds = store_entrypoint.open_dataset(
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\backends\store.py", line 46, in open_dataset
+    vars, attrs, coord_names = conventions.decode_cf_variables(
+  File "C:\Users\aedvmadmin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\xarray\conventions.py", line 461, in decode_cf_variables
+    raise type(e)(f"Failed to decode variable {k!r}: {e}") from e
+ValueError: Failed to decode variable 'ResTime': unable to decode time units 'hours since 1990-01-01T00:00:00' with 'the default calendar'. Try opening your dataset with decode_times=False or installing cftime if it is not installed.

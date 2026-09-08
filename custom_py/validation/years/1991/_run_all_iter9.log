@@ -1,0 +1,35 @@
+>>> START  [1] region_validation (base+rev)   (09:06:34)
+>>> DONE   [1] region_validation (base+rev)   exit=0   (09:08:11)   -> ../_log_region_validation.log
+>>> START  [2] scatter   (09:08:11)
+>>> DONE   [2] scatter   exit=0   (09:08:17)   -> ../_log_scatter.log
+>>> START  [2] scatter_lon   (09:08:17)
+>>> DONE   [2] scatter_lon   exit=0   (09:08:20)   -> ../_log_scatter_lon.log
+>>> START  [3a] hovmoller   (09:08:20)
+>>> DONE   [3a] hovmoller   exit=0   (09:09:08)   -> ../_log_hovmoller.log
+>>> START  [4] transectA curtains   (09:09:08)
+>>> DONE   [4] transectA curtains   exit=0   (09:10:33)   -> ../_log_transectA.log
+>>> START  [3b] profile_series   (09:10:33)
+>>> DONE   [3b] profile_series   exit=0   (09:11:36)   -> ../_log_profile_series.log
+>>> START  [5] transectB curtains   (09:11:36)
+>>> DONE   [5] transectB curtains   exit=0   (09:12:20)   -> ../_log_transectB.log
+>>> START  [6] transectOA curtains   (09:12:20)
+>>> DONE   [6] transectOA curtains   exit=0   (09:12:43)   -> ../_log_transectOA.log
+>>> START  [6b] transectV shelf (V1-V12)   (09:12:43)
+>>> DONE   [6b] transectV shelf (V1-V12)   exit=0   (09:13:02)   -> ../_log_transectV.log
+>>> START  [7] maps - campaigns   (09:13:02)
+>>> DONE   [7] maps - campaigns   exit=0   (09:25:51)   -> ../_log_maps_campaigns.log
+>>> START  [8] maps - panels   (09:25:51)
+>>> DONE   [8] maps - panels   exit=0   (10:56:41)   -> ../_log_maps_panels.log
+>>> START  [8b] maps - OA (zoom)   (10:56:41)
+>>> DONE   [8b] maps - OA (zoom)   exit=0   (11:02:36)   -> ../_log_maps_OA.log
+>>> START  [9] halocline (model vs field)   (11:02:36)
+>>> DONE   [9] halocline (model vs field)   exit=0   (11:03:19)   -> ../_log_halocline.log
+>>> START  [TS1] cs55 timeseries   (11:03:19)
+>>> DONE   [TS1] cs55 timeseries   exit=0   (11:04:29)   -> ../_log_ts_cs55.log
+>>> START  [TS2] oa80 timeseries   (11:04:29)
+>>> DONE   [TS2] oa80 timeseries   exit=0   (11:05:36)   -> ../_log_ts_oa80.log
+>>> START  [TS3] velocity validation   (11:05:36)
+>>> DONE   [TS3] velocity validation   exit=0   (11:08:19)   -> ../_log_velocity.log
+>>> START  [TS4] temperature validation   (11:08:19)
+>>> DONE   [TS4] temperature validation   exit=0   (11:10:24)   -> ../_log_temperature.log
+ALL DONE  (11:10:24)

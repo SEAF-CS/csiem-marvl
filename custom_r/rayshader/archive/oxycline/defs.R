@@ -1,0 +1,5 @@
+.libPaths(c("G:/CSIEM/1.8.0/csiem-marvl/rayshader/rlib/4.4", .libPaths()))
+suppressMessages({ library(rayrender) })
+fm <- formals(rayrender::mesh3d_model)
+for (n in c("swap_yz","reverse","override_material","material","recalculate_normals","flipped"))
+  cat(sprintf("%-22s = %s\n", n, deparse(fm[[n]])))

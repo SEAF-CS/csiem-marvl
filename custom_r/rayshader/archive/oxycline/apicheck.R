@@ -1,0 +1,6 @@
+.libPaths(c("G:/CSIEM/1.8.0/csiem-marvl/rayshader/rlib/4.4", .libPaths()))
+suppressMessages({ library(rayshader); library(rayrender) })
+cat("=== mesh3d_model args ===\n"); print(names(formals(rayrender::mesh3d_model)))
+cat("\n=== raymesh_model args ===\n"); print(names(formals(rayrender::raymesh_model)))
+cat("\n=== rot_to_euler exists? ===\n"); cat(exists("rot_to_euler", where=asNamespace("rayshader")), "\n")
+cat("\n=== generate_surface body ===\n"); print(rayshader:::generate_surface)

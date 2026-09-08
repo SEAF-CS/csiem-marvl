@@ -1,0 +1,27 @@
+>>> START  [1] region_validation (base+rev)   (20:21:11)
+>>> DONE   [1] region_validation (base+rev)   exit=0   (20:22:50)   -> ../_log_region_validation.log
+>>> START  [2] scatter   (20:22:50)
+>>> DONE   [2] scatter   exit=0   (20:22:58)   -> ../_log_scatter.log
+>>> START  [2] scatter_lon   (20:22:58)
+>>> DONE   [2] scatter_lon   exit=0   (20:23:01)   -> ../_log_scatter_lon.log
+>>> START  [3a] hovmoller   (20:23:01)
+>>> DONE   [3a] hovmoller   exit=0   (20:23:47)   -> ../_log_hovmoller.log
+>>> START  [4] transectA curtains   (20:23:47)
+>>> DONE   [4] transectA curtains   exit=0   (20:25:08)   -> ../_log_transectA.log
+>>> START  [3b] profile_series   (20:25:08)
+>>> DONE   [3b] profile_series   exit=0   (20:26:19)   -> ../_log_profile_series.log
+>>> START  [5] transectB curtains   (20:26:20)
+>>> DONE   [5] transectB curtains   exit=0   (20:27:12)   -> ../_log_transectB.log
+>>> START  [6] transectOA curtains   (20:27:12)
+>>> DONE   [6] transectOA curtains   exit=0   (20:27:35)   -> ../_log_transectOA.log
+>>> START  [6b] transectV shelf (V1-V12)   (20:27:35)
+>>> DONE   [6b] transectV shelf (V1-V12)   exit=0   (20:27:55)   -> ../_log_transectV.log
+>>> START  [7] maps - campaigns   (20:27:55)
+>>> DONE   [7] maps - campaigns   exit=0   (20:42:44)   -> ../_log_maps_campaigns.log
+>>> START  [8] maps - panels   (20:42:44)
+>>> DONE   [8] maps - panels   exit=0   (22:15:47)   -> ../_log_maps_panels.log
+>>> START  [8b] maps - OA (zoom)   (22:15:47)
+>>> DONE   [8b] maps - OA (zoom)   exit=0   (22:25:13)   -> ../_log_maps_OA.log
+>>> START  [9] halocline (model vs field)   (22:25:13)
+>>> DONE   [9] halocline (model vs field)   exit=0   (22:26:36)   -> ../_log_halocline.log
+ALL DONE  (22:26:36)

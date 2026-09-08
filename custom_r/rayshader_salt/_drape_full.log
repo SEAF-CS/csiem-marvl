@@ -1,0 +1,7 @@
+Warning messages:
+1: package 'rayshader' was built under R version 4.4.3 
+2: package 'rgl' was built under R version 4.4.3 
+DRAPE(mesh) data/sal_bottom scale 34.30..34.90 mask=FALSE theta=0 phi=45 | 253 frame(s)
+done: 253 rendered (253 requested)
+IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=8, resizing from (1500, 930) to (1504, 936) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+mp4 253 frames 42.2s

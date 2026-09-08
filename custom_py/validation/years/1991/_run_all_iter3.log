@@ -1,0 +1,23 @@
+>>> START  [1] region_validation (base+rev)   (14:32:54)
+>>> DONE   [1] region_validation (base+rev)   exit=0   (14:35:01)   -> ../_log_region_validation.log
+>>> START  [2] scatter   (14:35:01)
+>>> DONE   [2] scatter   exit=0   (14:35:09)   -> ../_log_scatter.log
+>>> START  [2] scatter_lon   (14:35:09)
+>>> DONE   [2] scatter_lon   exit=0   (14:35:12)   -> ../_log_scatter_lon.log
+>>> START  [3a] hovmoller   (14:35:12)
+>>> DONE   [3a] hovmoller   exit=0   (14:35:59)   -> ../_log_hovmoller.log
+>>> START  [4] transectA curtains   (14:35:59)
+>>> DONE   [4] transectA curtains   exit=0   (14:40:11)   -> ../_log_transectA.log
+>>> START  [3b] profile_series   (14:40:11)
+>>> DONE   [3b] profile_series   exit=0   (14:41:03)   -> ../_log_profile_series.log
+>>> START  [5] transectB curtains   (14:41:03)
+>>> DONE   [5] transectB curtains   exit=0   (14:44:33)   -> ../_log_transectB.log
+>>> START  [6] transectOA curtains   (14:44:33)
+>>> DONE   [6] transectOA curtains   exit=0   (14:47:38)   -> ../_log_transectOA.log
+>>> START  [7] maps - campaigns   (14:47:38)
+>>> DONE   [7] maps - campaigns   exit=0   (15:37:16)   -> ../_log_maps_campaigns.log
+>>> START  [8] maps - panels   (15:37:17)
+>>> DONE   [8] maps - panels   exit=0   (16:57:13)   -> ../_log_maps_panels.log
+>>> START  [8b] maps - OA (zoom)   (16:57:13)
+>>> DONE   [8b] maps - OA (zoom)   exit=0   (17:05:12)   -> ../_log_maps_OA.log
+ALL DONE  (17:05:12)

@@ -1,0 +1,79 @@
+Loading coordinates...
+Found 14 survey days: [69, 70, 71, 72, 73, 77, 78, 80, 83, 84, 85, 86, 87, 88]
+
+Loading coastline...
+    Surface: 192 stations, range 27.18–35.54
+    Bottom: 188 stations, range 34.16–35.77
+  wrote map_salinity_prestorm_extended.png
+    Surface: 192 stations, range 14.95–20.19
+    Bottom: 188 stations, range 13.92–20.17
+  wrote map_temperature_prestorm_extended.png
+    Surface: 185 stations, range 29.92–35.94
+    Bottom: 183 stations, range 34.13–35.94
+  wrote map_salinity_poststorm_extended.png
+    Surface: 185 stations, range 15.67–20.27
+    Bottom: 183 stations, range 15.61–19.56
+  wrote map_temperature_poststorm_extended.png
+    Surface: 106 stations, range 27.31–35.40
+    Bottom: 106 stations, range 34.18–35.72
+  wrote map_salinity_day13_extended.png
+    Surface: 106 stations, range 15.35–19.33
+    Bottom: 106 stations, range 15.12–18.91
+  wrote map_temperature_day13_extended.png
+    Surface: 101 stations, range 27.18–35.46
+    Bottom: 99 stations, range 34.06–35.77
+  wrote map_salinity_day14_extended.png
+    Surface: 101 stations, range 14.95–20.19
+    Bottom: 99 stations, range 13.92–20.17
+  wrote map_temperature_day14_extended.png
+    Surface: 116 stations, range 28.62–35.50
+    Bottom: 115 stations, range 34.16–35.51
+  wrote map_salinity_day15_extended.png
+    Surface: 116 stations, range 15.23–19.59
+    Bottom: 115 stations, range 15.35–19.39
+  wrote map_temperature_day15_extended.png
+    Surface: 100 stations, range 28.16–35.54
+    Bottom: 98 stations, range 34.22–35.54
+  wrote map_salinity_day16_extended.png
+    Surface: 100 stations, range 15.35–19.62
+    Bottom: 98 stations, range 15.20–19.10
+  wrote map_temperature_day16_extended.png
+    Surface: 72 stations, range 24.55–35.28
+    Bottom: 69 stations, range 33.66–35.28
+  wrote map_salinity_day17_extended.png
+    Surface: 72 stations, range 15.54–18.30
+    Bottom: 69 stations, range 15.47–18.02
+  wrote map_temperature_day17_extended.png
+    Surface: 87 stations, range 25.77–35.48
+    Bottom: 87 stations, range 34.22–35.48
+  wrote map_salinity_day18_extended.png
+    Surface: 87 stations, range 15.70–19.05
+    Bottom: 87 stations, range 15.10–18.78
+  wrote map_temperature_day18_extended.png
+  day19/salinity: 0 surf stns, skip
+  day19/temperature: 0 surf stns, skip
+    Surface: 121 stations, range 31.51–35.53
+    Bottom: 120 stations, range 34.13–35.51
+  wrote map_salinity_day20_extended.png
+    Surface: 121 stations, range 15.60–18.79
+    Bottom: 120 stations, range 15.47–18.76
+  wrote map_temperature_day20_extended.png
+    Surface: 93 stations, range 29.67–35.56
+    Bottom: 92 stations, range 34.19–35.86
+  wrote map_salinity_day21_extended.png
+    Surface: 93 stations, range 15.63–20.27
+    Bottom: 92 stations, range 15.53–19.56
+  wrote map_temperature_day21_extended.png
+    Surface: 126 stations, range 29.92–35.94
+    Bottom: 125 stations, range 34.17–35.94
+  wrote map_salinity_day22_extended.png
+    Surface: 126 stations, range 15.69–19.16
+    Bottom: 125 stations, range 15.64–18.62
+  wrote map_temperature_day22_extended.png
+    Surface: 12 stations, range 34.04–34.38
+    Bottom: 11 stations, range 34.25–34.78
+  wrote map_salinity_day23_extended.png
+    Surface: 12 stations, range 15.73–16.19
+    Bottom: 11 stations, range 15.74–16.43
+  wrote map_temperature_day23_extended.png
+done

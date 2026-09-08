@@ -1,0 +1,13 @@
+QC: masked 0 fresh-bottom spikes (obs_botS<33) for bottom stats
+wrote G:/CSIEM/1.8.0/csiem-marvl/custom_py/dadamo_transect\scatter_validation_1991_rev.png
+wrote G:/CSIEM/1.8.0/csiem-marvl/custom_py/dadamo_transect\region_bias_1991_rev.png
+wrote G:/CSIEM/1.8.0/csiem-marvl/custom_py/dadamo_transect\region_map_1991_rev.png
+
+=== per-region SURFACE bias (model - obs) ===
+var         S      T    n
+region                   
+OA     -0.135  0.071  195
+CS     -0.243  0.233  388
+NW      1.906 -0.035   49
+W      -0.173  0.626    6
+SW     -0.399 -0.087   16

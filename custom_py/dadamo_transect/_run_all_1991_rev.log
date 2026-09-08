@@ -1,0 +1,23 @@
+============================================================
+>>> START  1. region validation (revcompare: base+rev extraction)   (07:54:45)
+>>> DONE   1. region validation (revcompare: base+rev extraction)   exit=0   (07:56:17)   -> _run_regionval_1991_rev.log
+============================================================
+>>> START  2a. scatter (region/bias/map)   (07:56:17)
+>>> DONE   2a. scatter (region/bias/map)   exit=0   (07:56:25)   -> _run_scatter_1991_rev.log
+============================================================
+>>> START  2b. scatter (longitude-coloured)   (07:56:25)
+>>> DONE   2b. scatter (longitude-coloured)   exit=0   (07:56:28)   -> _run_scatter_lon_1991_rev.log
+============================================================
+>>> START  3. hovmoller (CS55/OA80)   (07:56:28)
+>>> DONE   3. hovmoller (CS55/OA80)   exit=0   (07:56:49)   -> _run_hovmoller_1991_rev.log
+============================================================
+>>> START  4. transect A compare curtains   (07:56:49)
+>>> DONE   4. transect A compare curtains   exit=0   (07:58:40)   -> _run_transectA_1991_rev.log
+============================================================
+>>> START  5a. maps - campaigns (pre/post)   (07:58:40)
+>>> DONE   5a. maps - campaigns (pre/post)   exit=0   (08:10:53)   -> _run_maps_1991_rev_campaigns.log
+============================================================
+>>> START  5b. maps - panels (per occupation)   (08:10:53)
+>>> DONE   5b. maps - panels (per occupation)   exit=0   (09:29:28)   -> _run_maps_1991_rev_panels.log
+============================================================
+ALL DONE  (09:29:28)

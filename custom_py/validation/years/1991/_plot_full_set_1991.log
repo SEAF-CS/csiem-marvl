@@ -1,0 +1,16 @@
+[2026-07-11 23:25:17] GATE: waiting for sim to finish writing S:/Matt_Working/csiem/output_archive/1.7.0/1991_aug_rev/csiem_B010_19910720_19910831_rev.nc
+[2026-07-11 23:28:18] GATE: NC stable 180s -> sim done, plotting.
+=========== 1991 FULL PLOT SET  START 2026-07-11 23:28:18 ===========
+>>> START [T1] run_all.sh (23:28:18)
+>>> DONE  [T1] run_all.sh exit=0 (23:43:50) -> _log_full_tier1.log
+>>> START [T2] extended maps (pre/post/all-days x S,T) (23:43:50)
+>>> DONE  [T2] extended maps (pre/post/all-days x S,T) exit=0 (01:30:19) -> ../../_log_full_extended.log
+>>> START [T2] MFR surface prestorm  (14 Aug) (01:30:19)
+>>> DONE  [T2] MFR surface prestorm  (14 Aug) exit=1 (01:32:32) -> ../../_log_full_MFR_pre.log
+>>> START [T2] MFR surface poststorm (21 Aug) (01:32:32)
+>>> DONE  [T2] MFR surface poststorm (21 Aug) exit=1 (01:34:42) -> ../../_log_full_MFR_post.log
+>>> START [T2] TransectV cross-shelf (pre/post) (01:34:43)
+>>> DONE  [T2] TransectV cross-shelf (pre/post) exit=1 (01:34:49) -> ../../_log_full_transectV.log
+>>> START [T2] run_diagnostics.sh (process/mechanism) (01:34:50)
+>>> DONE  [T2] run_diagnostics.sh (process/mechanism) exit=0 (01:35:36) -> ../../_log_full_diagnostics.log
+=========== 1991 FULL PLOT SET  DONE  2026-07-12 01:35:36 ===========

@@ -1,0 +1,24 @@
+Loaded 143 DFV+FV casts for valid stations
+Loading bathymetry...
+Bathymetry: -3.8 to 23.2 m over -4.4 to 6.1 km
+
+Generating transect plots...
+
+Model coverage 1991-07-20 00:00:00 -> 1991-08-31 00:00:00; 14 TransectB model stations
+15 panels in model window
+  saved compare_TransectB_6.16a.png
+  saved compare_TransectB_6.16b.png
+  saved compare_TransectB_6.16c.png
+  saved compare_TransectB_6.16d.png
+  saved compare_TransectB_6.16e.png
+  saved compare_TransectB_6.16f.png
+  saved compare_TransectB_6.16h.png
+  saved compare_TransectB_6.16i.png
+  saved compare_TransectB_6.16k.png
+  saved compare_TransectB_6.16l.png
+  saved compare_TransectB_6.17a.png
+  saved compare_TransectB_6.17c.png
+  saved compare_TransectB_6.17d.png
+6.17g: 0 field profiles, skipping
+  saved compare_TransectB_6.17h.png
+Done.

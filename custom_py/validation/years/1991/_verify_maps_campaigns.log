@@ -1,0 +1,11 @@
+>>> maps-campaigns verify (vs _ NC) START 11:59:35
+WINDOW_MODE=campaigns  (2 windows)
+FULL run [campaigns]: 6 figure(s)
+  saved temperature/map_temperature_prestorm.png
+  saved salinity/map_salinity_prestorm.png
+  saved density/map_density_prestorm.png
+  saved temperature/map_temperature_poststorm.png
+  saved salinity/map_salinity_poststorm.png
+  saved density/map_density_poststorm.png
+Done.
+>>> exit=0 12:12:14

@@ -1,0 +1,5 @@
+Warning messages:
+1: package 'rayshader' was built under R version 4.4.3 
+2: package 'rgl' was built under R version 4.4.3 
+DRAPE(mesh) data/sal_bottom scale 34.30..34.90 mask=FALSE theta=0 phi=31.5 | 253 frame(s)
+done: 253 rendered (253 requested)

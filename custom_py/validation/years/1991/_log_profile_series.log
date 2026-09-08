@@ -1,0 +1,15 @@
+Loading survey log...
+OA80: 26 DFV casts
+CS20: 27 DFV casts
+CS55: 66 DFV casts
+CS155: 23 DFV casts
+OA80: 26 readable profiles
+CS20: 27 readable profiles
+CS55: 35 readable profiles
+CS155: 23 readable profiles
+model steps in window: 126  (1991-08-13 00:00:00 .. 1991-08-23 23:00:00)
+OA80: model 126 profiles | field 26
+CS20: model 126 profiles | field 27
+CS55: model 126 profiles | field 35
+CS155: model 126 profiles | field 23
+wrote Q:\SEAF-CS\V1.8\MARVL\csiem-marvl\custom_py\validation\years\1991\outputs\profile_series_1991_rev.png

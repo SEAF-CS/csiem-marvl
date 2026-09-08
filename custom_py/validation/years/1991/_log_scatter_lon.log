@@ -1,0 +1,3 @@
+QC: masked 0 fresh-bottom spikes (obs_botS<33) for bottom stats
+lon range: 115.617 .. 115.772  | regions: ['OA', 'CS', 'NW', 'W', 'SW']
+wrote Q:/SEAF-CS/V1.8/MARVL/csiem-marvl/custom_py/validation/years/1991/outputs\scatter_validation_lon_1991_rev.png

@@ -1,0 +1,10 @@
+=== MODEL tidal-band WL (high-passed) ===
+  Fremantle mouth        tidal-band std 0.207 m  p5-95 range 0.682 m
+  mouth-inner            tidal-band std 0.142 m  p5-95 range 0.457 m
+  Melville (SW of NAR)   tidal-band std 0.151 m  p5-95 range 0.483 m
+  NAR (Narrows)          tidal-band std 0.152 m  p5-95 range 0.484 m
+  --> NAR/mouth tidal-band ratio: 73.21% (100% = no attenuation)
+=== REAL obs tidal-band (2001 proxy) ===
+  Fremantle FFFBH01  std 0.168 m
+  Barrack St PTBAR02  std 0.153 m   --> real Barrack/Fremantle ratio 91.34%
+wrote G:/CSIEM/1.8.0/csiem-marvl/custom_py/validation/years/1991/outputs/diagnostics/wl_tidal_attenuation.png

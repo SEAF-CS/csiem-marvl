@@ -1,0 +1,19 @@
+>>> START  [1] region_validation (base+rev)   (11:10:25)
+>>> DONE   [1] region_validation (base+rev)   exit=0   (11:13:26)   -> ../_log_region_validation.log
+>>> START  [2] scatter   (11:13:26)
+>>> DONE   [2] scatter   exit=0   (11:13:34)   -> ../_log_scatter.log
+>>> START  [2] scatter_lon   (11:13:34)
+>>> DONE   [2] scatter_lon   exit=0   (11:13:37)   -> ../_log_scatter_lon.log
+>>> START  [4] transectA curtains   (11:13:37)
+>>> DONE   [4] transectA curtains   exit=0   (11:14:37)   -> ../_log_transectA.log
+>>> START  [7/8] maps - daily   (11:14:37)
+>>> DONE   [7/8] maps - daily   exit=0   (12:10:30)   -> ../_log_maps.log
+>>> START  [TS1] cs55 timeseries   (12:10:31)
+>>> DONE   [TS1] cs55 timeseries   exit=0   (12:13:27)   -> ../_log_ts_cs55.log
+>>> START  [TS2] oa80 timeseries   (12:13:27)
+>>> DONE   [TS2] oa80 timeseries   exit=0   (12:16:08)   -> ../_log_ts_oa80.log
+>>> START  [TS3] velocity validation   (12:16:08)
+>>> DONE   [TS3] velocity validation   exit=0   (12:20:49)   -> ../_log_velocity.log
+>>> START  [TS4] temperature validation   (12:20:49)
+>>> DONE   [TS4] temperature validation   exit=0   (12:23:08)   -> ../_log_temperature.log
+ALL DONE  (12:23:08)

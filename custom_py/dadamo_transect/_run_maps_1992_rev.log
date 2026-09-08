@@ -1,0 +1,123 @@
+Loading coordinates...
+Found 14 survey days: [69, 70, 71, 72, 73, 77, 78, 80, 83, 84, 85, 86, 87, 88]
+
+Loading coastline...
+Field map machinery loaded: 546 coords, 14 survey days
+Domain lon 115.45 115.776 | lat -32.525 -31.87 | grid (400, 300)
+Model 1992-02-22 00:00:00 -> 1992-04-19 20:00:00; 30206 cells
+FULL run: 42 figure(s)
+    Surface: 67 stations, range 22.33–24.77
+    Bottom: 67 stations, range 21.13–23.91
+  saved daily_temperature/map_temperature_069.png
+    Surface: 67 stations, range 32.51–36.64
+    Bottom: 67 stations, range 33.34–36.62
+  saved daily_salinity/map_salinity_069.png
+    Surface: 67 stations, range 21.96–25.01
+    Bottom: 67 stations, range 22.83–25.18
+  saved daily_density/map_density_069.png
+    Surface: 72 stations, range 21.85–24.97
+    Bottom: 71 stations, range 21.85–23.93
+  saved daily_temperature/map_temperature_070.png
+    Surface: 72 stations, range 30.56–36.57
+    Bottom: 71 stations, range 30.89–36.58
+  saved daily_salinity/map_salinity_070.png
+    Surface: 72 stations, range 20.60–25.08
+    Bottom: 71 stations, range 20.93–25.20
+  saved daily_density/map_density_070.png
+    Surface: 94 stations, range 21.29–23.53
+    Bottom: 93 stations, range 21.02–23.33
+  saved daily_temperature/map_temperature_071.png
+    Surface: 94 stations, range 35.88–36.65
+    Bottom: 93 stations, range 35.97–36.65
+  saved daily_salinity/map_salinity_071.png
+    Surface: 94 stations, range 24.65–25.25
+    Bottom: 93 stations, range 24.80–25.34
+  saved daily_density/map_density_071.png
+    Surface: 97 stations, range 21.59–23.43
+    Bottom: 96 stations, range 20.79–23.43
+  saved daily_temperature/map_temperature_072.png
+    Surface: 97 stations, range 35.97–36.64
+    Bottom: 96 stations, range 35.90–36.66
+  saved daily_salinity/map_salinity_072.png
+    Surface: 97 stations, range 24.77–25.48
+    Bottom: 96 stations, range 24.77–25.51
+  saved daily_density/map_density_072.png
+    Surface: 110 stations, range 21.60–23.69
+    Bottom: 110 stations, range 19.47–23.80
+  saved daily_temperature/map_temperature_073.png
+    Surface: 110 stations, range 35.37–36.64
+    Bottom: 110 stations, range 35.60–36.64
+  saved daily_salinity/map_salinity_073.png
+    Surface: 110 stations, range 24.21–25.41
+    Bottom: 110 stations, range 24.43–25.51
+  saved daily_density/map_density_073.png
+jday 077 temperature: 0 field profiles, skipping
+jday 077 salinity: 0 field profiles, skipping
+jday 077 density: 0 field profiles, skipping
+jday 078 temperature: 0 field profiles, skipping
+jday 078 salinity: 0 field profiles, skipping
+jday 078 density: 0 field profiles, skipping
+    Surface: 27 stations, range 20.87–22.72
+    Bottom: 27 stations, range 20.71–22.58
+  saved daily_temperature/map_temperature_080.png
+    Surface: 27 stations, range 35.22–36.38
+    Bottom: 27 stations, range 35.82–36.47
+  saved daily_salinity/map_salinity_080.png
+    Surface: 27 stations, range 24.39–25.24
+    Bottom: 27 stations, range 24.89–25.37
+  saved daily_density/map_density_080.png
+    Surface: 102 stations, range 20.79–23.06
+    Bottom: 99 stations, range 20.65–22.39
+  saved daily_temperature/map_temperature_083.png
+    Surface: 102 stations, range 29.66–36.56
+    Bottom: 99 stations, range 30.33–36.56
+  saved daily_salinity/map_salinity_083.png
+    Surface: 102 stations, range 19.97–25.35
+    Bottom: 99 stations, range 20.76–25.41
+  saved daily_density/map_density_083.png
+    Surface: 133 stations, range 20.80–23.57
+    Bottom: 133 stations, range 15.06–23.31
+  saved daily_temperature/map_temperature_084.png
+    Surface: 133 stations, range 35.05–36.54
+    Bottom: 133 stations, range 29.51–36.56
+  saved daily_salinity/map_salinity_084.png
+    Surface: 133 stations, range 24.26–25.30
+    Bottom: 133 stations, range 6.13–25.58
+  saved daily_density/map_density_084.png
+    Surface: 100 stations, range 21.34–23.48
+    Bottom: 100 stations, range 15.04–22.74
+  saved daily_temperature/map_temperature_085.png
+    Surface: 100 stations, range 35.37–36.53
+    Bottom: 100 stations, range 29.49–36.56
+  saved daily_salinity/map_salinity_085.png
+    Surface: 100 stations, range 24.54–25.31
+    Bottom: 100 stations, range 5.54–25.55
+  saved daily_density/map_density_085.png
+    Surface: 70 stations, range 20.90–22.55
+    Bottom: 70 stations, range 14.99–22.36
+  saved daily_temperature/map_temperature_086.png
+    Surface: 70 stations, range 35.84–36.53
+    Bottom: 70 stations, range 29.51–36.53
+  saved daily_salinity/map_salinity_086.png
+    Surface: 70 stations, range 24.96–25.49
+    Bottom: 70 stations, range 5.81–25.50
+  saved daily_density/map_density_086.png
+    Surface: 114 stations, range 20.69–22.34
+    Bottom: 113 stations, range 15.09–25.27
+  saved daily_temperature/map_temperature_087.png
+    Surface: 114 stations, range 34.49–36.60
+    Bottom: 113 stations, range 29.55–36.61
+  saved daily_salinity/map_salinity_087.png
+    Surface: 114 stations, range 23.84–25.55
+    Bottom: 113 stations, range 5.52–25.55
+  saved daily_density/map_density_087.png
+    Surface: 12 stations, range 21.48–21.91
+    Bottom: 12 stations, range 21.49–21.95
+  saved daily_temperature/map_temperature_088.png
+    Surface: 12 stations, range 36.08–36.33
+    Bottom: 12 stations, range 36.22–36.33
+  saved daily_salinity/map_salinity_088.png
+    Surface: 12 stations, range 25.11–25.37
+    Bottom: 12 stations, range 25.16–25.37
+  saved daily_density/map_density_088.png
+Done.

@@ -1,0 +1,25 @@
+opening model NC ...
+...extracting sheet data: 100%|[32m##########[0m| 1/1 [00:01<00:00,  1.24s/it]...extracting sheet data: 100%|[32m##########[0m| 1/1 [00:01<00:00,  1.25s/it]
+L2 jday 225: 10 offshore obs | model curtain @ 13-Aug 14:00
+  wrote L2_225.png
+...extracting sheet data: 100%|[32m##########[0m| 1/1 [00:01<00:00,  1.09s/it]...extracting sheet data: 100%|[32m##########[0m| 1/1 [00:01<00:00,  1.10s/it]
+L2 jday 226: 7 offshore obs | model curtain @ 14-Aug 09:00
+  wrote L2_226.png
+L2 jday 227: 10 offshore obs | model curtain @ 15-Aug 12:00
+  wrote L2_227.png
+L2 jday 228: 16 offshore obs | model curtain @ 16-Aug 13:00
+  wrote L2_228.png
+...extracting sheet data: 100%|[32m##########[0m| 1/1 [00:01<00:00,  1.14s/it]...extracting sheet data: 100%|[32m##########[0m| 1/1 [00:01<00:00,  1.15s/it]
+L2 jday 229: 6 offshore obs | model curtain @ 17-Aug 12:00
+  wrote L2_229.png
+L2 jday 230: 7 offshore obs | model curtain @ 18-Aug 09:00
+  wrote L2_230.png
+L2 jday 232: 12 offshore obs | model curtain @ 20-Aug 13:00
+  wrote L2_232.png
+L2 jday 233: 12 offshore obs | model curtain @ 21-Aug 11:00
+  wrote L2_233.png
+...extracting sheet data: 100%|[32m##########[0m| 1/1 [00:01<00:00,  1.91s/it]...extracting sheet data: 100%|[32m##########[0m| 1/1 [00:01<00:00,  1.91s/it]
+L2 jday 234: 14 offshore obs | model curtain @ 22-Aug 09:00
+  wrote L2_234.png
+
+9 L2 estuary+offshore figures -> G:/CSIEM/1.8.0/csiem-marvl/custom_py/validation/years/1991/outputs/diagnostics/transect_long

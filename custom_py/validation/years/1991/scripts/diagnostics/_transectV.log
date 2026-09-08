@@ -1,0 +1,9 @@
+WARNING: point 'loc01' is outside of model domain
+prestorm: field 12 | tuflow 6 | roms 9 @ 1991-08-14 12:00:00
+wrote G:/CSIEM/1.8.0/csiem-marvl/custom_py/validation/years/1991/outputs/TransectV\transectV_shelf_prestorm.png
+wrote G:/CSIEM/1.8.0/csiem-marvl/custom_py/validation/years/1991/outputs/TransectV\transectV_roms_prestorm.png
+WARNING: point 'loc01' is outside of model domain
+poststorm: field 12 | tuflow 6 | roms 9 @ 1991-08-21 12:00:00
+wrote G:/CSIEM/1.8.0/csiem-marvl/custom_py/validation/years/1991/outputs/TransectV\transectV_shelf_poststorm.png
+wrote G:/CSIEM/1.8.0/csiem-marvl/custom_py/validation/years/1991/outputs/TransectV\transectV_roms_poststorm.png
+done

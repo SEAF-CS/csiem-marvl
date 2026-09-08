@@ -1,0 +1,10 @@
+YEAR=1992  window 04 Mar-03 Apr
+opening model NC ...
+  CSC4 top: bias +0.24 rmse 0.36
+  CSC4 near-bed: bias +0.24 rmse 0.34
+  CSC5 mid: bias +0.15 rmse 0.30
+  CSC5 near-bed: bias +0.31 rmse 0.38
+  SDC1 top: bias +0.71 rmse 0.80
+  SDC1 near-bed: bias +0.74 rmse 0.91
+  SW1 near-bed: bias +0.79 rmse 0.98
+wrote G:/CSIEM/1.8.0/csiem-marvl/custom_py/validation/years\1992\outputs\TimeSeries\temperature_validation_1992.png

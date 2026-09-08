@@ -1,0 +1,55 @@
+Model coverage: 1993-11-01 00:00:00 -> 1994-05-31 00:00:00 (open attempt 1)
+Loading coordinates...
+Loading survey log...
+  26 candidate casts at active stations
+  chainage range: -16.0 to +14.0 km
+Loading bathymetry...
+  bathymetry: 2.9 to 27.5 m
+
+Generating per-day Transect A cross-sections...
+
+Loading coordinates...
+Canonical B chainages (km from CS30 east):
+  CS30     0.00 km
+  CS28     1.10 km
+  CS25     2.51 km
+  CS20     4.30 km
+  CS18     5.37 km
+  CS15     6.20 km
+  CS12     7.02 km
+  CS5      8.80 km
+  OA98    10.12 km
+  SD60    11.49 km
+  SD55    13.06 km
+  SD50    15.89 km
+  SD40    19.61 km
+  Y33     26.37 km
+  Y34     29.36 km
+  Y35     32.48 km
+Loading survey log...
+  29 candidate casts
+Loading bathymetry along canonical Transect B polyline...
+
+Reading profiles...
+Loading coordinates...
+Transect C chainages (km from CS135 south):
+  CS135    0.00 km
+  CS105    2.68 km
+  CS85     5.33 km
+  CS55     8.00 km
+  AJ10    11.28 km
+  CS12    14.57 km
+  CS5     16.35 km
+  OA98    17.67 km
+  SD60    19.04 km
+  SD20    27.09 km
+Loading survey log...
+Read 10/10 stations on Transect C
+Loading bathymetry along Transect C polyline...
+  bathy: 2.3 to 22.5 m
+  A jday 123: field 14, model 14 -> saved
+  A jday 124: field 9, model 10 -> saved
+  B jday 123: field 16, model 16 -> saved
+  B jday 124: field 12, model 12 -> saved
+  C jday 124: field 10, model 10 -> saved
+Done. Outputs under Q:\SEAF-CS\V1.8\MARVL\csiem-marvl\custom_py\validation\years\1994\outputs

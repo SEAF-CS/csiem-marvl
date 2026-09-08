@@ -1,0 +1,8 @@
+Loading coordinates...
+Found 14 survey days: [69, 70, 71, 72, 73, 77, 78, 80, 83, 84, 85, 86, 87, 88]
+
+Loading coastline...
+14-Aug: 101 field stns | model 1991-08-14 12:00:00 | roms 14-Aug
+    Surface: 101 stations, range 27.18–35.46
+    Surface: 101 stations, range 14.95–20.19
+wrote G:\CSIEM\1.8.0\csiem-marvl\custom_py\validation\years\1991\outputs\diagnostics\map_surface_MFR_Aug14.png

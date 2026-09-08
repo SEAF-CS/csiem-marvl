@@ -1,0 +1,5 @@
+.libPaths(c("G:/CSIEM/1.8.0/csiem-marvl/rayshader/rlib/4.4", .libPaths()))
+suppressMessages(library(rayrender))
+fm <- formals(rayrender::render_scene)
+for (n in c("denoise","sample_method","integrator_type","min_variance","samples"))
+  cat(sprintf("%-16s = %s\n", n, paste(deparse(fm[[n]]),collapse="")))
