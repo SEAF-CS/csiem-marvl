@@ -17,11 +17,11 @@ end
 
 % define a date before the model starts
 % start_date=datenum(2022,11,01,00,00,00);
-start_date=datenum(2020,11,01,00,00,00);
+start_date=datenum(2019,10,01,00,00,00);
 % define file path and output
 %  filename = 'W:\csiem\Model\TFV\csiem_model_tfvaed_2.0\outputs\results\csiem_A001_20221101_20240401_WQ_test_3round_FLUX.csv';
-  filename = '/Projects2/csiem/model/csiem_model_tfvaed_1.6/outputs/results/csiem_A001_20201101_20211231_WQ_FLUX.csv';
- matout = './Flux_CSIEM_1p5.mat';
+  filename = "G:\CSIEM\1.6.0\outputs\sh\2023B\csiem_B009_20221101_20240401_WQ_FLUX.csv";
+ matout = 'G:\CSIEM\1.6.0\outputs\sh\2023B\Flux_CSIEM_1p5.mat';
  disp(filename);
 
  tfv_process_fluxfile_CSIEM(filename,matout,wqfile,nodefile,start_date);

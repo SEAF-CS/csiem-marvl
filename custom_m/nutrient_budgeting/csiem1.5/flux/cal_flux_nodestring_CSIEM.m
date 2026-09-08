@@ -2,8 +2,8 @@ clear; close all;
  
  % update the flux MAT file name to match the sim version
  % and output name
-flux=load('./Flux_CSIEM_1p5.mat');
-outname='saved_nodestring_flux_data_1p5.mat';
+flux=load('G:\CSIEM\1.6.0\outputs\sh\2023B\Flux_CSIEM_1p5.mat');
+outname='G:\CSIEM\1.6.0\outputs\sh\2023B\saved_nodestring_flux_data_1p5.mat';
 
  % define start and end dates
 t1=datenum(2023,1,1);
@@ -42,12 +42,20 @@ for nn=1:length(nsnames)
     data.(nsnames2{nn}).ON=data.(nsnames2{nn}).PON+data.(nsnames2{nn}).DON;
     data.(nsnames2{nn}).PPN=(data.(nsnames2{nn}).MIXED+data.(nsnames2{nn}).PICO ...
         +data.(nsnames2{nn}).DIATOM+data.(nsnames2{nn}).DINO)*16/106;
+
+    data.(nsnames2{nn}).TN=(data.(nsnames2{nn}).IN+data.(nsnames2{nn}).ON ...
+        +data.(nsnames2{nn}).PPN);
+
    % data.(nsnames2{nn}).ZOON=(data.(nsnames2{nn}).CLADOCERAN+data.(nsnames2{nn}).COPEPOD)*16/106;
     
     data.(nsnames2{nn}).IP=data.(nsnames2{nn}).FRP+data.(nsnames2{nn}).FRP_ADS;
     data.(nsnames2{nn}).OP=data.(nsnames2{nn}).POP+data.(nsnames2{nn}).DOP;
     data.(nsnames2{nn}).PPP=(data.(nsnames2{nn}).MIXED+data.(nsnames2{nn}).PICO ...
         +data.(nsnames2{nn}).DIATOM+data.(nsnames2{nn}).DINO)*1/106;
+
+    data.(nsnames2{nn}).TP=(data.(nsnames2{nn}).IP+data.(nsnames2{nn}).OP ...
+        +data.(nsnames2{nn}).PPP);
+
 %    data.(nsnames2{nn}).ZOOP=(data.(nsnames2{nn}).CLADOCERAN+data.(nsnames2{nn}).COPEPOD)*1/106;
 end
 

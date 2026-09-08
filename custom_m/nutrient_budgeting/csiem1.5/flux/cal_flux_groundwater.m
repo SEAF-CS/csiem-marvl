@@ -3,7 +3,7 @@ clear; close all;
  % read in groundwater influx
 
 %  gw_folder='W:\csiem\Model\TFV\csiem_model_tfvaed_2.0\bc_repo\6_gw\CSV\';
- gw_folder='/Projects2/csiem/model/csiem_model_tfvaed_1.6/bc_repo/6_gw/CSV/';
+ gw_folder='W:\WAMSI\PRAMS\';
 
 files=dir([gw_folder,'*.csv']);
 
@@ -14,8 +14,8 @@ for f=1:length(files)
     rawdata.(shortnames{f})=tfv_readBCfile_TIME([gw_folder,files(f).name]);
 end
 
-vars={'WQ_NIT_AMM','WQ_NIT_NIT','WQ_PHS_FRP','WQ_PHS_FRP_ADS','WQ_OGM_DON','WQ_OGM_PON','WQ_OGM_DOP','WQ_OGM_POP'};
-
+% vars={'WQ_NIT_AMM','WQ_NIT_NIT','WQ_PHS_FRP','WQ_PHS_FRP_ADS','WQ_OGM_DON','WQ_OGM_PON','WQ_OGM_DOP','WQ_OGM_POP'};
+vars={'AMM','NIT','FRP','FRP_ADS','DON','PON','DOP'};
  % define start and end dates
 t1=datenum(2023,1,1);
 t2=datenum(2024,1,1);
@@ -39,13 +39,26 @@ for ii=1:length(vars)
     fluxdata.(shortnames{f}).(vars{ii})=interp1(timens,tmpt,timearray)*86400;
 end
 
-fluxdata.(shortnames{f}).IN=fluxdata.(shortnames{f}).WQ_NIT_NIT+fluxdata.(shortnames{f}).WQ_NIT_AMM;
-fluxdata.(shortnames{f}).ON=fluxdata.(shortnames{f}).WQ_OGM_PON+fluxdata.(shortnames{f}).WQ_OGM_DON;
+fluxdata.(shortnames{f}).IN=fluxdata.(shortnames{f}).NIT+fluxdata.(shortnames{f}).AMM;
+fluxdata.(shortnames{f}).ON=fluxdata.(shortnames{f}).PON+fluxdata.(shortnames{f}).DON;
 fluxdata.(shortnames{f}).PPN=fluxdata.(shortnames{f}).Date*0;
+% POP set to 0
+fluxdata.(shortnames{f}).POP=fluxdata.(shortnames{f}).Date*0;
 
-fluxdata.(shortnames{f}).IP=fluxdata.(shortnames{f}).WQ_PHS_FRP+fluxdata.(shortnames{f}).WQ_PHS_FRP_ADS;
-fluxdata.(shortnames{f}).OP=fluxdata.(shortnames{f}).WQ_OGM_POP+fluxdata.(shortnames{f}).WQ_OGM_DOP;
+fluxdata.(shortnames{f}).IP=fluxdata.(shortnames{f}).FRP+fluxdata.(shortnames{f}).FRP_ADS;
+fluxdata.(shortnames{f}).OP=fluxdata.(shortnames{f}).POP+fluxdata.(shortnames{f}).DOP;
 fluxdata.(shortnames{f}).PPP=fluxdata.(shortnames{f}).Date*0;
+
+fluxdata.(shortnames{f}).TN=fluxdata.(shortnames{f}).NIT ...
+    +fluxdata.(shortnames{f}).AMM...
+    +fluxdata.(shortnames{f}).PON...
+    +fluxdata.(shortnames{f}).DON;
+
+fluxdata.(shortnames{f}).TP=fluxdata.(shortnames{f}).FRP ...
+    +fluxdata.(shortnames{f}).FRP_ADS...
+    +fluxdata.(shortnames{f}).POP...
+    +fluxdata.(shortnames{f}).DOP;
+
 
 if f==1
     totalFlux.Flow=fluxdata.(shortnames{f}).FLOW;
@@ -55,6 +68,8 @@ if f==1
     totalFlux.IP=fluxdata.(shortnames{f}).IP;
     totalFlux.OP=fluxdata.(shortnames{f}).OP;
     totalFlux.PPP=fluxdata.(shortnames{f}).PPP;
+    totalFlux.TN=fluxdata.(shortnames{f}).TN;
+    totalFlux.TP=fluxdata.(shortnames{f}).TP;
 
 else
 
@@ -66,12 +81,15 @@ else
     totalFlux.OP=totalFlux.OP+fluxdata.(shortnames{f}).OP;
     totalFlux.PPP=totalFlux.PPP+fluxdata.(shortnames{f}).PPP;
 
+    totalFlux.TN=totalFlux.TN+fluxdata.(shortnames{f}).TN;
+    totalFlux.TP=totalFlux.TP+fluxdata.(shortnames{f}).TP;
+
 end
 
 
 
 end
 
-outname='groundwater_influx_daily.mat';
+outname='G:\CSIEM\1.6.0\outputs\sh\2023B\groundwater_influx_daily.mat';
 save(outname,'rawdata','fluxdata','totalFlux','-mat');
 

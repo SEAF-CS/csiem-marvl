@@ -3,21 +3,21 @@ clear;close all;
 % define the exported mat files folder
 scen='1p5';
 % infolder0=['W:\csiem\csiem-marvl-dev\others\mat_export_CSIEM_ECO05\extracted_csiem1p5\CS-Region\'];
-infolder0=['/Projects2/csiem/csiem-marvl-dev/custom/nutrient_budgeting/csiem1.5/mat_export/extracted_ECO05/CS-Region/'];
+infolder0=['G:\CSIEM\1.6.0\outputs\sh\2023B\extracted_v1p5/CS-Region/'];
 % pre-processed nodestring and groundwater daily flux file
-fluxdata=load('./flux/saved_nodestring_flux_data_1p5.mat');
-gwfluxdata=load('./flux/groundwater_influx_daily.mat');
+fluxdata=load('G:\CSIEM\1.6.0\outputs\sh\2023B/saved_nodestring_flux_data_1p5.mat');
+gwfluxdata=load('G:\CSIEM\1.6.0\outputs\sh\2023B\groundwater_influx_daily.mat');
 
 % time and output folder
 % datearray=datenum(2023,1:3:13,1);
 % t1=datenum(2023,1,1);
 % t2=datenum(2024,1,1);
-datearray=datenum(2021,1:3:13,1);
-t1=datenum(2021,1,1);
-t2=datenum(2022,1,1);
+datearray=datenum(2023,1:3:13,1);
+t1=datenum(2023,01,1);
+t2=datenum(2024,1,1);
 datess=datestr(datearray,'yyyymmdd');
 
-outputfolder='./Budget_CS_Nitrogen/';
+outputfolder='G:\CSIEM\1.6.0\outputs\sh\2023B\Budget_CS_Nitrogen/';
 
 if ~exist(outputfolder,'dir')
     mkdir(outputfolder);
@@ -29,7 +29,7 @@ disp(infolder);
 %% loading nitrogen vars
 define_nitrogen_outputs;
 
-readdata=0;
+readdata=1;
 
 if readdata
     data=[];

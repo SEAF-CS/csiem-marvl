@@ -17,7 +17,8 @@ NPool_2D={'MPB_BENXNC',...
     };
 % factors to convert mmol to tonnes
 % assuming N:C=16:106 for MAC
-NPool_2D_factors=[1 16/106]*14/1e9;
+%NPool_2D_factors=[1 16/106]*14/1e9;
+NPool_2D_factors=[1 1/30]*14/1e9;  % leaf tissue is 30:1 C:N
 
 % 2D vars name for BGC process
 N_BGC_2D={'WQ_DIAG_OGM_PON_SWI',...

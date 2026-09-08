@@ -2,7 +2,7 @@
 %%
  
 % infolder=['Z:\csiem\csiem-marvl-dev\others\mat_export_CSIEM_ECO05\extracted_csiem1p5\CS-Region\'];
-infolder=['/Projects2/csiem/csiem-marvl-dev/custom/nutrient_budgeting/csiem1.5/mat_export/extracted_ECO05/CS-Region/'];
+infolder=['G:\CSIEM\1.6.0\outputs\sh\2023B\extracted_v1p5\CS-Region\'];
 
 disp(infolder);
 

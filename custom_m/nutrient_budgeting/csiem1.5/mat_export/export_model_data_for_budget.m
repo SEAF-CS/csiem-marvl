@@ -3,11 +3,11 @@ clear all; close all;
 addpath(genpath('Functions'));
 
 % define NC file path
-ncfile = 'Z:\csiem\model\csiem_model_tfvaed_1.6\outputs\results/csiem_A001_20201101_20211231_WQ_WQ.nc';
+ncfile = "G:\CSIEM\1.6.0\outputs\sh\2023B\csiem_B009_20221101_20240401_WQ_WQ.nc";
 % ncfile = '/Projects2/csiem/model/csiem_model_tfvaed_1.6/outputs/results/csiem_A001_20201101_20211231_WQ_WQ.nc ';
 
 % define output path
-outdir = './extracted_ECO05/';
+outdir = 'G:\CSIEM\1.6.0\outputs\sh\2023B\extracted_v1p5\';
 
     if exist(outdir,'dir')
         mkdir(outdir);
@@ -15,7 +15,9 @@ outdir = './extracted_ECO05/';
     disp(ncfile);
     
 % define variables to export to mat format	
-run('./varlist/varConfig_CSIEM_ECO05.m');
+%run('./varlist/varConfig_CSIEM_ECO05.m');
+
+run('./varlist/varConfig_CSIEM_v1p5.m');
 
 % shape file for study area
 shp = shaperead('./gis/shape_for_export.shp');
