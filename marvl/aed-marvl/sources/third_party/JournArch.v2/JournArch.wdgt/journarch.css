@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    background-image: url(background.gif);
+}
+  
+/** FRONT **/
+
+.helloText {
+	font: 18px "Lucida Grande";
+	font-weight: bold;
+	color: black;
+	position: absolute;
+	top:  15px;
+	left: 20px;
+}
+#infoButton {
+    position:absolute;
+    top:75px;
+    left:375px;
+}
+
+#front {
+    display:block;
+    background-image: url(front.gif);
+}
+
+#select-list {
+    font: 12px "Lucida Grande";
+    color: black;
+    position:absolute;
+    top: 35px;
+    left: 25px;
+    width: 330px;
+    height: 30px;
+    opacity: 1.0;
+    z-index: 20;
+}
+#select-year {
+    font: 12px "Lucida Grande";
+    color: black;
+    position:absolute;
+    top:  60px;
+    left: 25px;
+    width: 100px;
+    height: 30px;
+    opacity: 1.0;
+    z-index: 20;
+}
+#getarch {
+    position: absolute;
+    left: 150px;
+    top: 62px;
+}
+
+#searchinput
+{
+    position: absolute;
+    font: 12px "Lucida Grande";
+    top:110px;
+    left:25px;
+    width:350px;
+    height:22px;
+    -apple-dashboard-region: dashboard-region(control rectangle);
+}
+#getdoi {
+    position: absolute;
+    left: 25px;
+    top: 140px;
+}
+#getgoo {
+    position: absolute;
+    left: 78px;
+    top: 140px;
+}
+#getams {
+    position: absolute;
+    left: 200px;
+    top: 140px;
+}
+#getagu {
+    position: absolute;
+    left: 256px;
+    top: 140px;
+}
+#getegs {
+    position: absolute;
+    left: 312px;
+    top: 140px;
+}
+#resize {
+    position:absolute;
+    top: 178px;
+    left: 386px;
+    -apple-dashboard-region: dashboard-region(control rectangle);
+}
+
+/** BACK **/
+
+#back {
+    display:none;
+    background-image: url(back.gif);
+}
+
+#doneButton {
+    position:absolute;
+    top:65px;
+    left:330px;
+}
+
+#myurl {
+    position:absolute;
+    top:65px;
+    left:15px;
+}
+
+.byeText {
+	font: 18px "Lucida Grande";
+	font-weight: bold;
+	color: white;
+	position: absolute;
+	top:  15px;
+	left: 20px;
+}
+.creditText {
+	font: 14px "Lucida Grande";
+	font-weight: bold;
+	color: white;
+	position: absolute;
+	top:  44px;
+	left: 15px;
+}
+.versionText {
+	font: 14px "Lucida Grande";
+	font-weight: bold;
+	color: white;
+	position: absolute;
+	top:  44px;
+	left: 252px;
+        text-align: center;
+}
+
+  

@@ -2,3 +2,20 @@
 data/cockburn.mat
 data/Oxy.mat
 outputs/
+# --- 1.8 consolidation (2026-09-08) ---
+Thumbs.db
+__pycache__/
+*.pyc
+logs/
+*.pid
+# vendored aed-marvl: keep code, not bundled example results
+marvl/aed-marvl/sources/advanced/sediment_bgc_scripts/results_example/
+marvl/aed-marvl/sources/models/ROMS/toolbox/TUFLOWFV_Matlab_Utilities_001/results/
+# print/scratch outputs
+custom_py/tfv_curtain_panel/outputs_print/
+# figure/output archives and heavy local data (kept on disk, not in git)
+*.rar
+custom_r/*/rlib/
+custom_r/*/data/
+custom_r/*/images/
+custom_py/mesh_refinement/common/data/*.tif
