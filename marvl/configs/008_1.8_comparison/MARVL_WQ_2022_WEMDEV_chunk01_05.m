@@ -1,5 +1,6 @@
-%% 008_1.8_comparison: cloned from 007_1.7_comparison/MARVL_WQ_2013_WEMDEV.m (2026-09-06).
-%% ncfile(1) = the 1.8.0 reference run, single-model vs field data (no 1.7 B-mesh 2013 exists)
+%% auto-chunk vars 1-5
+%% 008_1.8_comparison: cloned from 007_1.7_comparison/MARVL_WQ_2021_WEMDEV.m (2026-09-06).
+%% ncfile(1) = 1.7 baseline (unchanged); ncfile(2) = 1.8.0 reference run
 %% (output_archive/1.8.0). Do NOT run until the 1.8 sims have closed.
 % .*((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((*.%
 %.((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((%
@@ -70,7 +71,7 @@ master.varname = { ...
      'WQ_DIAG_NCS_RESUS','Resuspension Rate'; ...
     'WQ_DIAG_NCS_D_TAUB','Bed Shear Stress'; ...
     'WQ_DIAG_PHY_GPP','GPP'; ...
-        %'WQ_DIAG_OAS_SECCHI','Secchi Depth (m)'; ...
+    %'WQ_DIAG_OAS_SECCHI','Secchi Depth (m)'; ...
     %'WQ_DIAG_TOT_TOC','Total Organic Carbon (mg/L)'; ...
     %'WQ_TRC_AGE','Tracer Age (days)'; ...
     %'WQ_DIAG_NCS_D_TAUB','Bed Shear Stress (N/m^2)'; ...
@@ -95,13 +96,12 @@ master.add_human = 1; % option to use user-define names, if 0 use AED names
 %master.ncfile(1).legend = 'csiem1.6';
 %master.ncfile(1).tag = 'TFV';
 
-% 1.7 never ran 2013 on the B mesh (only A002 2013A). 1.8 set is B-mesh
-% throughout (Matt 2026-09-07), so 2013 runs single-model vs field data.
-%master.ncfile(1).name = 'W:\WAMSI\1.7\SH-20251123-1.7.0\2013A-20251123024141\results\csiem_A002_20121101_20131231_WQ_WQ.nc';  % A-mesh 1.7 (disabled)
-%master.ncfile(1).legend = 'csiem1.7.0';
-master.ncfile(1).name = 'Q:\SEAF-CS\V1.8\MODEL\csiem_model_tfvaed_1.8\output_archive\1.8.0\2013B\csiem_B010_20121101_20131231_WQ_WQ.nc';
-master.ncfile(1).legend = 'csiem1.8.0';
+master.ncfile(1).name = 'W:\WAMSI\1.7\SH-20251123-1.7.0\2022B-20260131015416\results\csiem_B010_20211101_20221231_WQ_WQ.nc';   % B-mesh 1.7 baseline (was 2021A A-mesh; B mesh throughout, Matt 2026-09-07)
+master.ncfile(1).legend = 'csiem1.7.0';
 master.ncfile(1).tag = 'TFV';
+master.ncfile(2).name = 'Q:\SEAF-CS\V1.8\MODEL\csiem_model_tfvaed_1.8\output_archive\1.8.0\2022B\csiem_B010_20211101_20221231_WQ_WQ.nc';
+master.ncfile(2).legend = 'csiem1.8.0';
+master.ncfile(2).tag = 'TFV';
 
 % field data
 master.add_fielddata = 1;
@@ -133,7 +133,7 @@ MARVLs.master = master; clear master;
 % -------------------------------------------------------------------------
 
 timeseries.start_plot_ID = 1;
-timeseries.end_plot_ID = 26;   % = numel(varname); 31 overran the list and crashed after the last variable
+timeseries.end_plot_ID = 5;   % = numel(varname); 31 overran the list and crashed after the last variable
 %timeseries.start_plot_ID = 5;
 %timeseries.end_plot_ID = 5;
 
@@ -180,9 +180,9 @@ timeseries.skills = [1,... % r: regression coefficient (0-1)
     1,... % NRMS: RMSE normalized to mean observation
     1,... % MEF: model efficienty, Nash-Sutcliffe Efficiency
     ];
-timeseries.outputdirectory = '../../outputs/008_1.8_comparison/2013A/RAW/';
-timeseries.htmloutput = '../../outputs/008_1.8_comparison/2013A/HTML/';
-timeseries.ErrFilename = '../../outputs/008_1.8_comparison/2013A/errormatrix.mat';
+timeseries.outputdirectory = '../../outputs/008_1.8_comparison/2022B/RAW/';
+timeseries.htmloutput = '../../outputs/008_1.8_comparison/2022B/HTML/';
+timeseries.ErrFilename = '../../outputs/008_1.8_comparison/2022B/errormatrix_chunk01_05.mat';
 
 timeseries.ncfile(1).symbol = {'-';'-'};
 timeseries.ncfile(1).colour = {[166,86,40]./255;[8,88,158]./255};% Surface and Bottom
@@ -196,7 +196,7 @@ timeseries.ncfile(2).col_pal_color_bot  =[[254,232,200]./255;[252,141,89]./255];
 
 
 % plotting configuration
-timeseries.datearray = datenum(2012,13:25,1); % time period to plot
+timeseries.datearray = datenum(2021,13:25,1); % time period to plot
 timeseries.dateformat = 'dd/mm/yy';
 
 %timeseries.dimc = [0.9 0.9 0.9]; % dimmest (lightest) color
@@ -250,7 +250,7 @@ axis_map = {
 };
 
 % === Apply limits by name; handles duplicates safely ===
-var_codes = MARVLs.master.varname(:,1);   % primera columna: códigos como 'TEMP', 'SAL', etc.
+var_codes = MARVLs.master.varname(:,1);  
 
 for m = 1:size(axis_map,1)
     name = axis_map{m,1};

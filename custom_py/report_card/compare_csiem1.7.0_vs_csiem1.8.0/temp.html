@@ -1,0 +1,548 @@
+<html><head><meta charset='utf-8'><style>body{font-family:Segoe UI,Arial,sans-serif;margin:24px;color:#222}
+h1{font-size:19px}h2{font-size:15px;margin-top:24px}h3{font-size:13px;color:#555}
+table{border-collapse:collapse;margin:6px 0 18px 0;font-size:11.5px}
+th,td{border:1px solid #ccc;padding:3px 8px;text-align:center}
+th{background:#f0f0f0}td.zone{text-align:left}
+.g{background:#c6efce}.y{background:#ffffcc}.r{background:#ffc7ce}.na{color:#bbb}
+.small{font-size:11px;color:#777}.big{font-size:14px;font-weight:bold}</style></head><body><h1>Temperature: csiem1.7.0 → csiem1.8.0</h1>
+<p class="small">cell = baseline → candidate; green improved, yellow unchanged (within tolerance), red degraded. BIAS judged on |BIAS|.</p>
+<h2>2013 (2013A vs 2013B)</h2>
+<h3>MAE — improved 24 / unchanged 4 / degraded 6 (median Δ -0.066)</h3>
+<table><tr><th>Region</th><th>Zone</th><th>csiem1.7.0</th><th>csiem1.8.0</th><th>Δ</th></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_MidWest</td><td>0.18</td><td>0.04</td><td class="g">-0.14</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_NWest</td><td>0.05</td><td>0.05</td><td class="y">+0.00</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_Region</td><td>0.02</td><td>0.01</td><td class="y">-0.01</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_LSEest</td><td>0.16</td><td>0.23</td><td class="r">+0.06</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_LSWest</td><td>0.11</td><td>0.14</td><td class="r">+0.03</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_Leeuwin</td><td>0.08</td><td>0.13</td><td class="r">+0.06</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinMEast</td><td>0.21</td><td>0.08</td><td class="g">-0.13</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinNEast</td><td>0.19</td><td>0.05</td><td class="g">-0.14</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinNWest</td><td>0.27</td><td>0.08</td><td class="g">-0.20</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinSEast</td><td>0.29</td><td>0.08</td><td class="g">-0.21</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinSWest</td><td>0.20</td><td>0.06</td><td class="g">-0.15</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_GIEast</td><td>0.19</td><td>0.02</td><td class="g">-0.17</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Henderson</td><td>0.21</td><td>0.01</td><td class="g">-0.20</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_KSMid</td><td>0.08</td><td>0.03</td><td class="g">-0.05</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_KSSouth</td><td>0.04</td><td>0.07</td><td class="r">+0.03</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Mangles</td><td>0.08</td><td>0.05</td><td class="g">-0.03</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Region</td><td>0.32</td><td>0.18</td><td class="g">-0.15</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_SthFlats</td><td>0.09</td><td>0.04</td><td class="g">-0.05</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Comet_Nwest</td><td>3.49</td><td>3.17</td><td class="g">-0.32</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Comet_Region</td><td>3.24</td><td>2.96</td><td class="g">-0.28</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Kingston</td><td>0.17</td><td>0.07</td><td class="g">-0.10</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_North</td><td>0.06</td><td>0.09</td><td class="r">+0.03</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_Region</td><td>0.11</td><td>0.14</td><td class="r">+0.02</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_South</td><td>0.16</td><td>0.05</td><td class="g">-0.11</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Warnbro</td><td>0.06</td><td>0.01</td><td class="g">-0.05</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">IO_NRSROTT</td><td>0.21</td><td>0.22</td><td class="y">+0.01</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">RI_East</td><td>0.10</td><td>0.04</td><td class="g">-0.06</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">RI_North</td><td>0.14</td><td>0.10</td><td class="g">-0.05</td></tr>
+</table>
+<h3>RMS — improved 25 / unchanged 1 / degraded 8 (median Δ -0.099)</h3>
+<table><tr><th>Region</th><th>Zone</th><th>csiem1.7.0</th><th>csiem1.8.0</th><th>Δ</th></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_MidWest</td><td>0.35</td><td>0.09</td><td class="g">-0.26</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_NWest</td><td>0.13</td><td>0.17</td><td class="r">+0.04</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_Region</td><td>0.09</td><td>0.07</td><td class="g">-0.02</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_LSEest</td><td>0.36</td><td>0.50</td><td class="r">+0.14</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_LSWest</td><td>0.28</td><td>0.37</td><td class="r">+0.09</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_Leeuwin</td><td>0.22</td><td>0.28</td><td class="r">+0.06</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinMEast</td><td>0.27</td><td>0.15</td><td class="g">-0.12</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinNEast</td><td>0.27</td><td>0.10</td><td class="g">-0.16</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinNWest</td><td>0.36</td><td>0.16</td><td class="g">-0.20</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinSEast</td><td>0.35</td><td>0.15</td><td class="g">-0.21</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinSWest</td><td>0.26</td><td>0.12</td><td class="g">-0.14</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_GIEast</td><td>0.28</td><td>0.07</td><td class="g">-0.22</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Henderson</td><td>0.34</td><td>0.05</td><td class="g">-0.30</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_KSMid</td><td>0.17</td><td>0.11</td><td class="g">-0.05</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_KSSouth</td><td>0.13</td><td>0.17</td><td class="r">+0.04</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Mangles</td><td>0.25</td><td>0.20</td><td class="g">-0.06</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Region</td><td>0.78</td><td>0.50</td><td class="g">-0.27</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_SthFlats</td><td>0.23</td><td>0.17</td><td class="g">-0.06</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Comet_Nwest</td><td>4.36</td><td>4.09</td><td class="g">-0.28</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Comet_Region</td><td>4.07</td><td>3.83</td><td class="g">-0.24</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Kingston</td><td>0.38</td><td>0.23</td><td class="g">-0.15</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_North</td><td>0.17</td><td>0.27</td><td class="r">+0.10</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_Region</td><td>0.31</td><td>0.37</td><td class="r">+0.06</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_South</td><td>0.30</td><td>0.11</td><td class="g">-0.19</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Warnbro</td><td>0.14</td><td>0.05</td><td class="g">-0.09</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">IO_NRSROTT</td><td>0.39</td><td>0.42</td><td class="r">+0.03</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">RI_East</td><td>0.22</td><td>0.14</td><td class="g">-0.09</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">RI_North</td><td>0.29</td><td>0.23</td><td class="g">-0.06</td></tr>
+</table>
+<h3>R — improved 2 / unchanged 32 / degraded 0 (median Δ +0.005)</h3>
+<table><tr><th>Region</th><th>Zone</th><th>csiem1.7.0</th><th>csiem1.8.0</th><th>Δ</th></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_MidWest</td><td>0.99</td><td>1.00</td><td class="y">+0.01</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_NWest</td><td>1.00</td><td>1.00</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_Region</td><td>1.00</td><td>1.00</td><td class="y">+0.00</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_LSEest</td><td>1.00</td><td>0.99</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_LSWest</td><td>1.00</td><td>1.00</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_Leeuwin</td><td>1.00</td><td>1.00</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinMEast</td><td>0.98</td><td>0.99</td><td class="y">+0.01</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinNEast</td><td>0.98</td><td>1.00</td><td class="y">+0.01</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinNWest</td><td>0.97</td><td>0.99</td><td class="y">+0.02</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinSEast</td><td>0.98</td><td>0.99</td><td class="y">+0.02</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinSWest</td><td>0.99</td><td>0.99</td><td class="y">+0.01</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_GIEast</td><td>0.97</td><td>1.00</td><td class="y">+0.02</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Henderson</td><td>0.97</td><td>1.00</td><td class="y">+0.03</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_KSMid</td><td>0.99</td><td>0.99</td><td class="y">+0.00</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_KSSouth</td><td>1.00</td><td>1.00</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Mangles</td><td>0.97</td><td>0.98</td><td class="y">+0.01</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Region</td><td>0.97</td><td>0.99</td><td class="y">+0.01</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_SthFlats</td><td>1.00</td><td>1.00</td><td class="y">+0.00</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Comet_Nwest</td><td>0.10</td><td>0.18</td><td class="g">+0.09</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Comet_Region</td><td>0.20</td><td>0.27</td><td class="g">+0.08</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Kingston</td><td>0.98</td><td>0.99</td><td class="y">+0.01</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_North</td><td>1.00</td><td>1.00</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_Region</td><td>0.99</td><td>0.99</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_South</td><td>0.99</td><td>1.00</td><td class="y">+0.01</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Warnbro</td><td>0.99</td><td>1.00</td><td class="y">+0.01</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">IO_NRSROTT</td><td>0.96</td><td>0.96</td><td class="y">-0.01</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">RI_East</td><td>0.99</td><td>1.00</td><td class="y">+0.00</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">RI_North</td><td>0.99</td><td>0.99</td><td class="y">+0.00</td></tr>
+</table>
+<h3>BIAS — improved 26 / unchanged 1 / degraded 7 (median Δ -0.368)</h3>
+<table><tr><th>Region</th><th>Zone</th><th>csiem1.7.0</th><th>csiem1.8.0</th><th>Δ</th></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_MidWest</td><td>-0.78</td><td>0.11</td><td class="g">-0.67</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_NWest</td><td>-0.01</td><td>0.20</td><td class="r">+0.19</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_Region</td><td>-0.06</td><td>-0.04</td><td class="y">-0.02</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_LSEest</td><td>0.21</td><td>0.94</td><td class="r">+0.73</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_LSWest</td><td>-0.10</td><td>0.55</td><td class="r">+0.46</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_Leeuwin</td><td>0.07</td><td>0.66</td><td class="r">+0.59</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinMEast</td><td>-0.89</td><td>-0.31</td><td class="g">-0.58</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinNEast</td><td>-0.82</td><td>-0.20</td><td class="g">-0.62</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinNWest</td><td>-1.17</td><td>-0.33</td><td class="g">-0.84</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinSEast</td><td>-1.22</td><td>-0.32</td><td class="g">-0.90</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinSWest</td><td>-0.88</td><td>-0.24</td><td class="g">-0.64</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_GIEast</td><td>-0.82</td><td>-0.09</td><td class="g">-0.73</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Henderson</td><td>-0.90</td><td>-0.02</td><td class="g">-0.88</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_KSMid</td><td>-0.34</td><td>0.04</td><td class="g">-0.29</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_KSSouth</td><td>-0.04</td><td>0.31</td><td class="r">+0.27</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Mangles</td><td>-0.35</td><td>-0.18</td><td class="g">-0.18</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Region</td><td>-1.27</td><td>-0.12</td><td class="g">-1.15</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_SthFlats</td><td>-0.39</td><td>0.05</td><td class="g">-0.34</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Comet_Nwest</td><td>-11.62</td><td>-10.40</td><td class="g">-1.23</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Comet_Region</td><td>-10.97</td><td>-9.91</td><td class="g">-1.05</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Kingston</td><td>-0.67</td><td>-0.21</td><td class="g">-0.46</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_North</td><td>-0.08</td><td>0.43</td><td class="r">+0.35</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_Region</td><td>0.21</td><td>0.66</td><td class="r">+0.45</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_South</td><td>-0.70</td><td>0.07</td><td class="g">-0.63</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Warnbro</td><td>-0.24</td><td>0.03</td><td class="g">-0.22</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">IO_NRSROTT</td><td>-0.43</td><td>-0.38</td><td class="g">-0.05</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">RI_East</td><td>-0.44</td><td>-0.17</td><td class="g">-0.27</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">RI_North</td><td>-0.63</td><td>-0.19</td><td class="g">-0.44</td></tr>
+</table>
+<h2>2021 (2021B vs 2021B)</h2>
+<h3>MAE — improved 1 / unchanged 6 / degraded 30 (median Δ +0.082)</h3>
+<table><tr><th>Region</th><th>Zone</th><th>csiem1.7.0</th><th>csiem1.8.0</th><th>Δ</th></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_MidWest</td><td>0.26</td><td>0.36</td><td class="r">+0.10</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_Region</td><td>0.03</td><td>0.04</td><td class="y">+0.01</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_SEast</td><td>0.08</td><td>0.09</td><td class="y">+0.01</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_LSEest</td><td>0.19</td><td>0.23</td><td class="r">+0.04</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_LSWest</td><td>0.23</td><td>0.20</td><td class="g">-0.03</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_Leeuwin</td><td>0.14</td><td>0.41</td><td class="r">+0.27</td></tr>
+<tr><td class="zone small">Owen Anchorage</td><td class="zone">OA_FishRocks</td><td>0.05</td><td>0.10</td><td class="r">+0.05</td></tr>
+<tr><td class="zone small">Owen Anchorage</td><td class="zone">OA_Region</td><td>0.04</td><td>0.14</td><td class="r">+0.11</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinMEast</td><td>0.21</td><td>0.31</td><td class="r">+0.11</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinMWest</td><td>0.20</td><td>0.23</td><td class="r">+0.03</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinNEast</td><td>0.21</td><td>0.27</td><td class="r">+0.06</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinNWest</td><td>0.17</td><td>0.30</td><td class="r">+0.13</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinSEast</td><td>0.10</td><td>0.24</td><td class="r">+0.14</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinSWest</td><td>0.14</td><td>0.31</td><td class="r">+0.17</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_GIEast</td><td>0.01</td><td>0.02</td><td class="y">+0.02</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Henderson</td><td>0.08</td><td>0.19</td><td class="r">+0.11</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_KSMid</td><td>0.17</td><td>0.36</td><td class="r">+0.19</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_KSSouth</td><td>0.31</td><td>0.40</td><td class="r">+0.10</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Mangles</td><td>0.04</td><td>0.14</td><td class="r">+0.10</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Minstrel</td><td>0.02</td><td>0.03</td><td class="y">+0.01</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Region</td><td>0.07</td><td>0.23</td><td class="r">+0.15</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_SthFlats</td><td>0.04</td><td>0.14</td><td class="r">+0.10</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Kingston</td><td>0.15</td><td>0.19</td><td class="r">+0.03</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_Region</td><td>0.12</td><td>0.24</td><td class="r">+0.12</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_South</td><td>0.26</td><td>0.50</td><td class="r">+0.24</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Warnbro</td><td>0.06</td><td>0.20</td><td class="r">+0.14</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">IO_0</td><td>0.09</td><td>0.18</td><td class="r">+0.08</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">IO_NRSROTT</td><td>3.33</td><td>3.35</td><td class="y">+0.02</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">Parmelia</td><td>0.09</td><td>0.23</td><td class="r">+0.14</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">RI_East</td><td>0.07</td><td>0.08</td><td class="y">+0.01</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">RI_North</td><td>0.27</td><td>0.30</td><td class="r">+0.03</td></tr>
+</table>
+<h3>RMS — improved 2 / unchanged 6 / degraded 29 (median Δ +0.078)</h3>
+<table><tr><th>Region</th><th>Zone</th><th>csiem1.7.0</th><th>csiem1.8.0</th><th>Δ</th></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_MidWest</td><td>0.42</td><td>0.46</td><td class="r">+0.04</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_Region</td><td>0.08</td><td>0.09</td><td class="y">+0.01</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_SEast</td><td>0.20</td><td>0.17</td><td class="g">-0.03</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_LSEest</td><td>0.53</td><td>0.53</td><td class="y">+0.00</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_LSWest</td><td>0.54</td><td>0.50</td><td class="g">-0.03</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_Leeuwin</td><td>0.36</td><td>0.55</td><td class="r">+0.19</td></tr>
+<tr><td class="zone small">Owen Anchorage</td><td class="zone">OA_FishRocks</td><td>0.12</td><td>0.19</td><td class="r">+0.07</td></tr>
+<tr><td class="zone small">Owen Anchorage</td><td class="zone">OA_Region</td><td>0.12</td><td>0.28</td><td class="r">+0.16</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinMEast</td><td>0.30</td><td>0.46</td><td class="r">+0.16</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinMWest</td><td>0.33</td><td>0.31</td><td class="y">-0.01</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinNEast</td><td>0.33</td><td>0.38</td><td class="r">+0.05</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinNWest</td><td>0.28</td><td>0.42</td><td class="r">+0.14</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinSEast</td><td>0.19</td><td>0.37</td><td class="r">+0.17</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinSWest</td><td>0.25</td><td>0.43</td><td class="r">+0.18</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_GIEast</td><td>0.06</td><td>0.09</td><td class="r">+0.03</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Henderson</td><td>0.18</td><td>0.35</td><td class="r">+0.17</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_KSMid</td><td>0.30</td><td>0.51</td><td class="r">+0.22</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_KSSouth</td><td>0.70</td><td>0.79</td><td class="r">+0.09</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Mangles</td><td>0.12</td><td>0.27</td><td class="r">+0.14</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Minstrel</td><td>0.08</td><td>0.12</td><td class="r">+0.04</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Region</td><td>0.20</td><td>0.37</td><td class="r">+0.17</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_SthFlats</td><td>0.11</td><td>0.27</td><td class="r">+0.16</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Kingston</td><td>0.33</td><td>0.35</td><td class="r">+0.02</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_Region</td><td>0.27</td><td>0.45</td><td class="r">+0.18</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_South</td><td>0.45</td><td>0.71</td><td class="r">+0.26</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Warnbro</td><td>0.14</td><td>0.33</td><td class="r">+0.20</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">IO_0</td><td>0.16</td><td>0.25</td><td class="r">+0.09</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">IO_NRSROTT</td><td>6.76</td><td>6.78</td><td class="y">+0.02</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">Parmelia</td><td>0.19</td><td>0.34</td><td class="r">+0.15</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">RI_East</td><td>0.19</td><td>0.20</td><td class="y">+0.01</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">RI_North</td><td>0.51</td><td>0.53</td><td class="y">+0.02</td></tr>
+</table>
+<h3>R — improved 0 / unchanged 36 / degraded 1 (median Δ -0.002)</h3>
+<table><tr><th>Region</th><th>Zone</th><th>csiem1.7.0</th><th>csiem1.8.0</th><th>Δ</th></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_MidWest</td><td>1.00</td><td>1.00</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_Region</td><td>1.00</td><td>1.00</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_SEast</td><td>1.00</td><td>1.00</td><td class="y">+0.00</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_LSEest</td><td>0.99</td><td>0.99</td><td class="y">+0.00</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_LSWest</td><td>0.99</td><td>0.99</td><td class="y">+0.00</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_Leeuwin</td><td>0.99</td><td>0.99</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">Owen Anchorage</td><td class="zone">OA_FishRocks</td><td>0.99</td><td>0.98</td><td class="y">-0.01</td></tr>
+<tr><td class="zone small">Owen Anchorage</td><td class="zone">OA_Region</td><td>1.00</td><td>0.98</td><td class="y">-0.02</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinMEast</td><td>1.00</td><td>1.00</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinMWest</td><td>0.92</td><td>0.90</td><td class="y">-0.02</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinNEast</td><td>1.00</td><td>1.00</td><td class="y">+0.00</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinNWest</td><td>0.99</td><td>0.99</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinSEast</td><td>1.00</td><td>1.00</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinSWest</td><td>1.00</td><td>1.00</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_GIEast</td><td>1.00</td><td>1.00</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Henderson</td><td>1.00</td><td>0.99</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_KSMid</td><td>1.00</td><td>1.00</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_KSSouth</td><td>0.97</td><td>0.97</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Mangles</td><td>1.00</td><td>0.99</td><td class="y">-0.01</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Minstrel</td><td>0.99</td><td>0.98</td><td class="y">-0.01</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Region</td><td>1.00</td><td>1.00</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_SthFlats</td><td>1.00</td><td>1.00</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Kingston</td><td>0.98</td><td>0.98</td><td class="y">+0.00</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_Region</td><td>1.00</td><td>0.99</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_South</td><td>0.99</td><td>0.99</td><td class="y">-0.01</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Warnbro</td><td>1.00</td><td>1.00</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">IO_0</td><td>0.93</td><td>0.87</td><td class="r">-0.06</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">IO_NRSROTT</td><td>0.19</td><td>0.18</td><td class="y">-0.01</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">Parmelia</td><td>0.99</td><td>0.97</td><td class="y">-0.02</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">RI_East</td><td>0.99</td><td>0.99</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">RI_North</td><td>0.97</td><td>0.97</td><td class="y">+0.00</td></tr>
+</table>
+<h3>BIAS — improved 3 / unchanged 1 / degraded 33 (median Δ +0.451)</h3>
+<table><tr><th>Region</th><th>Zone</th><th>csiem1.7.0</th><th>csiem1.8.0</th><th>Δ</th></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_MidWest</td><td>-0.79</td><td>-0.17</td><td class="g">-0.62</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_Region</td><td>0.14</td><td>0.21</td><td class="r">+0.07</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_SEast</td><td>-0.40</td><td>0.04</td><td class="g">-0.35</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_LSEest</td><td>0.69</td><td>1.03</td><td class="r">+0.34</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_LSWest</td><td>0.55</td><td>0.80</td><td class="r">+0.24</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_Leeuwin</td><td>-0.14</td><td>2.01</td><td class="r">+1.87</td></tr>
+<tr><td class="zone small">Owen Anchorage</td><td class="zone">OA_FishRocks</td><td>0.22</td><td>0.45</td><td class="r">+0.24</td></tr>
+<tr><td class="zone small">Owen Anchorage</td><td class="zone">OA_Region</td><td>0.17</td><td>0.71</td><td class="r">+0.54</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinMEast</td><td>0.18</td><td>1.20</td><td class="r">+1.02</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinMWest</td><td>-0.80</td><td>0.11</td><td class="g">-0.69</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinNEast</td><td>-0.35</td><td>0.77</td><td class="r">+0.43</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinNWest</td><td>-0.10</td><td>1.25</td><td class="r">+1.15</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinSEast</td><td>0.12</td><td>1.11</td><td class="r">+0.99</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinSWest</td><td>0.25</td><td>1.30</td><td class="r">+1.05</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_GIEast</td><td>-0.02</td><td>0.09</td><td class="r">+0.07</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Henderson</td><td>0.32</td><td>0.90</td><td class="r">+0.58</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_KSMid</td><td>0.79</td><td>1.82</td><td class="r">+1.03</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_KSSouth</td><td>0.66</td><td>1.40</td><td class="r">+0.74</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Mangles</td><td>0.14</td><td>0.68</td><td class="r">+0.54</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Minstrel</td><td>0.00</td><td>0.13</td><td class="r">+0.13</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Region</td><td>0.31</td><td>1.12</td><td class="r">+0.81</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_SthFlats</td><td>0.18</td><td>0.71</td><td class="r">+0.54</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Kingston</td><td>0.37</td><td>0.70</td><td class="r">+0.32</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_Region</td><td>0.53</td><td>1.22</td><td class="r">+0.69</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_South</td><td>1.32</td><td>2.55</td><td class="r">+1.23</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Warnbro</td><td>0.28</td><td>0.99</td><td class="r">+0.71</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">IO_0</td><td>0.51</td><td>0.96</td><td class="r">+0.45</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">IO_NRSROTT</td><td>17.03</td><td>17.16</td><td class="y">+0.13</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">Parmelia</td><td>-0.06</td><td>0.90</td><td class="r">+0.85</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">RI_East</td><td>-0.05</td><td>0.16</td><td class="r">+0.11</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">RI_North</td><td>0.63</td><td>0.97</td><td class="r">+0.35</td></tr>
+</table>
+<h2>2015 (2015A vs 2015B)</h2>
+<h3>MAE — improved 22 / unchanged 5 / degraded 4 (median Δ -0.076)</h3>
+<table><tr><th>Region</th><th>Zone</th><th>csiem1.7.0</th><th>csiem1.8.0</th><th>Δ</th></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_LSEest</td><td>0.21</td><td>0.29</td><td class="r">+0.08</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_LSWest</td><td>0.17</td><td>0.18</td><td class="y">+0.01</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_Leeuwin</td><td>0.09</td><td>0.25</td><td class="r">+0.16</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinMEast</td><td>0.39</td><td>0.24</td><td class="g">-0.15</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinNEast</td><td>0.39</td><td>0.21</td><td class="g">-0.18</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinNWest</td><td>0.41</td><td>0.19</td><td class="g">-0.22</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinSEast</td><td>0.63</td><td>0.25</td><td class="g">-0.38</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinSWest</td><td>0.35</td><td>0.19</td><td class="g">-0.16</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_GIEast</td><td>0.30</td><td>0.03</td><td class="g">-0.27</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Henderson</td><td>0.30</td><td>0.01</td><td class="g">-0.28</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_KSMid</td><td>0.12</td><td>0.06</td><td class="g">-0.06</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_KSSouth</td><td>0.18</td><td>0.01</td><td class="g">-0.17</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Mangles</td><td>0.16</td><td>0.05</td><td class="g">-0.11</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Region</td><td>1.30</td><td>0.87</td><td class="g">-0.43</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_SthFlats</td><td>0.46</td><td>0.28</td><td class="g">-0.18</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Comet_Nwest</td><td>0.28</td><td>0.32</td><td class="r">+0.03</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Comet_Region</td><td>0.25</td><td>0.32</td><td class="r">+0.08</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Kingston</td><td>0.16</td><td>0.07</td><td class="g">-0.09</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_North</td><td>0.10</td><td>0.11</td><td class="y">+0.01</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_Region</td><td>0.19</td><td>0.20</td><td class="y">+0.01</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_South</td><td>0.16</td><td>0.01</td><td class="g">-0.15</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Warnbro</td><td>0.12</td><td>0.02</td><td class="g">-0.10</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">IO_0</td><td>0.43</td><td>0.01</td><td class="g">-0.42</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">IO_NRSROTT</td><td>0.31</td><td>0.30</td><td class="y">-0.01</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">RI_East</td><td>0.13</td><td>0.07</td><td class="g">-0.06</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">RI_North</td><td>0.17</td><td>0.11</td><td class="g">-0.06</td></tr>
+</table>
+<h3>RMS — improved 22 / unchanged 2 / degraded 7 (median Δ -0.089)</h3>
+<table><tr><th>Region</th><th>Zone</th><th>csiem1.7.0</th><th>csiem1.8.0</th><th>Δ</th></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_LSEest</td><td>0.53</td><td>0.63</td><td class="r">+0.10</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_LSWest</td><td>0.44</td><td>0.48</td><td class="r">+0.05</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_Leeuwin</td><td>0.26</td><td>0.41</td><td class="r">+0.16</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinMEast</td><td>0.47</td><td>0.36</td><td class="g">-0.11</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinNEast</td><td>0.48</td><td>0.34</td><td class="g">-0.14</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinNWest</td><td>0.54</td><td>0.34</td><td class="g">-0.20</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinSEast</td><td>0.66</td><td>0.35</td><td class="g">-0.31</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinSWest</td><td>0.42</td><td>0.36</td><td class="g">-0.06</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_GIEast</td><td>0.43</td><td>0.10</td><td class="g">-0.33</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Henderson</td><td>0.44</td><td>0.07</td><td class="g">-0.38</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_KSMid</td><td>0.22</td><td>0.21</td><td class="y">-0.01</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_KSSouth</td><td>0.32</td><td>0.06</td><td class="g">-0.25</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Mangles</td><td>0.27</td><td>0.15</td><td class="g">-0.11</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Region</td><td>2.27</td><td>1.75</td><td class="g">-0.52</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_SthFlats</td><td>0.92</td><td>0.70</td><td class="g">-0.23</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Comet_Nwest</td><td>0.46</td><td>0.53</td><td class="r">+0.07</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Comet_Region</td><td>0.42</td><td>0.54</td><td class="r">+0.12</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Kingston</td><td>0.28</td><td>0.17</td><td class="g">-0.11</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_North</td><td>0.26</td><td>0.28</td><td class="r">+0.02</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_Region</td><td>0.38</td><td>0.42</td><td class="r">+0.04</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_South</td><td>0.27</td><td>0.05</td><td class="g">-0.22</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Warnbro</td><td>0.20</td><td>0.08</td><td class="g">-0.12</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">IO_0</td><td>0.65</td><td>0.02</td><td class="g">-0.62</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">IO_NRSROTT</td><td>0.52</td><td>0.49</td><td class="g">-0.03</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">RI_East</td><td>0.26</td><td>0.19</td><td class="g">-0.07</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">RI_North</td><td>0.32</td><td>0.25</td><td class="g">-0.07</td></tr>
+</table>
+<h3>R — improved 2 / unchanged 29 / degraded 0 (median Δ +0.006)</h3>
+<table><tr><th>Region</th><th>Zone</th><th>csiem1.7.0</th><th>csiem1.8.0</th><th>Δ</th></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_LSEest</td><td>0.99</td><td>0.99</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_LSWest</td><td>0.99</td><td>0.99</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_Leeuwin</td><td>1.00</td><td>0.99</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinMEast</td><td>0.97</td><td>0.96</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinNEast</td><td>0.97</td><td>0.97</td><td class="y">+0.00</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinNWest</td><td>0.94</td><td>0.96</td><td class="y">+0.02</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinSEast</td><td>0.98</td><td>0.97</td><td class="y">-0.01</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinSWest</td><td>0.97</td><td>0.95</td><td class="y">-0.02</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_GIEast</td><td>0.95</td><td>1.00</td><td class="y">+0.05</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Henderson</td><td>0.96</td><td>1.00</td><td class="y">+0.04</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_KSMid</td><td>0.99</td><td>0.98</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_KSSouth</td><td>0.94</td><td>1.00</td><td class="g">+0.05</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Mangles</td><td>0.97</td><td>0.99</td><td class="y">+0.01</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Region</td><td>0.66</td><td>0.75</td><td class="g">+0.10</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_SthFlats</td><td>0.95</td><td>0.97</td><td class="y">+0.02</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Comet_Nwest</td><td>0.99</td><td>0.99</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Comet_Region</td><td>0.99</td><td>0.99</td><td class="y">-0.01</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Kingston</td><td>0.98</td><td>0.99</td><td class="y">+0.01</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_North</td><td>1.00</td><td>1.00</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_Region</td><td>0.99</td><td>0.99</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_South</td><td>0.99</td><td>1.00</td><td class="y">+0.01</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Warnbro</td><td>0.99</td><td>1.00</td><td class="y">+0.01</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">IO_0</td><td>0.96</td><td>1.00</td><td class="y">+0.04</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">IO_NRSROTT</td><td>0.93</td><td>0.93</td><td class="y">+0.01</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">RI_East</td><td>0.98</td><td>0.99</td><td class="y">+0.01</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">RI_North</td><td>0.98</td><td>0.98</td><td class="y">+0.01</td></tr>
+</table>
+<h3>BIAS — improved 24 / unchanged 0 / degraded 7 (median Δ -0.444)</h3>
+<table><tr><th>Region</th><th>Zone</th><th>csiem1.7.0</th><th>csiem1.8.0</th><th>Δ</th></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_LSEest</td><td>0.71</td><td>1.33</td><td class="r">+0.61</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_LSWest</td><td>0.33</td><td>0.71</td><td class="r">+0.38</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_Leeuwin</td><td>0.20</td><td>1.26</td><td class="r">+1.06</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinMEast</td><td>-1.68</td><td>-1.03</td><td class="g">-0.66</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinNEast</td><td>-1.70</td><td>-0.91</td><td class="g">-0.79</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinNWest</td><td>-1.79</td><td>-0.83</td><td class="g">-0.96</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinSEast</td><td>-2.70</td><td>-1.07</td><td class="g">-1.63</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinSWest</td><td>-1.52</td><td>-0.81</td><td class="g">-0.71</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_GIEast</td><td>-1.29</td><td>-0.12</td><td class="g">-1.17</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Henderson</td><td>-1.27</td><td>-0.05</td><td class="g">-1.22</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_KSMid</td><td>-0.53</td><td>-0.26</td><td class="g">-0.27</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_KSSouth</td><td>-0.79</td><td>-0.03</td><td class="g">-0.76</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Mangles</td><td>-0.68</td><td>-0.20</td><td class="g">-0.48</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Region</td><td>-5.64</td><td>-3.50</td><td class="g">-2.14</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_SthFlats</td><td>-2.22</td><td>-1.28</td><td class="g">-0.94</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Comet_Nwest</td><td>-0.49</td><td>0.56</td><td class="r">+0.07</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Comet_Region</td><td>-0.65</td><td>0.45</td><td class="g">-0.20</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Kingston</td><td>-0.58</td><td>-0.12</td><td class="g">-0.47</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_North</td><td>-0.34</td><td>0.45</td><td class="r">+0.11</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_Region</td><td>0.08</td><td>0.85</td><td class="r">+0.77</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_South</td><td>-0.71</td><td>-0.04</td><td class="g">-0.67</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Warnbro</td><td>-0.51</td><td>-0.08</td><td class="g">-0.43</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">IO_0</td><td>-2.07</td><td>-0.03</td><td class="g">-2.04</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">IO_NRSROTT</td><td>-0.32</td><td>-0.37</td><td class="r">+0.04</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">RI_East</td><td>-0.58</td><td>-0.28</td><td class="g">-0.30</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">RI_North</td><td>-0.71</td><td>-0.25</td><td class="g">-0.45</td></tr>
+</table>
+<h2>2022 (2022B vs 2022B)</h2>
+<h3>MAE — improved 3 / unchanged 3 / degraded 40 (median Δ +0.123)</h3>
+<table><tr><th>Region</th><th>Zone</th><th>csiem1.7.0</th><th>csiem1.8.0</th><th>Δ</th></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">Freo_Port</td><td>0.04</td><td>0.28</td><td class="r">+0.24</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_MidWest</td><td>0.32</td><td>0.39</td><td class="r">+0.07</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_Region</td><td>0.06</td><td>0.22</td><td class="r">+0.16</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_SEast</td><td>0.24</td><td>0.33</td><td class="r">+0.09</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_SWest</td><td>0.38</td><td>0.37</td><td class="y">-0.01</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_LSEest</td><td>0.13</td><td>0.17</td><td class="r">+0.04</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_LSWest</td><td>0.12</td><td>0.08</td><td class="g">-0.04</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_Leeuwin</td><td>0.07</td><td>0.35</td><td class="r">+0.29</td></tr>
+<tr><td class="zone small">Owen Anchorage</td><td class="zone">OA_East</td><td>0.06</td><td>0.22</td><td class="r">+0.15</td></tr>
+<tr><td class="zone small">Owen Anchorage</td><td class="zone">OA_FishRocks</td><td>0.13</td><td>0.30</td><td class="r">+0.17</td></tr>
+<tr><td class="zone small">Owen Anchorage</td><td class="zone">OA_Region</td><td>0.13</td><td>0.29</td><td class="r">+0.16</td></tr>
+<tr><td class="zone small">Owen Anchorage</td><td class="zone">OA_West</td><td>0.13</td><td>0.24</td><td class="r">+0.11</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinMEast</td><td>0.12</td><td>0.35</td><td class="r">+0.23</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinMWest</td><td>0.73</td><td>0.47</td><td class="g">-0.26</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinNEast</td><td>0.14</td><td>0.24</td><td class="r">+0.10</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinNWest</td><td>0.58</td><td>0.39</td><td class="g">-0.19</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinSEast</td><td>0.18</td><td>0.40</td><td class="r">+0.22</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinSWest</td><td>0.17</td><td>0.33</td><td class="r">+0.16</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_GIEast</td><td>0.04</td><td>0.06</td><td class="r">+0.02</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Henderson</td><td>0.12</td><td>0.34</td><td class="r">+0.22</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_KSMid</td><td>0.15</td><td>0.36</td><td class="r">+0.22</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_KSSouth</td><td>0.17</td><td>0.34</td><td class="r">+0.17</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Mangles</td><td>0.20</td><td>0.39</td><td class="r">+0.18</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Minstrel</td><td>0.10</td><td>0.26</td><td class="r">+0.16</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Region</td><td>0.10</td><td>0.24</td><td class="r">+0.14</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_SthFlats</td><td>0.07</td><td>0.14</td><td class="r">+0.08</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Kingston</td><td>0.18</td><td>0.22</td><td class="r">+0.04</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_North</td><td>0.15</td><td>0.33</td><td class="r">+0.18</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_Region</td><td>0.14</td><td>0.26</td><td class="r">+0.12</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_South</td><td>0.20</td><td>0.45</td><td class="r">+0.25</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Warnbro</td><td>0.07</td><td>0.21</td><td class="r">+0.13</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">Carnac</td><td>0.13</td><td>0.33</td><td class="r">+0.21</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">IO_NRSROTT</td><td>2.67</td><td>2.74</td><td class="y">+0.07</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">Mewstone</td><td>0.09</td><td>0.24</td><td class="r">+0.16</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">Parmelia</td><td>0.26</td><td>0.39</td><td class="r">+0.13</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">RI_East</td><td>0.11</td><td>0.12</td><td class="y">+0.01</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">RI_North</td><td>0.38</td><td>0.42</td><td class="r">+0.03</td></tr>
+</table>
+<h3>RMS — improved 4 / unchanged 2 / degraded 40 (median Δ +0.156)</h3>
+<table><tr><th>Region</th><th>Zone</th><th>csiem1.7.0</th><th>csiem1.8.0</th><th>Δ</th></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">Freo_Port</td><td>0.12</td><td>0.40</td><td class="r">+0.27</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_MidWest</td><td>0.54</td><td>0.58</td><td class="r">+0.04</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_Region</td><td>0.14</td><td>0.35</td><td class="r">+0.21</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_SEast</td><td>0.45</td><td>0.54</td><td class="r">+0.08</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_SWest</td><td>0.64</td><td>0.53</td><td class="g">-0.10</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_LSEest</td><td>0.35</td><td>0.38</td><td class="r">+0.03</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_LSWest</td><td>0.34</td><td>0.23</td><td class="g">-0.11</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_Leeuwin</td><td>0.24</td><td>0.51</td><td class="r">+0.28</td></tr>
+<tr><td class="zone small">Owen Anchorage</td><td class="zone">OA_East</td><td>0.13</td><td>0.33</td><td class="r">+0.20</td></tr>
+<tr><td class="zone small">Owen Anchorage</td><td class="zone">OA_FishRocks</td><td>0.27</td><td>0.46</td><td class="r">+0.19</td></tr>
+<tr><td class="zone small">Owen Anchorage</td><td class="zone">OA_Region</td><td>0.27</td><td>0.46</td><td class="r">+0.19</td></tr>
+<tr><td class="zone small">Owen Anchorage</td><td class="zone">OA_West</td><td>0.23</td><td>0.39</td><td class="r">+0.16</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinMEast</td><td>0.25</td><td>0.41</td><td class="r">+0.16</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinMWest</td><td>0.79</td><td>0.56</td><td class="g">-0.23</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinNEast</td><td>0.25</td><td>0.34</td><td class="r">+0.09</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinNWest</td><td>0.68</td><td>0.50</td><td class="g">-0.18</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinSEast</td><td>0.31</td><td>0.48</td><td class="r">+0.17</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinSWest</td><td>0.29</td><td>0.47</td><td class="r">+0.18</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_GIEast</td><td>0.17</td><td>0.23</td><td class="r">+0.05</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Henderson</td><td>0.27</td><td>0.51</td><td class="r">+0.24</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_KSMid</td><td>0.25</td><td>0.48</td><td class="r">+0.23</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_KSSouth</td><td>0.35</td><td>0.52</td><td class="r">+0.17</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Mangles</td><td>0.42</td><td>0.62</td><td class="r">+0.20</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Minstrel</td><td>0.20</td><td>0.41</td><td class="r">+0.21</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Region</td><td>0.26</td><td>0.43</td><td class="r">+0.17</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_SthFlats</td><td>0.21</td><td>0.32</td><td class="r">+0.11</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Kingston</td><td>0.35</td><td>0.39</td><td class="r">+0.04</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_North</td><td>0.31</td><td>0.51</td><td class="r">+0.21</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_Region</td><td>0.28</td><td>0.46</td><td class="r">+0.18</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_South</td><td>0.30</td><td>0.58</td><td class="r">+0.28</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Warnbro</td><td>0.16</td><td>0.34</td><td class="r">+0.18</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">Carnac</td><td>0.23</td><td>0.51</td><td class="r">+0.28</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">IO_NRSROTT</td><td>6.44</td><td>6.49</td><td class="y">+0.04</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">Mewstone</td><td>0.18</td><td>0.38</td><td class="r">+0.21</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">Parmelia</td><td>0.40</td><td>0.54</td><td class="r">+0.14</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">RI_East</td><td>0.25</td><td>0.26</td><td class="y">+0.01</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">RI_North</td><td>0.64</td><td>0.67</td><td class="r">+0.03</td></tr>
+</table>
+<h3>R — improved 0 / unchanged 44 / degraded 2 (median Δ -0.003)</h3>
+<table><tr><th>Region</th><th>Zone</th><th>csiem1.7.0</th><th>csiem1.8.0</th><th>Δ</th></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">Freo_Port</td><td>1.00</td><td>0.99</td><td class="y">-0.01</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_MidWest</td><td>0.97</td><td>0.98</td><td class="y">+0.01</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_Region</td><td>1.00</td><td>0.99</td><td class="y">-0.01</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_SEast</td><td>0.99</td><td>0.99</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_SWest</td><td>0.96</td><td>0.98</td><td class="y">+0.02</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_LSEest</td><td>1.00</td><td>1.00</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_LSWest</td><td>1.00</td><td>1.00</td><td class="y">+0.00</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_Leeuwin</td><td>1.00</td><td>0.99</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">Owen Anchorage</td><td class="zone">OA_East</td><td>1.00</td><td>1.00</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">Owen Anchorage</td><td class="zone">OA_FishRocks</td><td>1.00</td><td>0.99</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">Owen Anchorage</td><td class="zone">OA_Region</td><td>1.00</td><td>0.99</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">Owen Anchorage</td><td class="zone">OA_West</td><td>1.00</td><td>1.00</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinMEast</td><td>1.00</td><td>0.99</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinMWest</td><td>0.76</td><td>0.74</td><td class="y">-0.02</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinNEast</td><td>0.99</td><td>0.99</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinNWest</td><td>0.99</td><td>0.99</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinSEast</td><td>1.00</td><td>0.99</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinSWest</td><td>1.00</td><td>0.99</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_GIEast</td><td>1.00</td><td>1.00</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Henderson</td><td>1.00</td><td>0.99</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_KSMid</td><td>1.00</td><td>0.99</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_KSSouth</td><td>0.99</td><td>0.99</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Mangles</td><td>0.99</td><td>0.99</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Minstrel</td><td>0.89</td><td>0.45</td><td class="r">-0.44</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Region</td><td>1.00</td><td>1.00</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_SthFlats</td><td>1.00</td><td>1.00</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Kingston</td><td>0.99</td><td>0.99</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_North</td><td>0.99</td><td>0.99</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_Region</td><td>1.00</td><td>0.99</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_South</td><td>1.00</td><td>0.99</td><td class="y">-0.01</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Warnbro</td><td>1.00</td><td>1.00</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">Carnac</td><td>1.00</td><td>0.99</td><td class="y">-0.01</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">IO_NRSROTT</td><td>0.06</td><td>0.00</td><td class="r">-0.06</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">Mewstone</td><td>1.00</td><td>0.99</td><td class="y">-0.01</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">Parmelia</td><td>1.00</td><td>0.99</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">RI_East</td><td>0.99</td><td>0.99</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">RI_North</td><td>0.96</td><td>0.96</td><td class="y">-0.00</td></tr>
+</table>
+<h3>BIAS — improved 2 / unchanged 2 / degraded 42 (median Δ +0.768)</h3>
+<table><tr><th>Region</th><th>Zone</th><th>csiem1.7.0</th><th>csiem1.8.0</th><th>Δ</th></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">Freo_Port</td><td>0.23</td><td>1.48</td><td class="r">+1.25</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_MidWest</td><td>0.99</td><td>1.68</td><td class="r">+0.68</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_Region</td><td>0.29</td><td>1.14</td><td class="r">+0.85</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_SEast</td><td>1.00</td><td>1.64</td><td class="r">+0.64</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">GR_SWest</td><td>-0.12</td><td>0.91</td><td class="r">+0.80</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_LSEest</td><td>0.29</td><td>0.63</td><td class="r">+0.34</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_LSWest</td><td>-0.09</td><td>0.08</td><td class="y">-0.00</td></tr>
+<tr><td class="zone small">North (Gage Rds/Freo)</td><td class="zone">SCE_Leeuwin</td><td>-0.15</td><td>1.78</td><td class="r">+1.63</td></tr>
+<tr><td class="zone small">Owen Anchorage</td><td class="zone">OA_East</td><td>0.32</td><td>1.09</td><td class="r">+0.76</td></tr>
+<tr><td class="zone small">Owen Anchorage</td><td class="zone">OA_FishRocks</td><td>0.56</td><td>1.47</td><td class="r">+0.91</td></tr>
+<tr><td class="zone small">Owen Anchorage</td><td class="zone">OA_Region</td><td>0.48</td><td>1.33</td><td class="r">+0.85</td></tr>
+<tr><td class="zone small">Owen Anchorage</td><td class="zone">OA_West</td><td>0.20</td><td>0.98</td><td class="r">+0.79</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinMEast</td><td>-0.15</td><td>1.29</td><td class="r">+1.13</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinMWest</td><td>-3.01</td><td>-1.94</td><td class="g">-1.08</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinNEast</td><td>-0.09</td><td>0.85</td><td class="r">+0.76</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinNWest</td><td>-2.38</td><td>-1.22</td><td class="g">-1.17</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinSEast</td><td>0.10</td><td>1.55</td><td class="r">+1.45</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_BasinSWest</td><td>0.26</td><td>1.36</td><td class="r">+1.10</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_GIEast</td><td>0.03</td><td>0.25</td><td class="r">+0.21</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Henderson</td><td>0.56</td><td>1.67</td><td class="r">+1.10</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_KSMid</td><td>0.62</td><td>1.77</td><td class="r">+1.15</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_KSSouth</td><td>0.64</td><td>1.59</td><td class="r">+0.95</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Mangles</td><td>0.86</td><td>1.87</td><td class="r">+1.01</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Minstrel</td><td>0.55</td><td>1.45</td><td class="r">+0.90</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_Region</td><td>0.41</td><td>1.18</td><td class="r">+0.77</td></tr>
+<tr><td class="zone small">Cockburn Sound</td><td class="zone">CS_SthFlats</td><td>0.15</td><td>0.62</td><td class="r">+0.48</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Kingston</td><td>0.32</td><td>0.66</td><td class="r">+0.35</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_North</td><td>0.78</td><td>1.72</td><td class="r">+0.94</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_Region</td><td>0.62</td><td>1.26</td><td class="r">+0.65</td></tr>
+<tr><td class="zone small">South</td><td class="zone">SW_South</td><td>1.05</td><td>2.38</td><td class="r">+1.33</td></tr>
+<tr><td class="zone small">South</td><td class="zone">Warnbro</td><td>0.34</td><td>1.04</td><td class="r">+0.69</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">Carnac</td><td>0.68</td><td>1.78</td><td class="r">+1.10</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">IO_NRSROTT</td><td>10.26</td><td>10.15</td><td class="y">-0.11</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">Mewstone</td><td>0.45</td><td>1.29</td><td class="r">+0.84</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">Parmelia</td><td>0.03</td><td>1.20</td><td class="r">+1.16</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">RI_East</td><td>-0.09</td><td>0.16</td><td class="r">+0.06</td></tr>
+<tr><td class="zone small">West/offshore</td><td class="zone">RI_North</td><td>0.93</td><td>1.28</td><td class="r">+0.35</td></tr>
+</table></body></html>

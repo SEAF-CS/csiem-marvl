@@ -1,0 +1,260 @@
+# MARVL.log — sims × assessments ledger
+# Append-only record of which simulations have been run through which
+# assessments, with status and headline results. Newest entries at the BOTTOM.
+# Campaign detail / conventions: custom_py/validation/STATUS_1.8.md
+# Assessment outputs: years/<year>/outputs/... (python) · marvl/outputs/008_* (MARVL)
+
+=====================================================================
+CURRENT STATE (updated 2026-09-15)
+=====================================================================
+sim    | model  | TransectA | maps T/S | panels | MARVL (008)   | notes
+-------|--------|-----------|----------|--------|---------------|---------------------------
+2013B  | 1.8.0  | DONE ok   | n/a*     | DONE   | DONE (all 26 vars) | scatter DONE
+2021B  | 1.8.0  | DONE ok   | DONE T+S | DONE   | DONE all 26 vars; stats pass running | sim DONE 09-Sep ~02:35
+2015A  | 1.8.0  | -         | -        | -      | -             | fvc verified ready to fire
+2015B  | 1.8.0  | DONE ok   | n/a      | DONE   | DONE (26 vars) | scatter DONE
+2022B  | 1.8.0  | DONE ok   | running  | DONE   | DONE (26 vars + stats) | scatter DONE
+2020B  | 1.8.0  | -         | -        | -      | -             | NEW fvc pair built 13-Sep (WRF-forced; static-SST caveat); ready
+2023B  | 1.8.0  | -         | -        | -      | -             | fvc verified ready (17-month window Nov22-Mar24; WRF static-SST caveat)
+(*2013: kriged maps not wanted — too little field data that year)
+
+=====================================================================
+ENTRIES
+=====================================================================
+
+[2026-09-05] 1.8 reference sims LAUNCHED on H100 VM: 2013B WQ + 2021B WQ
+  (csiem_B010_20121101_20131231_WQ, csiem_B010_20201101_20211231_WQ), first
+  full runs of the committed 1.8 canonical-physics setup.
+
+[2026-09-07] PLUMBING TESTS on mid-run 2021B NC copies (output_archive/_test,
+  MODEL_VER=1.8.0-test — data only to ~04-Jun-2021, figures not meaningful):
+  - TransectA 2021B: PASS (12 windows; engine silently clamps windows beyond
+    file coverage — fine for complete runs).
+  - Kriged maps T + S 2021B: PASS. Station panels 2021B: PASS.
+  - MARVL timeseries (MLAU-zone polygon, 26 vars): 2 library bugs found+fixed —
+    (1) polygon_file relative path → absolute; (2) aed-marvl version skew in
+    marvl_plot_timeseries.m agency-info call (crash on IMOS dynamic sizing).
+
+[2026-09-08] Decisions: maps = T+S only (no density; σt stays in TransectA);
+  MARVL baselines B-mesh throughout (2021: 1.7-2021B vs 1.8-2021B like-mesh;
+  2013: single-model 1.8 vs obs — no 1.7 B-mesh 2013 exists).
+
+[2026-09-09 ~02:35] SIM COMPLETE: 2021B WQ — full period Nov-2020→Dec-2021,
+  clean exit, no errors, 92.9 h wall.
+
+[2026-09-09 ~04:00] SIM COMPLETE: 2013B WQ — full period Nov-2012→Dec-2013,
+  clean exit.
+
+[2026-09-09 ~03:05] REAL VALIDATION LAUNCHED (MODEL_VER=1.8.0, final NCs):
+  python suite (TransectA 2021B→maps T→maps S→panels 2021→TransectA 2013B→
+  panels 2013) + MARVL 008 (2021B then 2013B, sequential).
+
+[2026-09-09 ~03:10] RESULT — TransectA 2021B (1.8.0), 12 windows:
+  T bias −0.46..+1.18 °C (|T|≤0.5 for 8/12 windows; worst Oct +1.18);
+  S bias −0.45..+0.56 psu (winter salty lean +0.4–0.6 Jul–Nov);
+  σt bias within ±0.35. Figures: years/2021/outputs/transectA/.
+  (1.7 comparison table possible via MODEL_VER=1.7 re-run — not yet done.)
+
+[2026-09-09 ~11:20] MARVL 2021B FAILED: MATLAB Out of memory at variable 9/26
+  (WQ_NIT_NIT) in marvl_getmodeldatapolygon_quick — the two-model comparison
+  (1.7 + 1.8 NCs) doubles the footprint vs the single-model 007 runs.
+  RECOVERY: chunked configs MARVL_WQ_2021_WEMDEV_chunk*.m (vars 1-5/6-10/
+  11-15/16-20/21-26), fresh MATLAB per chunk; queued behind MARVL 2013B
+  (single-model, running, currently on var 1). NB config plot IDs 27-31
+  exceed the 26-var list — chunks stop at 26.
+
+[2026-09-09 ~11:40] Kriged maps 2021B T STALLED 8 h (hung during the MARVL
+  memory squeeze; python alive but no progress since 03:10) — killed and
+  python suite relaunched with light steps first: TransectA 2013B → panels
+  2013 → panels 2021 → maps T → maps S.
+
+[2026-09-09 ~12:00] MARVL 2021B salvage confirmed: vars 1-8 COMPLETE before
+  the OOM — includes all four priority variables (TEMP, SAL, WQ_OXY_OXY,
+  WQ_DIAG_TOT_TURBIDITY; 73 figures each) plus TCHLA/TSS/TN/AMM.
+  Outputs: marvl/outputs/008_1.8_comparison/2021A/RAW/ ("2021A" label is a
+  007-template leftover; content = 2021B 1.7-vs-1.8). Chunked rerun trimmed
+  to vars 9-26 (chunk09_12/13_16/17_21/22_26), queued behind MARVL 2013B.
+  MARVL 2013B progress: OXY done, SAL underway.
+
+[2026-09-09 ~12:45] MARVL 2013B COMPLETE — all 26 variables x 73 figures
+  (single-model 1.8 vs obs; outputs 008_1.8_comparison/2013A/RAW/). Its
+  "error" exit was only end_plot_ID=31 overrunning the 26-entry variable
+  list AFTER the last variable — end_plot_ID fixed to 26 in both 008 master
+  configs. 2021B chunks 09_12..22_26 launched (fresh MATLAB per chunk).
+
+[2026-09-10 ~00:30] PYTHON SUITE COMPLETE (all exit 0 on relaunch):
+  - TransectA 2013B: 14 windows. T bias -0.58..-0.04 degC (consistent slight
+    COOL lean, opposite sign to 2021); S bias -0.06..+0.34 psu (mild salty,
+    strongest Dec-2013); sigma-t +0.07..+0.29.
+  - Kriged maps 2021B T + S: full-year window sweep done (data-thin windows
+    skipped in S as designed; late-Dec surface T bias approx -1.0 degC).
+  - Station panels 2013 + 2021: done.
+  Remaining: MARVL 2021B chunks 9-26 (running).
+
+[2026-09-10 ~04:30] STATS PIPELINE (report-card groundwork, replaces image
+  scraping): MARVL's isSaveErr writes errorMatrix.<zone>.<var>.{BIAS,MAE,MEF,
+  NMAE,NRMS,R,RMS,rawOBS,rawSIM} to ErrFilename — but it scores ncfile(1)
+  ONLY. Extractor built: custom_py/report_card/extract_marvl_stats.py
+  (.mat -> tidy marvl_stats.csv; merges chunked matrices). Findings so far:
+  - 007-era matrices exist and are populated (2023A TCHLA: 35/72 zones) —
+    the save pipeline works.
+  - 2021B chunk09_12 (nutrients NIT/TP/PON/FRP; scores the 1.7 baseline as
+    ncfile(1)): ALL zones empty — cause TBD (sparse nutrient obs vs
+    two-model quirk); 2013B rerun will discriminate.
+  - Per-chunk ErrFilenames fixed (chunks were clobbering one errormatrix.mat);
+    chunk09_12's matrix rescued.
+  QUEUED (after 2021 chunks finish): MARVL 2013B rerun (single-model 1.8;
+  yields its errormatrix + diagnosis) and NEW MARVL_WQ_2021_WEMDEV_STATS.m
+  (single-model 1.8 as ncfile(1), outputs 2021A_stats18/) for 1.8-2021 stats.
+  Then: report-card generator (zones x years metric tables, per variable,
+  like redl/docs/validation/temperature.html) from marvl_stats.csv.
+
+[2026-09-10 ~05:00] MARVL 2021B chunks 13_16/17_21/22_26 COMPLETE (exit 0,
+  plottfv DONE) — 2021B comparison now covers ALL 26 variables x 73 figures.
+  STATS FINDING: every chunk errormatrix is all-NaN — even water level (H)
+  and PAR — confirming the TWO-MODEL config never populates skill stats
+  (the one populated historical matrix, 007 2023A, was single-model).
+  => stats must come from single-model passes. LAUNCHED sequentially:
+  (1) MARVL 2013B rerun (single-model; also recovers its errormatrix lost to
+  the overshoot crash), (2) MARVL_WQ_2021_WEMDEV_STATS (single-model 1.8,
+  outputs 2021A_stats18/). Report-card generator next once these land.
+
+[2026-09-11 ~early] STATS PIPELINE COMPLETE, REPORT CARD GENERATED.
+  Single-model passes both ran clean and CONFIRM the diagnosis: 2013B rerun +
+  2021B stats pass produced fully populated errorMatrices (1,761 + 1,906
+  finite zone-var-metric stats); the two-model comparison matrices stay NaN.
+  Pipeline (repeatable, no image scraping):
+    MARVL single-model run (isSaveErr=1) -> errormatrix.mat
+    -> custom_py/report_card/extract_marvl_stats.py -> marvl_stats.csv
+    -> custom_py/report_card/make_report_card.py -> output/*.html
+  First 1.8 report card: 14 variable pages + index (zones grouped by region,
+  columns per sim year, traffic-light MAE/R/BIAS) at
+  custom_py/report_card/output/. Headline: TEMP R~0.99 in CS basins, MAE
+  (range-method) 0.05-0.08 (2013B) / 0.24-0.31 (2021B) degC.
+  Convention forward: every new sim gets a single-model MARVL stats pass;
+  rerun the two scripts to refresh the card. NB MARVL 'range' scoremethod:
+  MAE = mean exceedance of the model percentile envelope (can be < |BIAS|).
+
+[2026-09-12 ~19:30] VERSION-COMPARISON CARD built (no image eyeballing):
+  custom_py/report_card/make_comparison_card.py -> compare_csiem1.7.0_vs_
+  csiem1.8.0/index.html — per variable/year/metric: zones improved/unchanged/
+  degraded + median delta + BETTER/WORSE verdict; per-zone tables behind it.
+  First verdict (2021B like-mesh, T+S, MARVL zone stats, n>=10):
+    SAL: BETTER — |BIAS| improved 17 zones vs 4 degraded (median -0.21 psu)
+    TEMP: WORSE on offset — |BIAS| degraded 33 zones (median +0.45 degC),
+          MAE degraded 30/37; R UNCHANGED in 36/37 zones (pure warm shift,
+          variability/timing intact). Matches TransectA cast-based finding.
+  2013 comparison lands when its 1.7 stats pass (2013A, running) completes.
+  Workflow per future version bump: stats pass per sim -> extract -> compare.
+
+[2026-09-12 ~21:45] 1.7-vs-1.8 T/S COMPARISON COMPLETE (MARVL zone stats,
+  both years; card: report_card/compare_csiem1.7.0_vs_csiem1.8.0/index.html):
+  2013 (1.7-A002 -> 1.8-B010):
+    TEMP BETTER (|BIAS| improved 26/7 zones, median -0.37 degC; MAE 24/6)
+    SAL  BETTER (MAE improved 16/1, |BIAS| 15/5, median -0.26 psu)
+  2021 (like-mesh B010):
+    SAL  BETTER (|BIAS| improved 17/4, median -0.21 psu; RMS 10/4)
+    TEMP WORSE on offset (|BIAS| degraded 33/3, median +0.45 degC; MAE 30/1;
+         R UNCHANGED 36/37 — a uniform warm shift, dynamics intact)
+  Net: 1.8 wins 3 of 4 variable-years; the one regression is the 2021 warm
+  offset from the heat-budget change that fixed 2013's cold bias — candidate
+  lever: latent heat coefficient (1.7:1.8e-3, 1.8:1.5e-3; try ~1.6-1.65e-3).
+
+[2026-09-12 ~23:00] MET-FORCING BIAS CHECK (custom_py/met_bias/, full-year
+  hourly vs BOM stations; summary CSV there):
+  - ANNUAL air-T bias ~0 for BOTH forcings (WRF-2021 -0.13..+0.05; BARRA-SUB
+    2013 -0.28..-0.10) — the simple "WRF is warm" story does not hold
+    annually (the hosted page's +1.76 was a Jan-2022 fortnight; our Jan-2021
+    WRF is actually -1.7..-2.2 COLD at GI/Rottnest).
+  - SEASONAL structure is the story: WRF-2021 runs +0.7..+1.15 degC WARM
+    Apr-Aug at Garden Is/Rottnest then COLD Nov-Jan; BARRA-SUB 2013's warm
+    season lean is half that (<=+0.6). Water T integrates the flux -> the
+    accumulated Apr-Aug surplus surfaces as the Jul-Oct water warm offset
+    (TransectA: Jul +0.83 .. Oct +1.18) and the Nov-Dec cold bias pulls Dec
+    back to ~0 — the 2021 pattern matches a lagged integral of WRF's
+    seasonal air-T bias. WRF GI wind also +1.0 m/s (partial evaporative
+    offset). BARRA-C2 (4-5 km counterfactual): noisy/warm at land stations,
+    not an obvious upgrade at the coast.
+  => 1.8 physics stays (validated on the BARRA-forced 1991+2013, both
+  improved); candidate remedies for WRF years: seasonal air-T bias
+  correction of WRF, or a BARRA-C2-forced 2021 sensitivity run (data on
+  store covers 20201101-20220331) for definitive attribution.
+
+[2026-09-13 ~00:15] ROOT CAUSE (Matt): WRF was forced with a STATIC ERA5
+  snapshot SST — explains the seasonal air-T bias shape exactly (warm while
+  real SST cools past the snapshot Apr-Aug, cold once it warms past Nov-Jan).
+  Figure: custom_py/met_bias/met_bias_vs_water_bias.png. REMEDY: re-run WRF
+  with dynamic SST from the finished CSIEM 1.8 outputs via
+  csiem_model_wrf_1.0 (Docker, monthly runs, --tfv coupling). Batch queue
+  prepared: scripts/queue_csiem_rerun.sh (14 months per CSIEM year,
+  resumable, refuses running sims' NCs). Needs a capable machine with
+  Docker + WPS_GEOG (29 GB) + CDS credentials; then e.g.
+  `bash scripts/queue_csiem_rerun.sh 2021 2022`.
+
+[2026-09-13 ~00:00] WRF model organised into the SEAF-CS MODEL area:
+  Q:\SEAF-CS\V1.8\MODEL\csiem_model_wrf_1.0 (git clone of
+  SEAF-CS/csiem_model_wrf_1.0 + local commit 353bac2: batch queue script +
+  ARCHIVE_BASE -> its own output_archive/, gitignored). Dropbox copy at
+  AED_VM\WRF is now secondary. Batch runs still need a capable machine
+  (Docker + local WRF_BASE + 29 GB WPS_GEOG + CDS credentials); results
+  will archive back to Q: automatically once ARCHIVE_BASE is reachable
+  from the batch host.
+
+[2026-09-13 ~01:00] WRF VM BATCH READY: scripts/run_wrf_vm.sh committed to
+  Q:\...\csiem_model_wrf_1.0 (25f4b34+) — parallel month farm for the 64-core
+  Linux VM (4 cores/month, JOBS=8 default, ERA5 prefetch stage, resumable,
+  refuses unfinished TFV sims, auto-archive to output_archive/ + local clean).
+  GETTING_STARTED_VM.md = one-time setup: docker install (sudo), WPS_GEOG
+  29GB -> /media/csiemcommon/CSIEM/WRF/WPS_GEOG (dir created), ~/.cdsapirc,
+  pip deps. Smoke test: `./scripts/run_wrf_vm.sh 2021 11`, then
+  `nohup ./scripts/run_wrf_vm.sh 2021 &`.
+
+[2026-09-13 ~02:00] SIMS COMPLETE: 2015B + 2022B WQ (full periods, clean
+  exits, no errors). FULL VALIDATION LAUNCHED for both: python suite
+  (TransectA + panels both; kriged maps T/S 2022 [no maps for 2015 — bottle
+  year, per the 2013 precedent]; scatter both — 2015 exercises the
+  warehouse-build obs path) + MARVL queue (2015B single-model WEMDEV;
+  2022B stats18 + stats17-TS + 2015A stats17-TS; 2022B like-mesh comparison
+  in 5 chunks). Extractor extended; comparison card will weave 2015+2022
+  into the 1.7-vs-1.8 assessment when matrices land.
+
+[2026-09-13 ~12:40] Kriged maps 2022 T STALLED again at 00:35 (12 h frozen —
+  same mode as 09-Sep: xarray model reads starve while MATLAB holds ~30 GB).
+  RULE: never run kriged maps concurrently with MARVL on this VM.
+  Python suite killed; scatters (lightweight) running now; maps 2022 T+S
+  requeued for after the MARVL queue drains. MARVL: 2015B WEMDEV DONE
+  (exit 0, errormatrix written); 2022 stats18 in progress; 7 jobs remain.
+
+[2026-09-13 ~14:00] 2020 + 2023/4 SUITABILITY REVIEW: 2023B pair
+  (csiem_B010_20221101_20240401[_WQ]) fully aligned already — 7/7 physics,
+  3 bathy overrides, B010 IC, outputs 1.8.0/2023B, forcing includes match
+  its 31-Mar-2024 end. 2020 had NO B010 pair (A002 only in 1.7) — NEW
+  csiem_B010_20191101_20201231[_WQ] built from the 2013B template with the
+  2021-pattern WRF forcing (Matt's direction; BARRA-SUB doesn't cover the
+  window). check_paths: 89 fvcs / 1053 refs ALL RESOLVE. Both years
+  registered in the validation engines (transectA/maps/scatter SIMS).
+  CAVEATS: both are static-SST WRF vintages -> expect the Jul-Oct warm
+  fingerprint until the dynamic-SST re-runs land (both already mapped in
+  run_wrf_vm.sh); 2023B is a 17-month window (~110 h wall at observed pace).
+
+[2026-09-14 ~12:15] MARVL queue COMPLETE (2022 comparison all 26 vars across
+  5 chunks; both 1.7 stats passes). Scatter complete all 4 years. 1.7-vs-1.8
+  weave (MARVL zone stats) now covers 2013/2015/2021:
+    2013: TEMP BETTER (|BIAS| 26/7, median -0.37) · SAL BETTER (15/5, -0.26)
+    2015: TEMP BETTER (24/7, median -0.44!) · SAL BETTER (19/0, -0.25; R up 11 zones)
+          -> 1.8's 2015 casts bias (-0.75) is a big step UP from 1.7's colder state
+    2021: SAL BETTER (17/4, -0.21) · TEMP WORSE offset (33/3, +0.45; R unchanged)
+  Pattern locked: BARRA-forced years improve across the board; WRF years
+  improve S but carry the static-SST warm offset. 2022 1.8-stats recovery
+  running (TS first, then 4 chunks); kriged maps 2022 queued after MATLAB.
+
+[2026-09-15] FOUR-YEAR 1.7-vs-1.8 WEAVE COMPLETE (MARVL zone stats; cards
+  regenerated: report_card/output/ + compare_csiem1.7.0_vs_csiem1.8.0/):
+    2013 BARRA: TEMP BETTER (-0.37) | SAL BETTER (-0.26)
+    2015 BARRA: TEMP BETTER (-0.44) | SAL BETTER (-0.25, 19/0 zones)
+    2021 WRF:   TEMP worse offset (+0.45, R intact) | SAL BETTER (-0.21)
+    2022 WRF:   TEMP worse offset (+0.77, R intact 44/46) | SAL BETTER (-0.12)
+  VERDICT: 1.8 better in 6 of 8 variable-years; the two regressions are the
+  same single mechanism — static-ERA5-SST WRF air-T bias (fix queued via
+  csiem_model_wrf_1.0 dynamic-SST re-runs). All 2022 stats chunks + TS pass
+  clean; final tail = 2022 kriged maps (running).

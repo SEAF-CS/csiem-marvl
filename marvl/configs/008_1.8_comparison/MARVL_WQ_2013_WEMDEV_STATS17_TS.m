@@ -1,3 +1,6 @@
+%% 1.7 STATS PASS, T+S ONLY (2026-09-12): single-model 1.7 reference as
+%% ncfile(1) so errorMatrix scores the OLD model; for the 1.7-vs-1.8
+%% report-card comparison. Variables restricted to SAL+TEMP (IDs 2-3).
 %% 008_1.8_comparison: cloned from 007_1.7_comparison/MARVL_WQ_2013_WEMDEV.m (2026-09-06).
 %% ncfile(1) = the 1.8.0 reference run, single-model vs field data (no 1.7 B-mesh 2013 exists)
 %% (output_archive/1.8.0). Do NOT run until the 1.8 sims have closed.
@@ -99,8 +102,8 @@ master.add_human = 1; % option to use user-define names, if 0 use AED names
 % throughout (Matt 2026-09-07), so 2013 runs single-model vs field data.
 %master.ncfile(1).name = 'W:\WAMSI\1.7\SH-20251123-1.7.0\2013A-20251123024141\results\csiem_A002_20121101_20131231_WQ_WQ.nc';  % A-mesh 1.7 (disabled)
 %master.ncfile(1).legend = 'csiem1.7.0';
-master.ncfile(1).name = 'Q:\SEAF-CS\V1.8\MODEL\csiem_model_tfvaed_1.8\output_archive\1.8.0\2013B\csiem_B010_20121101_20131231_WQ_WQ.nc';
-master.ncfile(1).legend = 'csiem1.8.0';
+master.ncfile(1).name = 'W:\WAMSI\1.7\SH-20251123-1.7.0\2013A-20251123024141\results\csiem_A002_20121101_20131231_WQ_WQ.nc';
+master.ncfile(1).legend = 'csiem1.7.0';
 master.ncfile(1).tag = 'TFV';
 
 % field data
@@ -132,8 +135,8 @@ MARVLs.master = master; clear master;
 %  The is the configuration file for the marvl_plot_timeseries.m function.
 % -------------------------------------------------------------------------
 
-timeseries.start_plot_ID = 1;
-timeseries.end_plot_ID = 26;   % = numel(varname); 31 overran the list and crashed after the last variable
+timeseries.start_plot_ID = 2;
+timeseries.end_plot_ID = 3;   % = numel(varname); 31 overran the list and crashed after the last variable
 %timeseries.start_plot_ID = 5;
 %timeseries.end_plot_ID = 5;
 
@@ -180,9 +183,9 @@ timeseries.skills = [1,... % r: regression coefficient (0-1)
     1,... % NRMS: RMSE normalized to mean observation
     1,... % MEF: model efficienty, Nash-Sutcliffe Efficiency
     ];
-timeseries.outputdirectory = '../../outputs/008_1.8_comparison/2013A/RAW/';
+timeseries.outputdirectory = '../../outputs/008_1.8_comparison/2013A_stats17/RAW/';
 timeseries.htmloutput = '../../outputs/008_1.8_comparison/2013A/HTML/';
-timeseries.ErrFilename = '../../outputs/008_1.8_comparison/2013A/errormatrix.mat';
+timeseries.ErrFilename = '../../outputs/008_1.8_comparison/2013A_stats17/errormatrix.mat';
 
 timeseries.ncfile(1).symbol = {'-';'-'};
 timeseries.ncfile(1).colour = {[166,86,40]./255;[8,88,158]./255};% Surface and Bottom

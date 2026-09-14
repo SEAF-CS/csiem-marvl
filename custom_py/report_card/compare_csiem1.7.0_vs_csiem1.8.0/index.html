@@ -1,0 +1,45 @@
+<html><head><meta charset='utf-8'><style>body{font-family:Segoe UI,Arial,sans-serif;margin:24px;color:#222}
+h1{font-size:19px}h2{font-size:15px;margin-top:24px}h3{font-size:13px;color:#555}
+table{border-collapse:collapse;margin:6px 0 18px 0;font-size:11.5px}
+th,td{border:1px solid #ccc;padding:3px 8px;text-align:center}
+th{background:#f0f0f0}td.zone{text-align:left}
+.g{background:#c6efce}.y{background:#ffffcc}.r{background:#ffc7ce}.na{color:#bbb}
+.small{font-size:11px;color:#777}.big{font-size:14px;font-weight:bold}</style></head><body><h1>Model comparison overview: csiem1.7.0 → csiem1.8.0</h1>
+<p class="small">Per variable/year/metric: zones improved / unchanged / degraded (zones need n≥10 matched obs in both versions).</p>
+<table><tr><th>Variable</th><th>Year</th><th>Metric</th><th>Improved</th><th>Unchanged</th><th>Degraded</th><th>Median Δ</th><th>Verdict</th></tr>
+<tr><td>Temperature</td><td>2013</td><td>MAE</td><td>24</td><td>4</td><td>6</td><td>-0.066</td><td class="g big">BETTER</td></tr>
+<tr><td>Temperature</td><td>2013</td><td>RMS</td><td>25</td><td>1</td><td>8</td><td>-0.099</td><td class="g big">BETTER</td></tr>
+<tr><td>Temperature</td><td>2013</td><td>R</td><td>2</td><td>32</td><td>0</td><td>+0.005</td><td class="g big">BETTER</td></tr>
+<tr><td>Temperature</td><td>2013</td><td>BIAS</td><td>26</td><td>1</td><td>7</td><td>-0.368</td><td class="g big">BETTER</td></tr>
+<tr><td>Temperature</td><td>2021</td><td>MAE</td><td>1</td><td>6</td><td>30</td><td>+0.082</td><td class="r big">WORSE</td></tr>
+<tr><td>Temperature</td><td>2021</td><td>RMS</td><td>2</td><td>6</td><td>29</td><td>+0.078</td><td class="r big">WORSE</td></tr>
+<tr><td>Temperature</td><td>2021</td><td>R</td><td>0</td><td>36</td><td>1</td><td>-0.002</td><td class="r big">WORSE</td></tr>
+<tr><td>Temperature</td><td>2021</td><td>BIAS</td><td>3</td><td>1</td><td>33</td><td>+0.451</td><td class="r big">WORSE</td></tr>
+<tr><td>Temperature</td><td>2015</td><td>MAE</td><td>22</td><td>5</td><td>4</td><td>-0.076</td><td class="g big">BETTER</td></tr>
+<tr><td>Temperature</td><td>2015</td><td>RMS</td><td>22</td><td>2</td><td>7</td><td>-0.089</td><td class="g big">BETTER</td></tr>
+<tr><td>Temperature</td><td>2015</td><td>R</td><td>2</td><td>29</td><td>0</td><td>+0.006</td><td class="g big">BETTER</td></tr>
+<tr><td>Temperature</td><td>2015</td><td>BIAS</td><td>24</td><td>0</td><td>7</td><td>-0.444</td><td class="g big">BETTER</td></tr>
+<tr><td>Temperature</td><td>2022</td><td>MAE</td><td>3</td><td>3</td><td>40</td><td>+0.123</td><td class="r big">WORSE</td></tr>
+<tr><td>Temperature</td><td>2022</td><td>RMS</td><td>4</td><td>2</td><td>40</td><td>+0.156</td><td class="r big">WORSE</td></tr>
+<tr><td>Temperature</td><td>2022</td><td>R</td><td>0</td><td>44</td><td>2</td><td>-0.003</td><td class="r big">WORSE</td></tr>
+<tr><td>Temperature</td><td>2022</td><td>BIAS</td><td>2</td><td>2</td><td>42</td><td>+0.768</td><td class="r big">WORSE</td></tr>
+<tr><td>Salinity</td><td>2013</td><td>MAE</td><td>16</td><td>3</td><td>1</td><td>-0.096</td><td class="g big">BETTER</td></tr>
+<tr><td>Salinity</td><td>2013</td><td>RMS</td><td>16</td><td>3</td><td>1</td><td>-0.087</td><td class="g big">BETTER</td></tr>
+<tr><td>Salinity</td><td>2013</td><td>R</td><td>2</td><td>18</td><td>0</td><td>+0.008</td><td class="g big">BETTER</td></tr>
+<tr><td>Salinity</td><td>2013</td><td>BIAS</td><td>15</td><td>0</td><td>5</td><td>-0.255</td><td class="g big">BETTER</td></tr>
+<tr><td>Salinity</td><td>2021</td><td>MAE</td><td>6</td><td>10</td><td>6</td><td>-0.003</td><td class="y big">neutral</td></tr>
+<tr><td>Salinity</td><td>2021</td><td>RMS</td><td>10</td><td>8</td><td>4</td><td>-0.019</td><td class="g big">BETTER</td></tr>
+<tr><td>Salinity</td><td>2021</td><td>R</td><td>2</td><td>20</td><td>0</td><td>+0.000</td><td class="g big">BETTER</td></tr>
+<tr><td>Salinity</td><td>2021</td><td>BIAS</td><td>17</td><td>1</td><td>4</td><td>-0.205</td><td class="g big">BETTER</td></tr>
+<tr><td>Salinity</td><td>2015</td><td>MAE</td><td>16</td><td>4</td><td>0</td><td>-0.089</td><td class="g big">BETTER</td></tr>
+<tr><td>Salinity</td><td>2015</td><td>RMS</td><td>17</td><td>3</td><td>0</td><td>-0.088</td><td class="g big">BETTER</td></tr>
+<tr><td>Salinity</td><td>2015</td><td>R</td><td>11</td><td>9</td><td>0</td><td>+0.044</td><td class="g big">BETTER</td></tr>
+<tr><td>Salinity</td><td>2015</td><td>BIAS</td><td>19</td><td>1</td><td>0</td><td>-0.254</td><td class="g big">BETTER</td></tr>
+<tr><td>Salinity</td><td>2022</td><td>MAE</td><td>11</td><td>13</td><td>7</td><td>-0.001</td><td class="g big">BETTER</td></tr>
+<tr><td>Salinity</td><td>2022</td><td>RMS</td><td>11</td><td>16</td><td>4</td><td>-0.013</td><td class="g big">BETTER</td></tr>
+<tr><td>Salinity</td><td>2022</td><td>R</td><td>3</td><td>27</td><td>1</td><td>+0.001</td><td class="g big">BETTER</td></tr>
+<tr><td>Salinity</td><td>2022</td><td>BIAS</td><td>19</td><td>5</td><td>7</td><td>-0.122</td><td class="g big">BETTER</td></tr>
+</table><h2>Variable pages</h2><ul>
+<li><a href="temp.html">Temperature</a></li>
+<li><a href="sal.html">Salinity</a></li>
+</ul></body></html>

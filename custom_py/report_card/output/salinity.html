@@ -1,0 +1,151 @@
+<html><head><meta charset='utf-8'><title>Salinity</title><style>
+body{font-family:Segoe UI,Arial,sans-serif;margin:24px;color:#222}
+h1{font-size:20px} h2{font-size:16px;margin-top:28px} h3{font-size:13px;color:#555}
+table{border-collapse:collapse;margin:8px 0 20px 0;font-size:12px}
+th,td{border:1px solid #ccc;padding:3px 10px;text-align:right}
+th{background:#f0f0f0} td.zone{text-align:left}
+.g{background:#c6efce}.y{background:#ffeb9c}.r{background:#ffc7ce}.na{color:#bbb}
+.small{font-size:11px;color:#777}
+</style></head><body><h1>CSIEM Report Card: Salinity (csiem1.8.0)</h1>
+<p class="small">Generated from MARVL errorMatrix stats (marvl_stats.csv) — no image scraping. Metrics use the MARVL "range" scoremethod. Units: psu.</p>
+<h2>Mean Absolute Error (psu)</h2>
+<h3>Region aggregates</h3>
+<table><tr><th>Zone</th><th>2013B</th><th>2015B</th><th>2021B</th><th>2022B</th></tr>
+<tr><td class="zone">CS_Region</td><td class="g">0.09</td><td class="g">0.09</td><td class="g">0.25</td><td class="g">0.14</td></tr>
+<tr><td class="zone">GR_Region</td><td class="na">–</td><td class="na">–</td><td class="na">–</td><td class="g">0.01</td></tr>
+<tr><td class="zone">OA_Region</td><td class="na">–</td><td class="na">–</td><td class="g">0.26</td><td class="y">0.46</td></tr>
+<tr><td class="zone">SW_Region</td><td class="g">0.12</td><td class="g">0.20</td><td class="g">0.14</td><td class="g">0.17</td></tr>
+</table>
+<h3>North (Gage Roads & Fremantle)</h3>
+<table><tr><th>Zone</th><th>2013B</th><th>2015B</th><th>2021B</th><th>2022B</th></tr>
+<tr><td class="zone">Freo_Port</td><td class="na">–</td><td class="na">–</td><td class="na">–</td><td class="g">0.01</td></tr>
+<tr><td class="zone">SCE_LSEest</td><td class="r">2.40</td><td class="r">2.41</td><td class="r">2.31</td><td class="r">2.03</td></tr>
+<tr><td class="zone">SCE_LSWest</td><td class="r">2.42</td><td class="r">2.34</td><td class="r">2.75</td><td class="r">2.44</td></tr>
+<tr><td class="zone">SCE_Leeuwin</td><td class="r">1.52</td><td class="r">1.51</td><td class="r">1.55</td><td class="r">1.44</td></tr>
+</table>
+<h3>Owen Anchorage</h3>
+<table><tr><th>Zone</th><th>2013B</th><th>2015B</th><th>2021B</th><th>2022B</th></tr>
+<tr><td class="zone">OA_East</td><td class="na">–</td><td class="na">–</td><td class="na">–</td><td class="g">0.13</td></tr>
+<tr><td class="zone">OA_West</td><td class="na">–</td><td class="na">–</td><td class="na">–</td><td class="g">0.19</td></tr>
+</table>
+<h3>Cockburn Sound</h3>
+<table><tr><th>Zone</th><th>2013B</th><th>2015B</th><th>2021B</th><th>2022B</th></tr>
+<tr><td class="zone">CS_BasinMEast</td><td class="g">0.10</td><td class="g">0.10</td><td class="y">0.39</td><td class="g">0.20</td></tr>
+<tr><td class="zone">CS_BasinNEast</td><td class="g">0.08</td><td class="g">0.10</td><td class="g">0.29</td><td class="g">0.25</td></tr>
+<tr><td class="zone">CS_BasinNWest</td><td class="g">0.11</td><td class="g">0.16</td><td class="y">0.38</td><td class="g">0.29</td></tr>
+<tr><td class="zone">CS_BasinSEast</td><td class="g">0.11</td><td class="g">0.10</td><td class="y">0.38</td><td class="g">0.16</td></tr>
+<tr><td class="zone">CS_BasinSWest</td><td class="g">0.11</td><td class="g">0.13</td><td class="y">0.31</td><td class="g">0.16</td></tr>
+<tr><td class="zone">CS_GIEast</td><td class="g">0.12</td><td class="g">0.14</td><td class="y">0.37</td><td class="g">0.21</td></tr>
+<tr><td class="zone">CS_Henderson</td><td class="g">0.12</td><td class="g">0.12</td><td class="g">0.23</td><td class="g">0.23</td></tr>
+<tr><td class="zone">CS_KSMid</td><td class="g">0.07</td><td class="g">0.07</td><td class="g">0.22</td><td class="g">0.16</td></tr>
+<tr><td class="zone">CS_KSSouth</td><td class="g">0.04</td><td class="g">0.03</td><td class="g">0.26</td><td class="g">0.24</td></tr>
+<tr><td class="zone">CS_Mangles</td><td class="g">0.13</td><td class="g">0.12</td><td class="g">0.23</td><td class="g">0.18</td></tr>
+<tr><td class="zone">CS_SthFlats</td><td class="g">0.09</td><td class="g">0.09</td><td class="y">0.31</td><td class="g">0.19</td></tr>
+</table>
+<h3>South (Warnbro, Comet Bay & Surrounds)</h3>
+<table><tr><th>Zone</th><th>2013B</th><th>2015B</th><th>2021B</th><th>2022B</th></tr>
+<tr><td class="zone">SW_North</td><td class="na">–</td><td class="na">–</td><td class="na">–</td><td class="g">0.19</td></tr>
+<tr><td class="zone">SW_South</td><td class="g">0.03</td><td class="g">0.06</td><td class="g">0.15</td><td class="g">0.19</td></tr>
+<tr><td class="zone">Warnbro</td><td class="g">0.08</td><td class="g">0.13</td><td class="g">0.19</td><td class="g">0.22</td></tr>
+</table>
+<h3>West (Rottnest & offshore)</h3>
+<table><tr><th>Zone</th><th>2013B</th><th>2015B</th><th>2021B</th><th>2022B</th></tr>
+<tr><td class="zone">Carnac</td><td class="na">–</td><td class="na">–</td><td class="na">–</td><td class="g">0.16</td></tr>
+<tr><td class="zone">IO_NRSROTT</td><td class="g">0.06</td><td class="g">0.07</td><td class="r">11.08</td><td class="r">7.45</td></tr>
+<tr><td class="zone">Mewstone</td><td class="na">–</td><td class="na">–</td><td class="na">–</td><td class="g">0.09</td></tr>
+<tr><td class="zone">Parmelia</td><td class="na">–</td><td class="na">–</td><td class="g">0.27</td><td class="r">0.90</td></tr>
+</table>
+<h2>Correlation Coefficient (R)</h2>
+<h3>Region aggregates</h3>
+<table><tr><th>Zone</th><th>2013B</th><th>2015B</th><th>2021B</th><th>2022B</th></tr>
+<tr><td class="zone">CS_Region</td><td class="g">0.98</td><td class="g">0.93</td><td class="g">0.97</td><td class="g">0.94</td></tr>
+<tr><td class="zone">GR_Region</td><td class="na">–</td><td class="na">–</td><td class="na">–</td><td class="g">1.00</td></tr>
+<tr><td class="zone">OA_Region</td><td class="na">–</td><td class="na">–</td><td class="y">0.78</td><td class="y">0.61</td></tr>
+<tr><td class="zone">SW_Region</td><td class="g">0.94</td><td class="g">0.83</td><td class="g">0.98</td><td class="g">0.97</td></tr>
+</table>
+<h3>North (Gage Roads & Fremantle)</h3>
+<table><tr><th>Zone</th><th>2013B</th><th>2015B</th><th>2021B</th><th>2022B</th></tr>
+<tr><td class="zone">Freo_Port</td><td class="na">–</td><td class="na">–</td><td class="na">–</td><td class="g">1.00</td></tr>
+<tr><td class="zone">SCE_LSEest</td><td class="g">0.94</td><td class="g">0.91</td><td class="g">0.95</td><td class="g">0.95</td></tr>
+<tr><td class="zone">SCE_LSWest</td><td class="g">0.91</td><td class="g">0.82</td><td class="g">0.91</td><td class="g">0.90</td></tr>
+<tr><td class="zone">SCE_Leeuwin</td><td class="g">0.90</td><td class="y">0.80</td><td class="g">0.95</td><td class="g">0.91</td></tr>
+</table>
+<h3>Owen Anchorage</h3>
+<table><tr><th>Zone</th><th>2013B</th><th>2015B</th><th>2021B</th><th>2022B</th></tr>
+<tr><td class="zone">OA_East</td><td class="na">–</td><td class="na">–</td><td class="na">–</td><td class="g">0.96</td></tr>
+<tr><td class="zone">OA_West</td><td class="na">–</td><td class="na">–</td><td class="na">–</td><td class="g">0.97</td></tr>
+</table>
+<h3>Cockburn Sound</h3>
+<table><tr><th>Zone</th><th>2013B</th><th>2015B</th><th>2021B</th><th>2022B</th></tr>
+<tr><td class="zone">CS_BasinMEast</td><td class="g">0.99</td><td class="g">0.90</td><td class="g">0.95</td><td class="g">0.97</td></tr>
+<tr><td class="zone">CS_BasinNEast</td><td class="g">0.98</td><td class="g">0.88</td><td class="g">0.96</td><td class="y">0.70</td></tr>
+<tr><td class="zone">CS_BasinNWest</td><td class="g">0.97</td><td class="y">0.79</td><td class="g">0.98</td><td class="g">0.96</td></tr>
+<tr><td class="zone">CS_BasinSEast</td><td class="g">0.99</td><td class="g">0.90</td><td class="g">0.97</td><td class="g">0.98</td></tr>
+<tr><td class="zone">CS_BasinSWest</td><td class="g">0.96</td><td class="g">0.86</td><td class="g">0.97</td><td class="g">0.98</td></tr>
+<tr><td class="zone">CS_GIEast</td><td class="g">0.97</td><td class="g">0.82</td><td class="g">0.93</td><td class="g">0.89</td></tr>
+<tr><td class="zone">CS_Henderson</td><td class="g">0.95</td><td class="g">0.84</td><td class="g">0.98</td><td class="g">0.96</td></tr>
+<tr><td class="zone">CS_KSMid</td><td class="g">0.99</td><td class="g">0.92</td><td class="g">0.98</td><td class="g">0.98</td></tr>
+<tr><td class="zone">CS_KSSouth</td><td class="g">0.99</td><td class="g">0.98</td><td class="g">0.92</td><td class="g">0.81</td></tr>
+<tr><td class="zone">CS_Mangles</td><td class="g">0.97</td><td class="g">0.88</td><td class="g">0.98</td><td class="g">0.98</td></tr>
+<tr><td class="zone">CS_SthFlats</td><td class="g">0.97</td><td class="g">0.84</td><td class="g">0.97</td><td class="g">0.96</td></tr>
+</table>
+<h3>South (Warnbro, Comet Bay & Surrounds)</h3>
+<table><tr><th>Zone</th><th>2013B</th><th>2015B</th><th>2021B</th><th>2022B</th></tr>
+<tr><td class="zone">SW_North</td><td class="na">–</td><td class="na">–</td><td class="na">–</td><td class="g">1.00</td></tr>
+<tr><td class="zone">SW_South</td><td class="g">0.98</td><td class="y">0.79</td><td class="g">0.99</td><td class="g">0.98</td></tr>
+<tr><td class="zone">Warnbro</td><td class="g">0.98</td><td class="y">0.68</td><td class="g">0.97</td><td class="g">0.98</td></tr>
+</table>
+<h3>West (Rottnest & offshore)</h3>
+<table><tr><th>Zone</th><th>2013B</th><th>2015B</th><th>2021B</th><th>2022B</th></tr>
+<tr><td class="zone">Carnac</td><td class="na">–</td><td class="na">–</td><td class="na">–</td><td class="g">0.96</td></tr>
+<tr><td class="zone">IO_NRSROTT</td><td class="g">0.87</td><td class="y">0.76</td><td class="r">0.42</td><td class="r">0.41</td></tr>
+<tr><td class="zone">Mewstone</td><td class="na">–</td><td class="na">–</td><td class="na">–</td><td class="g">0.98</td></tr>
+<tr><td class="zone">Parmelia</td><td class="na">–</td><td class="na">–</td><td class="y">0.78</td><td class="y">0.59</td></tr>
+</table>
+<h2>Bias (psu)</h2>
+<h3>Region aggregates</h3>
+<table><tr><th>Zone</th><th>2013B</th><th>2015B</th><th>2021B</th><th>2022B</th></tr>
+<tr><td class="zone">CS_Region</td><td class="g">0.25</td><td class="g">0.24</td><td class="r">0.62</td><td class="y">0.36</td></tr>
+<tr><td class="zone">GR_Region</td><td class="na">–</td><td class="na">–</td><td class="na">–</td><td class="g">-0.02</td></tr>
+<tr><td class="zone">OA_Region</td><td class="na">–</td><td class="na">–</td><td class="y">0.56</td><td class="r">1.08</td></tr>
+<tr><td class="zone">SW_Region</td><td class="g">-0.09</td><td class="y">0.30</td><td class="g">-0.15</td><td class="g">-0.09</td></tr>
+</table>
+<h3>North (Gage Roads & Fremantle)</h3>
+<table><tr><th>Zone</th><th>2013B</th><th>2015B</th><th>2021B</th><th>2022B</th></tr>
+<tr><td class="zone">Freo_Port</td><td class="na">–</td><td class="na">–</td><td class="na">–</td><td class="g">-0.02</td></tr>
+<tr><td class="zone">SCE_LSEest</td><td class="r">7.19</td><td class="r">7.28</td><td class="r">5.13</td><td class="r">4.12</td></tr>
+<tr><td class="zone">SCE_LSWest</td><td class="r">6.99</td><td class="r">6.94</td><td class="r">6.42</td><td class="r">4.82</td></tr>
+<tr><td class="zone">SCE_Leeuwin</td><td class="r">4.62</td><td class="r">4.41</td><td class="r">4.80</td><td class="r">3.35</td></tr>
+</table>
+<h3>Owen Anchorage</h3>
+<table><tr><th>Zone</th><th>2013B</th><th>2015B</th><th>2021B</th><th>2022B</th></tr>
+<tr><td class="zone">OA_East</td><td class="na">–</td><td class="na">–</td><td class="na">–</td><td class="g">0.17</td></tr>
+<tr><td class="zone">OA_West</td><td class="na">–</td><td class="na">–</td><td class="na">–</td><td class="y">0.37</td></tr>
+</table>
+<h3>Cockburn Sound</h3>
+<table><tr><th>Zone</th><th>2013B</th><th>2015B</th><th>2021B</th><th>2022B</th></tr>
+<tr><td class="zone">CS_BasinMEast</td><td class="g">0.28</td><td class="g">0.27</td><td class="r">0.72</td><td class="g">0.29</td></tr>
+<tr><td class="zone">CS_BasinNEast</td><td class="g">0.20</td><td class="g">0.26</td><td class="y">0.32</td><td class="y">0.44</td></tr>
+<tr><td class="zone">CS_BasinNWest</td><td class="g">0.29</td><td class="y">0.44</td><td class="r">0.92</td><td class="r">-0.68</td></tr>
+<tr><td class="zone">CS_BasinSEast</td><td class="g">0.30</td><td class="g">0.27</td><td class="y">0.36</td><td class="g">0.26</td></tr>
+<tr><td class="zone">CS_BasinSWest</td><td class="g">0.30</td><td class="y">0.32</td><td class="y">0.36</td><td class="g">0.10</td></tr>
+<tr><td class="zone">CS_GIEast</td><td class="y">0.32</td><td class="y">0.37</td><td class="r">0.97</td><td class="g">0.01</td></tr>
+<tr><td class="zone">CS_Henderson</td><td class="y">0.33</td><td class="g">0.29</td><td class="y">0.38</td><td class="y">0.50</td></tr>
+<tr><td class="zone">CS_KSMid</td><td class="g">0.18</td><td class="g">0.17</td><td class="y">0.42</td><td class="y">0.34</td></tr>
+<tr><td class="zone">CS_KSSouth</td><td class="g">0.10</td><td class="g">0.02</td><td class="r">0.71</td><td class="r">0.65</td></tr>
+<tr><td class="zone">CS_Mangles</td><td class="y">0.35</td><td class="g">0.28</td><td class="g">0.23</td><td class="g">0.19</td></tr>
+<tr><td class="zone">CS_SthFlats</td><td class="g">0.25</td><td class="g">0.19</td><td class="y">0.44</td><td class="g">0.16</td></tr>
+</table>
+<h3>South (Warnbro, Comet Bay & Surrounds)</h3>
+<table><tr><th>Zone</th><th>2013B</th><th>2015B</th><th>2021B</th><th>2022B</th></tr>
+<tr><td class="zone">SW_North</td><td class="na">–</td><td class="na">–</td><td class="na">–</td><td class="g">0.02</td></tr>
+<tr><td class="zone">SW_South</td><td class="g">0.04</td><td class="g">0.11</td><td class="g">-0.21</td><td class="g">-0.11</td></tr>
+<tr><td class="zone">Warnbro</td><td class="g">0.22</td><td class="y">0.32</td><td class="g">-0.05</td><td class="g">-0.04</td></tr>
+</table>
+<h3>West (Rottnest & offshore)</h3>
+<table><tr><th>Zone</th><th>2013B</th><th>2015B</th><th>2021B</th><th>2022B</th></tr>
+<tr><td class="zone">Carnac</td><td class="na">–</td><td class="na">–</td><td class="na">–</td><td class="g">0.08</td></tr>
+<tr><td class="zone">IO_NRSROTT</td><td class="g">0.05</td><td class="g">0.04</td><td class="r">44.90</td><td class="r">26.05</td></tr>
+<tr><td class="zone">Mewstone</td><td class="na">–</td><td class="na">–</td><td class="na">–</td><td class="g">-0.03</td></tr>
+<tr><td class="zone">Parmelia</td><td class="na">–</td><td class="na">–</td><td class="y">0.58</td><td class="r">2.15</td></tr>
+</table></body></html>

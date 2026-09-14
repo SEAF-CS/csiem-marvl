@@ -132,7 +132,7 @@ MARVLs.master = master; clear master;
 % -------------------------------------------------------------------------
 
 timeseries.start_plot_ID = 1;
-timeseries.end_plot_ID = 31;
+timeseries.end_plot_ID = 26;   % = numel(varname); 31 overran the list and crashed after the last variable
 %timeseries.start_plot_ID = 5;
 %timeseries.end_plot_ID = 5;
 
