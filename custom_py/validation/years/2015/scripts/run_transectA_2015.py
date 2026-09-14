@@ -7,6 +7,7 @@
 import os, runpy
 from pathlib import Path
 
-os.environ['TRANSECT_SIM'] = '2015A'
+# 2015 is A002 under model 1.7 but B010 under 1.8 (MODEL_VER env selects)
+os.environ['TRANSECT_SIM'] = '2015B' if os.environ.get('MODEL_VER', '1.7').startswith('1.8') else '2015A'
 runpy.run_path(str(Path(__file__).resolve().parents[3] / 'common' / 'lib'
                    / 'transectA_modern.py'), run_name='__main__')

@@ -34,7 +34,11 @@ import matplotlib.lines as mlines
 import tfv.xarray
 from scipy.interpolate import griddata
 
-MODEL_NC = Path(r'W:/WAMSI/1.7/SH-20251123-1.7.0/2022B-20260131015416/results/csiem_B010_20211101_20221231_WQ.nc')
+# model-version switch (MODEL_VER env; default '1.7' = published behaviour)
+MODEL_NC = {
+    '1.7':   Path(r'W:/WAMSI/1.7/SH-20251123-1.7.0/2022B-20260131015416/results/csiem_B010_20211101_20221231_WQ.nc'),
+    '1.8.0': Path(r'Q:/SEAF-CS/V1.8/MODEL/csiem_model_tfvaed_1.8/output_archive/1.8.0/2022B/csiem_B010_20211101_20221231_WQ.nc'),
+}[os.environ.get('MODEL_VER', '1.7')]
 FIELD_SCRIPT = r'Q:/SEAF-CS/V1.8/DATA/csiem-data/data-lake/DEP/SMCWS/1992/March/contour_coastal_salinity.py'
 WAREHOUSE = r'G:/CSIEM/V1.7/DATA/csiem-data/data-warehouse/parquet/variable/csiem_var{:05d}_public.parquet'
 OUT_BASE = Path(r'Q:/SEAF-CS/V1.8/MARVL/csiem-marvl/custom_py/validation/years/2022/outputs/maps')

@@ -1,4 +1,21 @@
-# 1.8 validation prep — status (2026-09-06)
+# 1.8 validation prep — status (updated 2026-09-09)
+
+**Live sims×assessments ledger: `MARVL.log` at the repo root** (append-only,
+updated as runs/assessments progress — Matt's at-a-glance reference).
+
+**2026-09-09:** Both reference sims COMPLETE (2021B ~02:35, 2013B ~04:xx,
+clean "Exiting TUFLOWFV", full periods, no errors). Real `MODEL_VER=1.8.0`
+validation running: Python suite (TransectA 2021B+2013B, kriged maps T/S 2021,
+panels both) + MARVL 008 configs (2021B then 2013B) — logs in
+`S:\tmp\csiem_18_rollout\testlogs\REAL_*.log`. The `output_archive/_test/`
+copies (329 GB) + `MARVL_WQ_2021_WEMDEV_TEST.m` can be deleted once the real
+pass is reviewed. **csiem-marvl consolidated + pushed**: GitHub main =
+`c62d01c` (marvl/ layout, vendored aed-marvl, 1.8 suite, -mh port, origin
+merge). Y: 1.7.0 folders (`csiem-marvl`, `-mh`, `-sg`) are now legacy.
+New sims prepped: 2015B pair created from 2013B template (first B-mesh 2015);
+2015A/2022B verified ready to fire.
+
+# (original prep notes below)
 
 Restart-safe notes for the 1.8 post-processing campaign. Written while the two
 1.8 reference sims are still running — **nothing here opens a model NetCDF; do
